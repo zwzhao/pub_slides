@@ -1,0 +1,1996 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Advances in Network Computing - Zhiwei Zhao</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="../../templates/dist/reset.css">
+		<link rel="stylesheet" href="../../templates/dist/reveal.css">
+		<link rel="stylesheet" href="../../templates/dist/theme/simple-z.css" id="theme">
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="../../templates/plugin/highlight/monokai.css">
+	</head>
+
+	<body>
+
+		<div class="reveal">
+			<div class="slides">
+				<section class="outline-page">
+					<section>
+					<img src="../../resources/ranc/turing1.png" style="height: 160px; margin: 60px auto auto auto; background: transparent;">
+					<h2 style="font-size: 46px;"><span style="color: lightcoral;">R</span>ecent <span style="color:lightgreen;">A</span>dvances in <span style="color:cornflowerblue;">N</span>etwork <span style="color: crimson;">C</span>omputing</h2>
+					<hr>
+					<p>
+						<small><a href="https://mobinets.cn/zzw" target="_blank">Zhiwei Zhao</a><br>zzw@uestc.edu.cn
+						</small>
+					</p>
+						<small><img width="20%" src="../../resources/ranc/homelink.png">
+						<br>
+						<span style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif"><a href="https://mobinets.cn" target="_blank"><span style="color: rgb(99, 99, 99);">mobinets</span></a> <span style="color: rgb(110, 110, 110);">@ SCSE, UESTC</span></span>
+						</small>
+					</section>
+				</section>
+
+				<section class="outline-page">
+					<div class="logo">
+						<a href="https://mobinets.cn"><img src="../../resources/ranc/mobinetslogo.png"/></a>
+					</div>
+					<section>
+						<h3>Two lines</h3>
+						<table>
+							<thead>
+								<th>Recent advances</th>
+								<th>Turing award winners</th>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1. NDN/SDN/NFV</td>
+									<td>1. Stories</td>
+								</tr>
+								<tr>
+									<td>2. Edge computing</td>
+									<td>2. Interesting works</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>3. Lectures</td>
+								</tr>
+							</tbody>
+						</table>
+						<br>
+						<img width="70%" src="../../resources/ranc/fashion-classic.png">
+					</section>
+					<section>
+						<h3>Coursework (60%+40%)</h3>
+						<h4>A one-column, two-page course work.</h4>
+						<h5><a href="../../resources/ranc/Two_page_coursework.pdf">Sample pdf</a>, <a href="../../resources/ranc/ranc.tex">Template tex file</a>.</h5>
+						<h4>Attendance</h4>
+						<h5>The roll will be called when many are absent.</h5>
+						<h5>No final score if you are found absent for ≥3 times.</h5>
+						<h4>Submission</h4>
+						<h5>Email: fmi_course@mobinets.org</h5>
+						<h5>Deadline: May 26, 2022.</h5>
+					</section>
+				</section>
+
+				<section class="outline-page">
+					<div class="logo">
+						<a href="https://mobinets.cn"><img src="../../resources/ranc/mobinetslogo.png"/></a>
+					</div>
+					<section>
+						<h3>👑 Turing Award</h3>
+						<img width="40%" src="../../resources/ranc/turing/turing-head.png">
+						<p>
+							The ACM Alan Mathison Turing Award - "Nobel Prize of Computing".
+						</p>
+					</section>
+					<section>
+						<h3>56 Turing Awards</h3>
+						<table>
+							<thead>
+								<tr>
+									<th>Field</th>
+									<th>Awards</th>
+									<th>Percentage</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Programming lauguage</td>
+									<td>16</td>
+									<td>28.6%</td>
+								</tr>
+								<tr>
+									<td>Computing theory</td>
+									<td>12</td>
+									<td>21.4%</td>
+								</tr>
+								<tr class="fragment highlight-blue">
+									<td>Network system</td>
+									<td>8</td>
+									<td>14.3%</td>
+								</tr>
+								<tr>
+									<td>Database</td>
+									<td>7</td>
+									<td>12.5%</td>
+								</tr>
+								<tr>
+									<td>AI</td>
+									<td>6</td>
+									<td>10.7%</td>
+								</tr>
+								<tr>
+									<td>CHI</td>
+									<td>4</td>
+									<td>7%</td>
+								</tr>
+								<tr>
+									<td>Security</td>
+									<td>3</td>
+									<td>5.4%</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+					<section>
+						<h3>Stars in networks (1)</h3>
+						<table style="width: 90%;">
+							<tbody>
+								<tr>
+									<td style="text-align: center;"><img height="100px" src="../../resources/photos/Thompson_and_Ritchie.png">
+										<br><a href="https://dl.acm.org/profile/81100436668">Ken Thompson</a> & <a href="https://www.bell-labs.com/usr/dmr/www/">Dennis Ritchie</a> (1983)</td>
+									<td style="text-align: center;"><img height="100px" src="../../resources/photos/rkarp.png">
+										<br><a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/karp.html">Richard M. Karp</a> (1985)</td>
+								</tr>
+								<tr>
+									<td style="text-align: center;"><img height="100px" src="../../resources/photos/fjc.png">
+										<br><a href="https://www.computer.org/profiles/fernando-corbato">Fernando J. Corbató</a> (1990)</td>
+									<td style="text-align: center;"><img height="100px" src="../../resources/photos/blampson.png">
+									<br><a href=" http://butler.lampsons.us">Butler W. Lampson</a> (1992)</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+					<section>
+						<h3>Stars in networks (2)</h3>
+						<table style="width: 90%;">
+							<tbody>
+								<tr>
+									<td style="text-align: center;"><img height="100px" src="../../resources/photos/vcerf.png"><img height="100px" src="../../resources/photos/bkhan.png">
+										<br><a href="https://research.google/people/author32412/">Vint Cerf</a> & <a href="https://amturing.acm.org/award_winners/kahn_4598637.cfm">Robert Kahn</a> (2004)</td>
+									<td style="text-align: center;"><img height="100px" src="../../resources/photos/cThacker.png">
+										<br><a href="https://amturing.acm.org/award_winners/thacker_1336106.cfm">Charles P. Thacker</a> (2009)</td>
+								</tr>
+								<tr>
+									<td style="text-align: center;"><img height="100px" src="../../resources/photos/llamport.png">
+										<br><a href="http://www.lamport.org/">Leslie Lamport</a> (2013)</td>
+									<td style="text-align: center;"><img height="100px" src="../../resources/photos/tbLee.png">
+									<br><a href="https://www.w3.org/People/Berners-Lee/">Tim Berners-Lee</a> (2016)</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+					<section>
+						<h3>On our stage..</h3>
+						<table style="width: 90%;">
+							<tbody>
+								<tr style="font-size: 32px;">
+									<td style="text-align: center;"><img height="100px" src="../../resources/photos/vcerf.png"><img height="100px" src="../../resources/photos/bkhan.png">
+										<br><a href="https://research.google/people/author32412/">Vint Cerf</a> & <a href="https://amturing.acm.org/award_winners/kahn_4598637.cfm">Robert Kahn</a> (2004)</td>
+									<td style="text-align: center;"><img height="100px" src="../../resources/photos/rkarp.png">
+										<br><a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/karp.html">Richard M. Karp</a> (1985)</td>
+									<td style="text-align: center;"><img height="100px" src="../../resources/photos/llamport.png">
+										<br><a href="http://www.lamport.org/">Leslie Lamport</a> (2013)</td>
+								</tr>
+								<tr>
+									<td style="text-align: center; vertical-align: top;"><br>🤔
+										<br>Explore their problems</td>
+									<td style="text-align: center; vertical-align: top;"><br>📜
+										<br>Seminal works</td>
+									<td style="text-align: center; vertical-align: top;"><br>🎤
+										<br>Stories and Interviews</td>
+									<!-- <td class="fragment" style="text-align: center; opacity: 50%; vertical-align: top; font-size: large;"><img height="100px" src="../../resources/photos/tbLee.png"><br><a href="https://www.w3.org/People/Berners-Lee/">Tim Berners-Lee</a> (2016)<br>If there is time...</td> -->
+								</tr>
+							</tbody>
+						</table>
+					</section>
+				</section>
+
+				<section class="outline-page">
+					<div class="logo">
+						<a href="https://mobinets.cn"><img src="../../resources/ranc/mobinetslogo.png"/></a>
+					</div>
+
+					<section>
+						<h3>It starts with cold war...</h3>
+						<table style="font-size: 30px;">
+							<thead>
+								<th width="20%">时间</th>
+								<th width="80%">事件</th>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1956</td>
+									<td>中苏交恶、太空竞赛与洲际弹道导弹</td>
+								</tr>
+								<tr>
+									<td>1958</td>
+									<td>柏林危机<br>
+									<p class="bot_notes_left">1958年11月，赫鲁晓夫发给了西方一则最后通牒，要求美英法三国掌管的柏林区块转变为独立的、非军事化的自由城</p></td>
+								</tr>
+								<tr>
+									<td>1962</td>
+									<td>古巴导弹危机（<a href="http://cpc.people.com.cn/GB/85037/8474456.html">扩展: 毛泽东与古巴导弹危机</a>）
+										<p class="bot_notes_right">苏联寻求在古巴部署核导弹</p>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<span style="right: 20px;"><img width="35%" src="../../resources/ranc/turing/vcerfkahn/cold-war.png"></span>
+					</section>
+
+					<section>
+						<h3>Computers are rising..</h3>
+						<h4>IBM System/360 is taking over 70% computer market.</h4>
+						<h4>Remote control, data sharing, etc...</h4>
+						<h4><u>Military demands</u> from USAF, (D)ARPA...</h4>
+						<img width="30%" src="../../resources/ranc/turing/vcerfkahn/ibm-s360.jpg">
+						<p class="bot_notes_right">Military initiated? Corporation started? why bother.</p>
+					</section>
+
+					<section>
+						<h3>US Gov. seeks solutions</h3>
+						<h4>Tech. state: <a href="https://www.vonage.com/resources/articles/a-history-of-telecommunications-how-telecoms-became-just-another-interface/">Telecommunications</a></h4>
+						<h4>US Airforce → RAND</h4>
+						<h4>ARPA → Universities</h4>
+						<table style="font-size: 24px;">
+							<td width="70%"><ul>
+								<li>ACTUV: A project to build an unmanned anti-submarine warfare vessel. (2010)</li>
+								<li>Warrior Web: Soft exosuit to alleviate musculoskeletal stress on soldiers when carrying heavy loads. (2014)</li>
+								<li>Combat Zones That See: "track everything that moves" in a city by linking up a massive network of surveillance cameras(2009)</li>
+								<li>The Energetically Autonomous Tactical Robot (terminated in 2015).</li>
+								<li>Switchblade UAV (cancelled in 2008).</li>
+							</ul></td>
+							<td style="vertical-align: top;" width="30%">
+								<img src="../../resources/ranc/turing/vcerfkahn/warriorweb.png" alt="">
+								<br><img src="../../resources/ranc/turing/vcerfkahn/insect.jpg" alt="">
+							</td>
+						</table>
+					</section>
+
+					<section>
+						<h3>Competition</h3>
+						<h4>RAND</h4>
+						<h5><a href="../../resources/refs/turing/on distributed communications networks.pdf">On distributed communications networks</a>, <a href="https://www.rand.org/">RAND Corporation</a>, 1962</h5>
+						<h4>ARPA</h4>
+						<h5><a href="../../resources/refs/turing/online man-computer communications.pdf">On-line Man-Computer Communication</a>, J Licklider and W Clark, 1962 Spring Joint Computer Conference.</h5>
+						<h5><a href="../../resources/refs/turing/toward-cooperative-network-of-time-shared computers.pdf">Toward a cooperative network of time-shared computers</a>, T. Marill and L. Roberts, 1966.</h5>
+					</section>
+
+					<section>
+						<h3>Insights from RAND (1)</h3>
+						<h4><a href="../../resources/refs/turing/on distributed communications networks.pdf">On distributed communications networks</a></h4>
+						<table>
+							<td style="vertical-align: top;" width="60%">
+								<h5>Define survivability and level of redundancy</h5>
+								<h5>Find performance bounds of the circuit switching system</h5>
+								<h5>Many thounghts on future systems</h5>
+							</td>
+							<td width="40%">
+								<img src="../../resources/ranc/turing/vcerfkahn/randreport.png">
+								<img width="80%" src="../../resources/ranc/turing/vcerfkahn/perforfmance-switch-sys.png" alt="">
+							</td>
+						</table>
+					</section>
+
+					<section>
+						<h3>Insights from RAND (2)</h3>
+						<h4 class="fragment">We will be living in an era in which <u>we cannot guarantee survivability of any single point</u>.</h4>
+						<h4 class="fragment">... design systems in which system destruction requires the enemy to pay the price of destroying n of n stations. If <u>n is made sufficiently large, it can be shown that highly survivable system structures can be built</u><span class="fragment">, even in the thermonuclear era 😱.</span></h4>
+					</section>
+
+					<section>
+						<h3>Insights from RAND (3)</h3>
+						<h4>Our future systems design problem is that of <u>building very reliable systems</u> out of the described set of unreliable elements (general system reliability issues and enemy attacks) <u>at lowest cost</u>.</h4>
+					</section>
+
+					<section>
+						<h3>Insights from RAND (4)</h3>
+						<h4>Low-cost all-digital communications links</h4>
+						<h4>Pulse regenerative repeater line</h4>
+						<blockquote>
+							&ldquo;... digital data rates on the order of 1.5 million bits per second can be transmitted over ordinary telephone line at repeater spacings on athe order of 6000 feet ...&rdquo;
+						</blockquote>
+					</section>
+
+					<section>
+						<h3>Insights from RAND (4)</h3>
+						<blockquote>
+							&ldquo;... There appears to be no fundamental reason why either lines of lower loss with corresponding further repeater spacing ... to extend link distances to in excess of 100 miles. Such distances would be desired for a possible national distributed network. ...&rdquo;
+						</blockquote>
+						<p class="bot_notes_right">1 mile ≈ 1.6 km ≈ 5280 feet </p>
+					</section>
+
+					<section>
+						<h3>Insights from RAND (5)</h3>
+						<h4>"Poor-boy" Microwave</h4>
+						<blockquote>
+							We would envision the use of almost mass-produced <u>microwave</u> crystal receiver/klystron <u>oscillator</u> units mounted on telegraph poles carrying commercial power... <br>While this technique <u>has not been fully examined</u>,... this may be the cheapest way of building large networks ...
+						</blockquote>
+					</section>
+
+					<section>
+						<h3>Insights from RAND (6)</h3>
+						<h4>TV stations</h4>
+						<blockquote>
+							With proper siting of receiving antennas, broadcast television stations might be used to <u>form additional high data rate links in emergencies</u>.
+						</blockquote>
+					</section>
+
+					<section>
+						<h3>Insights from RAND (7)</h3>
+						<h4>Non-Sync. Satellites</h4>
+						<blockquote>
+							When a satellite is overhead, the link is operative. When a satellite is not overhead, the link is out of service.
+						</blockquote>
+						<p class="bot_notes_right">Think about the Starlink. <br>
+						LEO-Satellite, Starlink, OEC, ...</p>
+					</section>
+
+					<section>
+						<h3>Insights from RAND (8)</h3>
+						<h4>Variable data rate</h4>
+						<h5>Variable data rate links</h5>
+						<blockquote style="font-size: 32px;">
+							... it was seen that in order to make fullest use of a digital link <u>the post-error-removal data rate would have to vary as it is a function of noise level</u>.
+						</blockquote>
+						<p class="bot_notes_right">Hamming code - 1950</p>
+						<h5>Variable data rate users</h5>
+						<blockquote style="font-size: 32px;">
+							... if one transmitted one line of a 60 wpm teletype message over a high-data "express route" at 1,500,000 bits per second.
+						</blockquote>
+					</section>
+
+					<section>
+						<h3>Insights from RAND (9)</h3>
+						<h4>Common users</h4>
+						<blockquote style="font-size: 32px;">
+							... we would like to consider the interconnection, one day, of many all digital links to provide a resource optimized for handling of data for many potential intermittent users - a new common-user system.
+						</blockquote>
+						<img width="40%" src="../../resources/ranc/turing/vcerfkahn/mixture-link-common-user.png" alt="">
+					</section>
+
+					<section>
+						<h3>Insights from RAND (10)</h3>
+						<h4>Standard message block</h4>
+						<blockquote style="font-size: 32px;">
+							Present common carrier communications networks, used for digital transmission, <u>use links and concepts originally designed for another purpose -- voice</u>. These systems are built around a frequency division multiplexing link-to-link interface standard... <u>Time division multiplexing appears so natural to data transmission that we might wish to consider an alternative approach--a standardized message block as a network interface standard</u>. 
+						</blockquote>
+					</section>
+
+					<section>
+						<h3>Insights from RAND (11)</h3>
+						<h4>Standard message block</h4>
+						<img width="70%" src="../../resources/ranc/turing/vcerfkahn/rand-block.png" alt="">
+					</section>
+
+					<section>
+						<h3>Insights from RAND (12)</h3>
+						<h4>Switching</h4>
+						<blockquote>
+							... The high data rate of the future carry us into a hybrid zone between store-and-forward and circuit switching.
+						</blockquote>
+					</section>
+
+					<section>
+						<h3>Insights from RAND (13)</h3>
+						<h4>The postman</h4>
+						<blockquote style="font-size: 32px;">
+							... The postman records bulletins describing the traffic loading status for each of the outgoing links... determine the best direction to send out any letters. 
+						</blockquote>
+						<table>
+							<td width="50%" style="vertical-align: top;">
+								<ul>
+									<li>Hot-potato routing</li>
+									<li>Determine of the best path</li>
+									<li>The handover number table</li>
+								</ul>
+							</td>
+							<td width="50%">
+								<img width="80%" src="../../resources/ranc/turing/vcerfkahn/rand-handover.png" alt="">
+							</td>
+						</table>
+					</section>
+
+					<section>
+						<h3>Insights from RAND (14)</h3>
+						<h4>Perfect learning</h4>
+						<h4>Digital simulation of perfect learning</h4>
+						<h4>Forgetting learning</h4>
+						<h4>Adaptation to environment</h4>
+						<h4>Lowest cost path</h4>
+					</section>
+
+					<section>
+						<h3>Insights from RAND (15)</h3>
+						<h4>Where we stand today? (1962)</h4>
+						<blockquote>
+							There is an increasingly repeated statement made that one day <u>we will require more capacity for data transmission than needed for voice</u>.
+						</blockquote>
+						<blockquote>
+							New digital computer techuniques using redundancy make cheap unreliable links potentially usable.
+						</blockquote>
+					</section>
+
+					<section>
+						<h3>Insights from RAND (15)</h3>
+						<h4>Where we stand today? (1962)</h4>
+						<blockquote>
+							Of course we could use our existing <u>circuit switching</u> techniques. But, <u>a system with greater capacity than the long lines of telephone plants might best be designed</u> for such data transmission and survivability at the outset.
+						</blockquote>
+					</section>
+
+					<section>
+						<h3>Insights from RAND (15)</h3>
+						<h4>Where we stand today? (1962)</h4>
+						<blockquote>
+							Is it time now to start thinking about <u>a new user digital data communication plant designed specifically for the transmission of digital data</u> among a large set of subscribers?
+						</blockquote>
+						<blockquote>
+							Is it time to consider <u>the detailed format of a standard message</u> block as a possible new data standard for the future?
+						</blockquote>
+					</section>
+
+					<section>
+						<h3>DARPA's progress</h3>
+						<h4>Key man #1: Licklider from MIT</h4>
+						<h5><a href="../../resources/refs/turing/online man-computer communications.pdf">On-line Man-Computer Communication</a></h5>
+						<table width="80%">
+							<td width="20%"><img src="../../resources/ranc/turing/vcerfkahn/licklider.png" alt=""></td>
+							<td width="80%"><img src="../../resources/ranc/turing/vcerfkahn/online-man-computer.png"></td>
+						</table>
+					</section>
+
+					<section>
+						<h3>Insights from Licklider (1)</h3>
+						<h4>The need is strong</h4>
+						<img width="60%" src="../../resources/ranc/turing/vcerfkahn/licker-need.png" alt="">
+						<img width="60%" src="../../resources/ranc/turing/vcerfkahn/licker-need2.png" alt="">
+					</section>
+
+					<section>
+						<h3>Insights from Licklider (2)</h3>
+						<h4>Open questions</h4>
+						<blockquote>
+							... time-sharing among many users on a split-milisecond basis.
+						</blockquote>
+						<blockquote>
+							Devise an electronic input-output surface on which both operators and computers can display and communicate...
+						</blockquote>
+					</section>
+
+					<section>
+						<h3>Insights from Licklider (3)</h3>
+						<h4>Open questions</h4>
+						<blockquote style="font-size: 32px;">
+							... a programming system that will facilitate real-time contingent selection and shaping of information-processing procedures. 
+						</blockquote>
+						<blockquote style="font-size: 32px;">
+							... systems for storage and retrieval of the vast quantities of information required to support, simultaneously at several user stations, creative thinking in various areas of investigation.
+						</blockquote>
+						<blockquote style="font-size: 32px;">
+							Human cooperation in the development of large program systems. 
+						</blockquote>
+					</section>
+
+					<section>
+						<h3>The story starts...</h3>
+						<h4>Licklider as the IPTO* leader</h4>
+						<h4>Licklider → Lawrence Roberts and Thomas Merrill (Colleagues from MIT)</h4>
+						<h5><a href="">A cooperative network of time-sharing computers</a>.</h5>
+						<table>
+							<td><img width="30%" src="../../resources/ranc/turing/vcerfkahn/roberts.png" alt=""><br>Lawrence Roberts</td>
+							<td><img width="40%" src="../../resources/ranc/turing/vcerfkahn/merril.png" alt=""><br>Thomas Merril</td>
+						</table>
+						<p class="bot_notes_right">* Information processing techniques office</p>
+					</section>
+
+					<section>
+						<h3>The Experimental Network</h3>
+						<table>
+							<tr>
+								<td width="33%"><img width="60%" src="../../resources/ranc/turing/vcerfkahn/tx-2.jpg" alt=""></td>
+								<td width="33%"><img width="60%" src="../../resources/ranc/turing/vcerfkahn/an-fsq-32.png" alt=""></td>
+								<td width="33%"><img width="60%" src="../../resources/ranc/turing/vcerfkahn/darpa-pdp10.JPG" alt=""></td>
+							</tr>
+							<tr><td>TX-2 (MIT)</td><td>AN/FSQ-32 (SDC)</td><td>PDP-10 (ARPA)</td></tr>
+							<tr class="fragment" style="color: brown;">
+								<td>Low-efficiency:</td>
+								<td>1) Circuit switching</td>
+								<td>2) TDM/FDM</td>
+							</tr>
+						</table>
+						<p style="font-style:italic;">A three-node network: The first network ever -- The Experimental Network</p>
+					</section>
+
+					<section>
+						<h3>DARPA's progress</h3>
+						<h4>Key man #2: Roberts from MIT</h4>
+						<h5><a href="../../resources/refs/turing/toward-cooperative-network-of-time-shared computers.pdf">Toward a cooperative network of time-shared computers</a>, T. Marill and L. Roberts, 1966.</h5>
+						<table width="80%">
+							<td style="vertical-align: top;" width="20%"><img src="../../resources/ranc/turing/vcerfkahn/roberts.png" alt=""></td>
+							<td width="80%"><img src="../../resources/ranc/turing/vcerfkahn/roberts-paper.png"></td>
+						</table>
+					</section>
+
+					<section>
+						<h3>Roberts as IPTO leader</h3>
+						<h4>The rise of Packet Switching</h4>
+						<h5><a href="https://www.lk.cs.ucla.edu/data/files/Kleinrock/Information%20Flow%20in%20Large%20Communication%20Nets.pdf">Information flow in large communication nets</a>, Kleinrock from MIT.</h5>
+						<h5>"Packet" defined by D. W. Davies from NPL, UK</h5>
+						<h4 class="fragment">😼 Circuit switching → Packet switching</h4>
+						<h5 class="fragment">L. Roberts, <a href="https://dl.acm.org/doi/pdf/10.1145/800001.811680">Multiple computer networks and inter-computer communication</a>, ACM SOSP 1967.</h5>
+						<h5 class="fragment">D. W. Davies, <a href="https://dl.acm.org/doi/pdf/10.1145/800001.811669">A digital communication network for computers giving rapid response on remote terminal</a>, ACM SOSP 1967</h5>
+					</section>
+
+					<section>
+						<h3>Progress and prototype</h3>
+						<h4><a href="http://archive.michigan-terminal-system.org/discussions/people/frankwesterveltumandwsu">Frank Westvelt</a> from MSU</h4>
+						<h5>Message blocks, Error-correction and retransmission</h5>
+						<h5><u>Computer/user identification</u></h5>
+						<h4><a href="https://www.computer.org/profiles/wesley-clark">Wesley Clark</a> from Washington University</h4>
+						<h5>Message routing computer >> Interface Message Processor (IMP)</h5>
+						<img width="25%" src="../../resources/ranc/turing/vcerfkahn/imp.jpg" alt="">
+					</section>
+
+					<section>
+						<h3>IMP-based architecture</h3>
+						<h4>Message format</h4>
+						<h4>Protocols</h4>
+						<h4>Dynamic routing</h4>
+						<h4>Queuing</h4>
+						<h4>Error control</h4>
+						<h4 class="fragment"><u>Store-and-forward</u> (1961-1968)</h4>
+					</section>
+
+					<section>
+						<h3>System construction</h3>
+						<h4>Roberts Request for Proposals (RFP)</h4>
+						<h4>BBN wins the contract</h4>
+						<p class="bot_notes_right">BBN: Bolt, Baranek and Newman</p>
+						<p class="bot_notes_right">BBN engineers: Frank Heart, Severo Ornstein, Will Crowther, <span class="fragment highlight-red">Robert Kahn</span>, etc.</p>
+						<h4>Four nodes are selected:</h4>
+						<h5>Sigma7 - SEX (UCLA)</h5>
+						<h5>IBM360/75 - OS/MVT (UCSB)</h5>
+						<h5>PDP-10 - Tenex (Utah U)</h5>
+						<h5>SDS-940 - Genic (SRI)</h5>
+						<p class="bot_notes_right">Graduate students: <span class="fragment highlight-red">S. Crocker</span>, R. Stoughton, S. Carr, J. Rulifson</p>
+					</section>
+
+					<section>
+						<h3>The first ARPANET</h3>
+						<img width="60%" src="../../resources/ranc/turing/vcerfkahn/expNet.png" alt="">
+						<table style="font-size: 26px;">
+							<td>Machine type</td>
+							<td>Different OS</td>
+							<td>Different format</td>
+							<td>Different terminal</td>
+						</table>
+					</section>
+
+					<section>
+						<h3>IMP - Honeywell DDP-516</h3>
+						<h4>BBN → The four nodes</h4>
+						<h4>Functionalities (client-server)</h4>
+						<h5>Telnet</h5>
+						<h5>FTP</h5>
+						<img width="60%" src="../../resources/ranc/turing/vcerfkahn/dip-516.png" alt="">
+					</section>
+
+					<section>
+						<h3>Continous evolution</h3>
+						<h4>NCP: Network control program</h4>
+						<h5>Group leader: <a href="https://en.wikipedia.org/wiki/Steve_Crocker">S. Crocker</a>*</h5>
+						<h5>NCP provided <u>connections and flow control between processes running on different ARPANET host computers</u>. Application services, such as <u>email and file transfer</u>, were built on top of NCP, using it to handle connections to other host computers.
+						</h5>
+						<h5>Transits to TCP/IP in 1983.</h5>
+						<table>
+							<td style="vertical-align: top;" width="15%" align="center"><img width="80%" src="../../resources/ranc/turing/vcerfkahn/crocker.jpg" alt=""></td>
+							<td style="vertical-align: top; font-size: 24px;" width="85%">
+								* Steve Crocker was instrumental in creating the ARPA "Network Working Group", which later was <u>the context in which the IETF was created</u>.<br>* The inventor of the <a href="https://en.wikipedia.org/wiki/Request_for_Comments">Request for Comments</a> series, authoring the first RFC (Host Software, S. Crocker, RFC 0001, April 1969.).
+								<br>
+								* Same high school with Vinton Cerf.
+							</td>
+						</table>
+					</section>
+
+					<section>
+						<h3>Organization</h3>
+						<h4>Network Control Center@BBN (Kahn)</h4>
+						<h5>Network/Project Management</h5>
+						<h4>Network Measurement Center@UCLA (Kleinrock)</h4>
+						<h5>Metrics and measurements</h5>
+						<h4>Network Information Center@SRI (Douglas Engelbart)</h4>
+						<h5>Information collection and storage</h5>
+					</section>
+
+					<section>
+						<h3>Boosting</h3>
+						<h4>From 4 to 23</h4>
+						<h5>New nodes include Harvard, Stanford, MIT, CMU, NASA</h5>
+						<h5>Scales from West to the entire country of US</h5>
+						<h4>1972, Hilton Hotel, Washington DC.</h4>
+						<h5>29 stations</h5>
+						<h5>40+ computers</h5>
+						<h5>Vinton Cerf obtained his PhD degree and started working with Kahn.</h5>
+					</section>
+
+					<section>
+						<h3>ARPANET goes international</h3>
+						<h4>UK, Norway joined</h4>
+						<h4>Satellite links from CA to Hawaii included</h4>
+						<h4>Even more heterogeneity</h4>
+						<p style="display: inline-block;"><u>Key men #3: Kahn x Cerf on TCP/IP</u></p>
+					</section>
+
+					<section>
+						<h3>TCP/IP</h3>
+						<h5>In 1973, development of a full-fledged system of internetworking protocols for the ARPAnet began.</h5>
+						<h5>In early versions of this technology, there was only one core protocol: TCP - Transmission Control <strike>Protocol</strike> <span style="color: brown; text-decoration-line: underline;">Program</span>.</h5>
+						<h5>The first version of this predecessor of modern TCP was written in 1973, then revised and formally documented in RFC 675, <a href="https://datatracker.ietf.org/doc/html/rfc675">Specification of Internet Transmission Control Program</a>, December 1974.</h5>
+					</section>
+
+					<section>
+						<h3>Specification of Internet Transmission Control Program</h3>
+						<h4>Important definitions:</h4>
+						<h5>Processes, PORTS, SOCKET, Letter sending/receiving, ...</h5>
+						<img src="../../resources/ranc/turing/vcerfkahn/tcp-first-version.png" alt="">
+					</section>
+
+					<section>
+						<h3>Modern TCP/IP</h3>
+						<h4>In March 1977, version 2 of TCP was documented</h4>
+						<h4>Key man #4: Jon Postel</h4>
+						<table>
+							<td style="font-size: 24px;" width="20%" align="right"><img src="../../resources/ranc/turing/vcerfkahn/Jon-Postel.png" alt=""><br>1943-1998<br>UCLA<br>SMTP RFC</td>
+							<td style="vertical-align: top;" width="80%">
+								<blockquote style="font-size: 24px;">
+								<a href="https://www.rfc-editor.org/ien/ien2.txt">IEN #2</a>: We are screwing up in our design of internet protocols by violating <u>the principle of layering</u>. Specifically we are trying to use TCP to do <u>two things</u>: serve as a host level end to end protocol, and to serve as an internet packaging and routing protocol. These two things should be provided in a layered and modular way. I suggest that a new distinct internetwork protocol is needed, and that <u>TCP be used strictly as a host level end to end protocol</u>.
+							</blockquote>
+							</td>
+						</table>
+					</section>
+
+					<section>
+						<h3>v3/v4 TCP 1978</h3>
+						<h5>The above observation led to the creation of "TCP/IP" architecture: TCP at the transport layer and IP at the network layer</h5>
+						<h5>The first formal standard for the versions of IP and TCP used in modern networks (version 4) were created in 1980. This is why the first “real” version of IP is version 4 and not version 1.</h5>
+					</section>
+
+					<section>
+						<h3>TCP/IP Race</h3>
+						<ul style="font-size: 24px;">
+							<li>TCP/IP was at one time just “<u>one of many</u>” different sets of protocols that could be used to provide network-layer and transport-layer functionality.</li>
+							<li><b>Integrated Addressing System</b>: TCP/IP includes within it a system for <u>identifying and addressing devices</u> on <u>both small and large networks</u>. The addressing system is designed to allow devices to be addressed regardless of the lower-level details of how each constituent network is constructed.</li>
+							<li><b>Design For Routing</b>: Unlike some network-layer protocols, TCP/IP is specifically designed to facilitate the routing of information over a network of arbitrary complexity. In fact, TCP/IP is <u>conceptually concerned more with the connection of networks, than with the connection of devices</u>. TCP/IP routers enable data to be delivered between devices on different networks by moving it one step at a time from one network to the next. A number of support protocols are also included in TCP/IP to allow routers to exchange critical information and manage the efficient flow of information from one network to another. </li>
+						</ul>
+						<p class="bot_notes_right">*Even former “competitors” to TCP/IP such as <a href="https://en.wikipedia.org/wiki/NetWare">NetWare</a> now use TCP/IP to carry traffic.</p>
+					</section>
+
+					<section>
+						<h3>TCP/IP Race</h3>
+						<ul style="font-size: 24px;">
+							<li><b>Underlying Network Independence</b>: TCP/IP operates primarily at layers three and above, and includes provisions to allow it to function on almost any lower-layer technology, including LANs, wireless LANs and WANs of various sorts. This flexibility means that <u>one can mix and match a variety of different underlying networks and connect them all using TCP/IP.</u> </li>
+							<li><b>Scalability</b>: One of the most amazing characteristics of TCP/IP is how scalable its protocols have proven to be. Over the decades it has proven its mettle as the Internet has grown from a small network with just a few machines to a huge internetwork with millions of hosts. While some changes have been required periodically to support this growth, these changes have taken place as part of the TCP/IP development process, and the core of TCP/IP is basically the same as it was in 1980s. </li>
+							<li><b>Open Standards and Development Process</b>: The TCP/IP standards are not proprietary, but <u>open standards freely available to the public</u>. Furthermore, the process used to develop TCP/IP standards is also completely open. TCP/IP standards and protocols are developed and modified using the unique, democratic “RFC” process, with all interested parties invited to participate. This ensures that anyone with an interest in the TCP/IP protocols is given a chance to provide input into their development, and also ensures the world-wide acceptance of the protocol suite. </li>
+						</ul>
+						<p class="bot_notes_right">*Even former “competitors” to TCP/IP such as <a href="https://en.wikipedia.org/wiki/NetWare">NetWare</a> now use TCP/IP to carry traffic.</p>
+					</section>
+
+					<section>
+						<h3>TCP/IP Race</h3>
+						<h4>ARPA/IPTO promotes</h4>
+						<h4>Embedded into BSD Unix</h4>
+						<h4>All ARPANET devices use TCP/IP in 1983</h4>
+						<blockquote style="font-size: 32px;">ARPANET adopted TCP/IP on January 1, 1983, and from there researchers began to assemble the “network of networks” that became the modern Internet. The online world then took on a more recognizable form in 1990, when Tim Berners-Lee invented the World Wide Web.</blockquote>
+					</section>
+
+					<section>
+						<h3>Recent news?</h3>
+						<h4>IPv6 (32→128)</h4>
+						<h5>China: 59039/32; USA: 57785/32</h5>
+						<h4>IPvX</h4>
+						<h5>IPv5 (1979, IEN119): the experimental Internet Stream Protocol</h5>
+						<h5>IPv7 (1993): TP/IX: The Next Internet</h5>
+						<h5>IPv8 (1994):Pip protocol</h5>
+						<h5>IPv9 (1989-RFC1347/2004-China): Address Extension/decimal vs hex</h5>
+						<h5>IPv9 4.1 Special (1994): A Historical Perspective On The Usage Of IP Version 9</h5>
+					</section>
+
+					<section>
+						<h3>Recent news?</h3>
+						<h4>IPv9 China</h4>
+						<ul style="font-size: 24px;">
+							<li>2007年,上海通用化工技术研究所所长谢建平宣布IPv9正式走出实验室,开始进行商业化运作</li>
+							<li>2010年,信息产业部十进制网络标准工作组称已经有上百家企业使用IPv9</li>
+							<li>谢建平团队有放出一个实验软件,让IPv9对于现阶段IPv4和IPv6网路的兼容实现,但方式类似于DNS劫持,需要更改用户计算机的DNS设置到他专门的域名服务器才可以达成</li>
+							<li>曾公开支持IPv9的院士有童志鹏、倪光南、周仲义、蔡吉人、沈昌祥、吾守尔、郑建华、魏正耀、丁文华、鄂维南、柴洪峰等</li>
+							<li>逐步形成共识: IPV9并非互联网,只是一种域名设计。</li>
+						</ul>
+						<img src="../../resources/ranc/turing/vcerfkahn/ipv9-news.png" alt="">
+					</section>
+
+					<section>
+						<h3>Huawei New IP</h3>
+						<h4 style="font-size: 36px;"><a href="http://www.infocomm-journal.com/dxkx/article/2019/1000-0801/1000-0801-35-9-00002.shtml?from=timeline&isappinstalled=0">NewIP:开拓未来数据网络的新连接和新能力</a></h4>
+						<blockquote style="font-size: 32px;">旨在通过顶层设计，提供“万网互联、万物互联”的新连接能力、确定性传输及大吞吐量传输的新服务能力、安全可信及用户可定义的新内生能力，使能更多的新服务接入网络。</blockquote>
+						<ul style="font-size: 32px;">
+							<li>变长网络地址</li>
+							<li>多样化寻址</li>
+							<li>面向服务的路由</li>
+							<li>天空地海网络使用统一网络协议进行多样化寻址</li>
+							<li>确定性IP技术、内生安全、用户可自定义、新传输层技术 ...</li>
+						</ul>
+						<p class="bot_notes_mid">* 华为或许有能力实现，但首先要定义清楚，且推进到底</p>
+					</section>
+
+					<section>
+						<h3>Vinton Cerf</h3>
+						<table>
+							<tr>
+								<td>Name:</td>
+								<td>Vinton Cerf</td>
+							</tr>
+							<tr>
+								<td>Photo:</td>
+								<td style="vertical-align:middle;"><img width="25%" src="../../resources/ranc/turing/vcerfkahn/vcerf-young.png"></td>
+							</tr>
+							<tr>
+								<td>Date of Birth:</td>
+								<td>Jun 23, 1943</td>
+							</tr>
+							<tr>
+								<td>Education:</td>
+								<td>UCLA (MS-1970, PhD-1972)</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>Stanford (BS-1965)</td>
+							</tr>
+							<tr>
+								<td>Hobbies:</td>
+								<td>🥪 delicious food, 🍷 wine</td>
+							</tr>
+						</table>
+					</section>
+
+					<section>
+						<h3>Robert Bob Kahn</h3>
+						<table style="font-size: 36px;">
+							<tr>
+								<td>Name:</td>
+								<td>Robert Kahn</td>
+							</tr>
+							<tr>
+								<td>Photo:</td>
+								<td style="vertical-align:middle;"><img width="25%" src="../../resources/ranc/turing/vcerfkahn/kahn.png"></td>
+							</tr>
+							<tr>
+								<td>Date of Birth:</td>
+								<td>Dec 23, 1938</td>
+							</tr>
+							<tr>
+								<td>Education:</td>
+								<td>Princeton (MS-1962, PhD-1964*)</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>NYU (BS-1960)</td>
+							</tr>
+						</table>
+						<p class="bot_notes_right">Advised by <a href="https://dof.princeton.edu/about/clerk-faculty/emeritus/bede-liu">Bede Liu</a>.</p>
+					</section>
+
+					<section>
+						<h3>Interview with Vinton Cerf</h3>
+						<video controls data-autoplay src="../../resources/vid/vcerf-interview.mp4"></video>
+						<p class="bot_notes_right"><a href="../../resources/vid/vcerf-interview.mp4">USC Interview with Vinton Cerf, Dec 2018.</a></p>
+					</section>
+
+				</section>
+
+				<section class="outline-page">
+					<div class="logo">
+						<a href="https://mobinets.cn"><img src="../../resources/ranc/mobinetslogo.png"/></a>
+					</div>
+
+					<section>
+						<h3>It starts with a game...</h3>
+						<blockquote>123456789</blockquote>
+						<ul>
+							<li>Two players</li>
+							<li>Each picks a number in each round</li>
+							<li>The one that picks the right numbers that sum up to 15 wins.</li>
+						</ul>
+						<blockquote>
+							R1: 1234<s>5</s>6789<br>
+							<span class="fragment">R2: 1234<s>5</s><u>6</u>789<br></span>
+							<span class="fragment">R3: 1234<s>5</s><u>6</u><s>7</s>89<br></span>
+							<span class="fragment">R4: 12<u>3</u>4<s>5</s><u>6</u><s>7</s>89</span></blockquote>
+					</section>
+
+					<section>
+						<h3>If we change the layout...</h3>
+						<table>
+							<tr>
+								<td>2</td>
+								<td><s>7</s></td>
+								<td><u>6</u></td>
+							</tr>
+							<tr>
+								<td>9</td>
+								<td><s>5</s></td>
+								<td>1</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td><u>3</u></td>
+								<td>8</td>
+							</tr>
+							<tr><p style="font-size: 36px;">The magic square</p></tr>
+						</table>
+						<table class="fragment"  style="border: 1px solid black; border-collapse: collapse;">
+							<tr>
+								<td>__</td>
+								<td>X</td>
+								<td>O</td>
+							</tr>
+							<tr>
+								<td>__</td>
+								<td>X</td>
+								<td>__</td>
+							</tr>
+							<tr>
+								<td>__</td>
+								<td>O</td>
+								<td>__</td>
+							</tr>
+							<tr><p class="fragment"  style="font-size: 36px;">Turns out to be another game</p></tr>
+						</table>
+					</section>
+
+					<section>
+						<h3>A reduced to B</h3>
+						<h4>There are many, many, many problems out there...</h4>
+						<h4>Can they be reduced to some common problems, that can be solved by known algorithms?</h4>
+					</section>
+
+					<section>
+						<h3>Cook's reduction</h3>
+						<table>
+							<tr><td>if X &le;<sup>C</sup> Y</td></tr>
+							<tr><td>then</td></tr>
+							<tr><td>1. if you can solve Y, you can also solve X.</td></tr>
+							<tr><td>2. if X not solvable, then Y also not solvable.</td></tr>
+						</table>
+					</section>
+
+					
+
+					<section>
+						<h3>Pre-stage</h3>
+						<h4>John Nash</h4>
+						<h4>In 1955, mathematician John Nash wrote a letter to the NSA, where he speculated that cracking a sufficiently complex code would require time exponential in the length of the key.</h4>
+						<h4><a href="../../resources/refs/complexity/nash_letters.pdf">Letter from John Nash</a></h4>
+					</section>
+
+					<section>
+						<h3>Pre-stage</h3>
+						<h4>Kurt Gödel's thinking (1956)</h4>
+						<blockquote style="font-size: 32px;">
+							Gödel asked whether theorem-proving (now known to be co-NP-complete) could be solved in quadratic or linear time,pointed out one of the most important consequences --that if so, then the discovery of mathematical proofs could be automated. 
+						</blockquote>
+						<h4><a href="../../resources/refs/complexity/godel_paper.pdf">Kurt Gödel, von Neumann, and the P?=NP problem</a></h4>
+					</section>
+
+					<section>
+						<h3>Stephen Cook</h3>
+						<h4>The complexity of theorem proving procedures, by Stephen Cook, 1971.</h4>
+						<h4>Leonid Levin independently (1973).</h4>
+						<h5>Levin got his PhD at MIT in one year (1978-1979).</h5>
+						<blockquote>
+							NP-completeness theorem also called Cook-Levin theorem.
+						</blockquote>
+					</section>
+
+					<section>
+						<h3>Richard Karp</h3>
+						<h4>TSP</h4>
+						<h5>Branch and bound method</h5>
+						<h5>49 by RAND &rarr; 65 by Karp-Held.</h5>
+						<h4>A lot more</h4>
+						<h5>Coloring, partition, set cover, knapsack, etc.</h5>
+						<h5>Combinational explosion.</h5>
+					</section>
+
+					<section>
+						<h3>Cook's reduction</h3>
+						<table>
+							<tr><td>if X &le;<sup>C</sup> Y</td></tr>
+							<tr><td>then</td></tr>
+							<tr><td>1. if you can solve Y, you can also solve X.</td></tr>
+							<tr><td>2. if X not solvable, then Y also not solvable.</td></tr>
+						</table>
+					</section>
+
+					<section>
+						<h3>Karp's reduction</h3>
+						<table>
+							<tr><td>A language L &sube; {0,1}<sup>*</sup> is <u>Karp reducible</u> to a language L' &sube; {0,1}<sup>*</sup> if there exists a computable function f:{0,1}<sup>*</sup> &rarr; {0,1}<sup>*</sup> such that for every X &in; {0,1}<sup>*</sup> f(X)&in;L' &hArr; X&in;L</td></tr>
+							<tr><td>if we can decide L', we can also decide L.</td></tr>
+							<tr><td></td></tr>
+						</table>
+					</section>
+
+					<section>
+						<h3>Language Decidability*</h3>
+						A decision problem P is decidable if the language L of all yes instances to P is decidable.
+						<p class="bot_notes_left">*A language is called Decidable or Recursive if there is a Turing machine which accepts and halts on every input string w. Every decidable language is Turing-Acceptable.</p>
+					</section>
+
+					<section>
+						<h3>Example 1</h3>
+						<h4>Find out whether the following problem is decidable or not</h4>
+						<h5>Is a number m prime?</h5>
+						<h4>Solution</h4>
+						<table width="80%" style="font-size: 28px;">
+							<tr><td>Prime numbers = {2, 3, 5, 7, 11, 13, …………..}</td></tr>
+							<tr><td>Divide the number 'm' by all the numbers between 'm' and '√m' starting from '2'.</td></tr>
+							<tr><td>If any of these numbers produce a remainder zero, then it goes to the “Rejected state”, otherwise it goes to the “Accepted state”. So, here the answer could be made by 'Yes' or 'No'.</td></tr>
+							<tr class="fragment"><td>It is a decidable problem.</td></tr>
+						</table>
+					</section>
+
+					<section>
+						<h3>Example 2</h3>
+						<h4>Given a regular language L and string w, how can we check if w &in; L?</h4>
+						<h4>Solution</h4>
+						<table width="80%">
+							<tr><td>Take the DFA that accepts L and check if w is accepted</td></tr>
+						</table>
+						<img width="40%" src="../../resources/ranc/karp/decidable-exmple2.png" alt="">
+					</section>
+
+					<section>
+						<h3>Polynomial time Karp reduction</h3>
+						<table>
+							<tr><td>A language L &sube; {0,1}<sup>*</sup> is <u>polynomial-time</u> Karp reducible to a language L' &sube; {0,1}<sup>*</sup> if there exists a <u>polynomial-time</u> computable function f:{0,1}<sup>*</sup> &rarr; {0,1}<sup>*</sup> such that for every X &in; {0,1}<sup>*</sup> f(x)&in;L' &hArr; X&in;L</td></tr>
+							<tr><td align="center">L &le;<sub>p</sub> L'</td></tr>
+							<tr><td></td></tr>
+						</table>
+					</section>
+
+					<section>
+						<h3>Design algorithm</h3>
+						<h4>Suppose we want an efficient algorithm for decision problem X but we already have an efficient algorithm for decition problem Y.</h4>
+						<ul>
+							<li>If we have X &le;<sub>p</sub> Y. For an input w, we can decide whether w&in;X</li>
+							<ol>
+								<li>compute f(w)</li>
+								<li>check whether f(w)&in;Y</li>
+							</ol>
+						</ul>
+					</section>
+
+					<section>
+						<h3>Obtain lower bound and Equivalence</h3>
+						<ol>
+							<li>If X &le;<sub>p</sub> Y, and X cannot be decided in polynomial time, then Y cannot be decided in polynomial time either.</li>
+							<li>If X &le;<sub>p</sub> Y and Y &le;<sub>p</sub> X, then X&equiv;Y</li>
+						</ol>
+					</section>
+
+					<section>
+						<h3>P and NP</h3>
+						<h4>P: Problems that can be solved in polynomial time</h4>
+						<h5>Shortest path, spanning tree, etc.</h5>
+						<h5>n<sup>2</sup>, n<sup>7</sup>, ... algorithm steps are proportional to the input size, reasonable amount of time</h5>
+						<h4>NP: Problems that can be <u>verified</u> in polynomial time, but may take <u>exponential</u> number of steps to solve.</h4>
+					</section>
+
+					<section>
+						<h3>Algorithm complexity</h3>
+						<table>
+							<tr>
+								<td>f(n)\n</td>
+								<td>10</td>
+								<td>30</td>
+								<td>50</td>
+							</tr>
+							<tr>
+								<td>n</td>
+								<td>0.00001s</td>
+								<td>0.00003s</td>
+								<td>0.00005s</td>
+							</tr>
+							<tr>
+								<td>n<sup>5</sup></td>
+								<td>0.1s</td>
+								<td>24.3s</td>
+								<td>5.2m</td>
+							</tr>
+							<tr>
+								<td>2<sup>n</sup></td>
+								<td>0.001s</td>
+								<td>17.9m</td>
+								<td>35.7y</td>
+							</tr>
+						</table>
+					</section>
+
+					<section>
+						<h3>NP hard and NP complete</h3>
+						<h4>NP-Complete</h4>
+						<h5>NP-Complete is a complexity class which represents the set of all problems X in NP for which it is possible to reduce any other NP problem Y to X in polynomial time.</h5>
+						<h5>2<sup>n</sup>, 7<sup>n</sup>, ..., computers take very long time to solve.</h5>
+						<h4>NP-hard</h4>
+						<h5>At least as hard as NP-complete, NP-hard problems do not have to be in NP, and they do not have to be decision problems.</h5>
+					</section>
+
+					<section>
+						<h3>NP hard and NP complete</h3>
+						<ul style="font-size:34px;">
+							<li>A problem X is NP-hard, if there is an NP-complete problem Y, such that Y is reducible to X in polynomial time.</li>
+							<li>Since any NP-complete problem can be reduced to any other NP-complete problem in polynomial time, all NP-complete problems can be reduced to any NP-hard problem in polynomial time. Then, if there is a solution to one NP-hard problem in polynomial time, there is a solution to all NP problems in polynomial time.</li>
+							<li>A problem is NP-complete if it is both in NP and NP-hard.</li>
+							<li>Although a solution to an NP-complete problem can be verified "quickly", there is no known way to find a solution quickly.</li>
+						</ul>
+					</section>
+					
+					<section class="invisible">
+						<h3>NP hard and NP complete</h3>
+						<img width="80%" src="../../resources/ranc/karp/np-relation.png" alt="">
+					</section>
+
+
+					<section>
+						<h3>P?=NP</h3>
+						<h4>Unsolved problem in computer science</h4>
+						<h4>Why bother</h4>
+						<h5>If the solution to a problem is easy to check for correctness, must the problem be easy to solve?</h5>
+					</section>
+
+					<section>
+						<h3>Karp's 21 Problems</h3>
+						<ul>
+							<li>Satisfiability (SAT)</li>
+							<ul>
+								<li>0-1 integer programming</li>
+								<li>Clique (independent set problem)</li>
+								<ul>
+									<li>Set packing</li>
+									<li>Vertex cover</li>
+									<li>Feedback node set</li>
+									<li>Feedback arc set</li>
+									<li>Directed Hamilton circuit/cycle</li>
+									<li>Undirected Hamilton circuit/cycle</li>
+								</ul>
+							</ul>
+						</ul>
+					</section>
+
+					<section>
+						<h3>Karp's 21 Problems</h3>
+						<ul>
+							<li>Satisfiability with at most 3 literals per clause</li>
+							<ul>
+								<li>Chromatic number</li>
+								<ul>
+									<li>Clique cover</li>
+									<li>Exact cover</li>
+									<ul>
+										<li>Hitting set</li>
+										<li>Steiner tree</li>
+										<li>3-dimensional matching</li>
+										<li>Knapsack</li>
+										<ul>
+											<li>Job sequencing</li>
+											<li>Partition</li>
+											<li>Max cut</li>
+										</ul>
+									</ul>
+								</ul>
+							</ul>
+						</ul>
+					</section>
+
+					<section>
+						<h3>SAT</h3>
+						<h4>The "hardest" problem</h4>
+						<h5>Boolean satisfiability problem</h5>
+						<h5>It asks whether the variables of a given Boolean formula can be consistently replaced by the values TRUE or FALSE in such a way that the formula evaluates to TRUE.</h5>
+						<h4>Examples</h4>
+						<h5>a AND NOT b</h5>
+						<h5>a AND NOT a</h5>
+						<h4>The first NP complete problem</h4>
+					</section>
+
+					<section>
+						<h3>Vertex cover</h3>
+						<h4>a set of vertices that includes at least one endpoint of every edge of the graph.</h4>
+						<img width="30%" src="../../resources/ranc/karp/v-cover.png">
+					</section>
+
+					<section>
+						<h3>0-1 Integer Programming</h3>
+						<h4>Applications</h4>
+						<h5>Scheduling</h5>
+						<h5>Agriculture production</h5>
+						<h4>Is linear programming NP hard?</h4>
+						<blockquote>In general, a continous domain means there is no brute force (and no clever heuristics to speed it up ---Raphael's comment.</blockquote>
+					</section>
+
+					<section>
+						<h3>Proof of NP-hard</h3>
+						<h4>Idea: Reduction from the problem of vertex cover. let G=(V,E) be an undirected graph.</h4>
+						<table>
+							<tr><td>min &Sigma;<sub>v&in;V</sub>y<sub>v</sub></td></tr>
+							<tr><td style="border: none;">y<sub>v</sub>+y<sub>u</sub>&ge;1, &forall;uv&in;E</td></tr>
+							<tr><td style="border: none;">y<sub>v</sub>&ge;0, &forall;v&in;V</td></tr>
+						</table>
+						<p class="bot_notes_left">
+							0. Any feasible solution to the integer program is a subset of vertices<br>
+							1. At least one end point of every edge is included in this subset<br>
+							2. Additionally given some vertex cover C, y<sub>v</sub> can be set to 1 for any v&in;C and to 0 for any v&notin; C thus giving us a feasible solution to the integer program. <br>
+							* <a href="https://web.archive.org/web/20150518072946/https://courses.engr.illinois.edu/cs498dl1/sp2015/solutions/hw10sol.pdf">Integer Programming Reduction</a>
+						</p>
+					</section>
+
+					<section>
+						<h3>Set cover</h3>
+						<h4>Set cover</h4>
+						<p style="font-size: 24px; text-align: left; margin-left: 40px;">Given a set of elements {1,2,...,n} (called the universe) and a collection S of m sets whose union equals the universe, the set cover problem is to identify the smallest sub-collection of S whose union equals the universe.</p>
+						<h4>Hitting set formulation</h4>
+						<img width="25%" src="../../resources/ranc/karp/hittingset.jpg">
+						<p class="bot_notes_right">* Two problems are equal.</p>
+					</section>
+
+					<section>
+						<h3>TSP</h3>
+						<h4>Finding the optimal route</h4>
+						<h4>Held-Karp alg. (Branch and bound)</h4>
+						<h5>Traverse different branches of the problem tree</h5>
+						<h5>Use lower bound to find optimal solution</h5>
+						<h5>Recursively divide the problem into sub-problems, bounding the solution each step of the way</h5>
+						<table>
+							<td width="50%"><img src="../../resources/ranc/karp/tsp-bruteforce.gif"></td>
+							<td width="50%"><img src="../../resources/ranc/karp/tsp-Branchbound.gif"></td>
+						</table>
+					</section>
+
+					<section>
+						<h3>Branch&bound: Example</h3>
+						<h4>Visit 5 cities with smallest weights.</h4>
+						<img width="60%" src="../../resources/ranc/karp/bnb-figure.png">
+					</section>
+
+					<section>
+						<h3>Branch&bound (1)</h3>
+						<h4>Branches</h4>
+						<img width="90%" src="../../resources/ranc/karp/bnb-tree.png">
+					</section>
+
+					<section>
+						<h3>Branch & bound (2)</h3>
+						<h4>We start with node 0</h4>
+						<table>
+							<tr>
+								<td>City</td>
+								<td>0</td>
+								<td>1</td>
+								<td>2</td>
+								<td>3</td>
+								<td>4</td>
+								<td>Reduce</td>
+							</tr>
+							<tr>
+								<td>0</td>
+								<td>&infin;</td>
+								<td>12</td>
+								<td>34</td>
+								<td>17</td>
+								<td>27</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>12</td>
+								<td>&infin;</td>
+								<td>22</td>
+								<td>44</td>
+								<td>17</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>34</td>
+								<td>22</td>
+								<td>&infin;</td>
+								<td>45</td>
+								<td>19</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>47</td>
+								<td>44</td>
+								<td>45</td>
+								<td>&infin;</td>
+								<td>57</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>27</td>
+								<td>17</td>
+								<td>19</td>
+								<td>57</td>
+								<td>&infin;</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Reduce</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+						</table>
+					</section>
+
+					<section>
+						<h3>Branch & bound: Example (2)</h3>
+						<h4>We start with node 0</h4>
+						<table>
+							<tr>
+								<td>City</td>
+								<td>0</td>
+								<td>1</td>
+								<td>2</td>
+								<td>3</td>
+								<td>4</td>
+								<td>Reduce</td>
+							</tr>
+							<tr>
+								<td>0</td>
+								<td>&infin;</td>
+								<td>0</td>
+								<td>21</td>
+								<td>9</td>
+								<td>15</td>
+								<td><u>12</u></td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>0</td>
+								<td>&infin;</td>
+								<td>9</td>
+								<td>6</td>
+								<td>5</td>
+								<td><u>12</u></td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>34</td>
+								<td>22</td>
+								<td>&infin;</td>
+								<td>45</td>
+								<td>19</td>
+								<td><u>19</u></td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>15</td>
+								<td>3</td>
+								<td>0</td>
+								<td>&infin;</td>
+								<td>0</td>
+								<td><u>44</u></td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>10</td>
+								<td>0</td>
+								<td>1</td>
+								<td>14</td>
+								<td>&infin;</td>
+								<td><u>17</u></td>
+							</tr>
+							<tr>
+								<td>Reduce</td>
+								<td><u>0</u></td>
+								<td><u>0</u></td>
+								<td><u>1</u></td>
+								<td><u>26</u></td>
+								<td><u>0</u></td>
+								<td><u><b>131</b></u></td>
+							</tr>
+						</table>
+					</section>
+
+					<section>
+						<h3>Branch & bound (3)</h3>
+						<h4>Updated weight matrix</h4>
+						<table>
+							<tr>
+								<td>City</td>
+								<td>0</td>
+								<td>1</td>
+								<td>2</td>
+								<td>3</td>
+								<td>4</td>
+								<td>Reduce</td>
+							</tr>
+							<tr>
+								<td>&infin;</td>
+								<td>&infin;</td>
+								<td>&infin;</td>
+								<td>&infin;</td>
+								<td>&infin;</td>
+								<td>&infin;</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td><u><b>&infin;</b></u></td>
+								<td>&infin;</td>
+								<td>9</td>
+								<td>6</td>
+								<td>5</td>
+								<td><u></u></td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>34</td>
+								<td>&infin;</td>
+								<td>&infin;</td>
+								<td>45</td>
+								<td>19</td>
+								<td><u></u></td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>15</td>
+								<td>&infin;</td>
+								<td>0</td>
+								<td>&infin;</td>
+								<td>0</td>
+								<td><u></u></td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>10</td>
+								<td>&infin;</td>
+								<td>1</td>
+								<td>14</td>
+								<td>&infin;</td>
+								<td><u></u></td>
+							</tr>
+							<tr>
+								<td>Reduce</td>
+								<td><u></u></td>
+								<td><u></u></td>
+								<td><u></u></td>
+								<td><u></u></td>
+								<td><u></u></td>
+								<td><u><b></b></u></td>
+							</tr>
+						</table>
+					</section>
+
+					<section>
+						<h3>Branch & bound (3)</h3>
+						<h4>The algorithm recursively goes..</h4>
+						<h4>Until every weight becomes infinity.</h4>
+
+						<h4>Try it yourself, and check the answers in next page</h4>
+					</section>
+
+					<section>
+						<h3>Branch & bound (4)</h3>
+						<h4>Result</h4>
+						<img width="90%" src="../../resources/ranc/karp/bnb-result.png">
+					</section>
+
+					<section>
+						<h3>Directed Hamilton Cycle</h3>
+						<p>Hamiltonian path (or traceable path) is a path in an undirected or directed graph that visits each vertex exactly once.</p>
+						<img width="70%" src="../../resources/ranc/karp/hcircle.png">
+					</section>
+
+					<section>
+						<h3>Knapsack</h3>
+						<h5>Given a set of items, each with a weight and a value, determine the number of each item to include in a collection so that the total weight is less than or equal to a given limit and the total value is as large as possible.</h5>
+						<table>
+							<tr><td style="border: none;">maximize &Sigma;<sup>n</sup><sub>i=1</sub>v<sub>i</sub>x<sub>i</sub></td></tr>
+							<tr><td>s.t.  &Sigma;<sup>n</sup><sub>i=1</sub>w<sub>i</sub>x<sub>i</sub>&le;W and x<sub>i</sub>&in; {0,1}</td></tr>
+						</table>
+					</section>
+
+					<section>
+						<h3>Richard Karp</h3>
+						<table style="font-size: 30px;">
+							<tr>
+								<td>Name:</td>
+								<td>Richard Karp</td>
+							</tr>
+							<tr>
+								<td>Photo:</td>
+								<td style="vertical-align:middle;"><img width="16%" src="../../resources/ranc/karp/pic1.png"><img width="14%" src="../../resources/ranc/karp/pic2.png"><img width="21%" src="../../resources/ranc/karp/pic3.png"></td>
+							</tr>
+							<tr>
+								<td>Date of Birth:</td>
+								<td>January 3, 1935</td>
+							</tr>
+							<tr>
+								<td>Education:</td>
+								<td>Harvard (BS-1955, MS-1956, PhD-1959)</td>
+							</tr>
+							<tr>
+								<td>Background:</td>
+								<td>Mixture of control theory, statistics, complex analysis</td>
+							</tr>
+							<tr>
+								<td>Contributions:</td>
+								<td>"三栖学者" computer science, combinatorial algorithms, and operations research</td>
+							</tr>
+						</table>
+						<p style="font-size: 24px;" class="bot_notes_right">* Hartley Rogers, "Theory of Recursive Functions and Effective Computability" (1967).</p>
+					</section>
+
+					<section>
+						<h3>Turing remarks</h3>
+						<blockquote style="font-size: 32px;">
+							For his continuing contributions to the theory of algorithms including the development of efficient algorithms for network flow and other combinatorial optimization problems, the identification of polynomial-time computability with the intuitive notion of algorithmic efficiency, and, most notably, contributions to the theory of NP-completeness. Karp introduced the now standard methodology for proving problems to be NP-complete which has led to the identification of many theoretical and practical problems as being computationally difficult.
+						</blockquote>
+					</section>
+
+					<section>
+						<h3>Stephen Cook</h3>
+						<table style="font-size: 30px;">
+							<tr>
+								<td>Name:</td>
+								<td>Stephen Cook</td>
+							</tr>
+							<tr>
+								<td>Photo:</td>
+								<td style="vertical-align:middle;"><img width="15%" src="../../resources/ranc/karp/cook-y.png"><img width="14%" src="../../resources/ranc/karp/cook.png"></td>
+							</tr>
+							<tr>
+								<td>Date of Birth:</td>
+								<td>December 14, 1939</td>
+							</tr>
+							<tr>
+								<td>Education:</td>
+								<td>BS-1961@University of Michigan, PhD-1966@Harvard)</td>
+							</tr>
+							<tr>
+								<td>Work Exp.:</td>
+								<td>UCB &rarr; U Toronto</td>
+							</tr>
+							<tr>
+								<td>Contributions:</td>
+								<td>Definition of P, NP and P?=NP</td>
+							</tr>
+						</table>
+					</section>
+
+					<section>
+						<h3>Interview with Karp @UCB</h3>
+						<h4>Host: <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/patterson.html">David A. Patterson</a></h4>
+						<video controls src="../../resources/vid/karp_interview_45min.mp4"></video>
+					</section>
+
+				</section>
+
+				<section class="outline-page">
+					<div class="logo">
+						<a href="https://mobinets.cn"><img src="../../resources/ranc/mobinetslogo.png"/></a>
+					</div>
+					<section>
+						<h3>Leslie Lamport</h3>
+						<table style="font-size: 24px;">
+							<!-- <tr>
+								<td>Photo:</td>
+								<td><img width="12%" src="../../resources/ranc/turing/lamport/lamport.png"></td>
+							</tr> -->
+							<tr>
+								<td>Date of Birth:</td>
+								<td>Feb 7, 1941</td>
+							</tr>
+							<tr>
+								<td>Education:</td>
+								<td>MIT (BS-1960)<br>Brandeis University (MS-1963, PhD-1972)</td>
+							</tr>
+							<tr>
+								<td>Work experience:</td>
+								<td>Massachusetts Computer Associates (COMPASS, 1970-1977)<br>SRI International (1977-1985)<br>DEC/Compaq (1985-2001)<br>Microsoft Research (2001-)</td>
+							</tr>
+							<tr>
+								<td style="vertical-align: top;">Contributions:</td>
+								<td>
+									<table>
+										<td style="vertical-align: top;"><a href="http://cds.cern.ch/record/270275/files/9780201529838_TOC.pdf">LaTeX</a>, <br>
+											<a href="https://lamport.azurewebsites.net/pubs/lamport-paxos.pdf">Paxos algorithm</a>, <br>
+											<a href="http://lamport.azurewebsites.net/pubs/multi.pdf">Sequential consistency</a>, <br>
+											<a href="http://lamport.azurewebsites.net/pubs/bakery.pdf">Lamport's bakery algorithm</a>,<br>
+											<a href="http://lamport.azurewebsites.net/pubs/byz.pdf">Byzantine fault tolerance</a>,<br>
+											Temporal logic (TLA+)<sup>[<a href="http://lamport.azurewebsites.net/pubs/old-tla-src.pdf">1</a>][<a href="http://lamport.azurewebsites.net/pubs/lamport-actions.pdf">2</a>][<a href="http://lamport.azurewebsites.net/pubs/lamport-spec-tla-plus.pdf">3</a>]</sup>,<br>
+											<a href="http://lamport.azurewebsites.net/"><u>Full collection</u></a>
+										</td>
+										<td><img width="80%" src="../../resources/ranc/turing/lamport/lamport.png"></td>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</section>
+					<section>
+						<h3>LaTeX</h3>
+						<h4>La<s>mport</s>TeX</h4>
+						<h4>TeX () vs LaTeX</h4>
+						<h5>Tex: An environment and a program.</h5>
+						<blockquote style="font-size: 20px; text-align: left;">TeX is a typesetting system. It provides many commands which allow you to specify the format of your document with great detail (e.g. font styles, spacing, kerning, ligatures, etc.), and has specialized algorithms to compute the optimal flow of text in your document (e.g. where to cut lines, pages, etc.). </blockquote>
+						<h5>LaTeX</h5>
+						<blockquote style="font-size: 20px; text-align: left;">LaTeX is a set of macros built on top of TeX. The idea behind LaTeX is to shift the focus from the format to the content of your document.</blockquote>
+						<h5>People: <a href="https://www-cs-faculty.stanford.edu/~knuth/">Donald Knuth (高德纳)</a>, Leslie Lamport</h5>
+						<h5>XeLaTeX, LuaLaTeX, htLaTeX</h5>
+					</section>
+
+					<section>
+						<h3>LaTeX</h3>
+						<blockquote>
+							Writing is the nature's way of letting you know how sloppy your thinking is.
+							<br>--Dick Guindon
+						</blockquote>
+						<blockquote>
+							To think, you have to write.<br>
+							--Leslie Lamport
+						</blockquote>
+						<blockquote>
+							If you are thinking without writing, you only think you are thinking.
+							<br>--Leslie Lamport
+						</blockquote>
+					</section>
+
+					<section>
+						<h3>LaTeX</h3>
+						<h4>Interesting packages</h4>
+						<img width="40%" src="../../resources/ranc/turing/lamport/tex-coffee.png">
+						<table style="font-size: 24px;">
+							<tr>
+								<td style="text-align: center; border: none;"><a href="http://hanno-rein.de/archives/349">coffee</a></td>
+								<td style="text-align: center; border: none;"><a href="https://www.ctan.org/pkg/balance">balance</a></td>
+								<td style="text-align: center; border: none;"><a href="http://ctan.org/pkg/chickenize">rainbow</a></td>
+								<td style="text-align: center; border: none;"><a href="https://www.ctan.org/pkg/marginnote">marginnotes</a></td>
+								<td style="text-align: center; border: none;"><a href="https://ctan.org/pkg/algorithm2e">algorithm2e</a></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td style="text-align: center; font-size: 20px;"><a href="https://www.zhihu.com/people/li-a-ling"><u>李阿玲@知乎</u></a></td>
+								<td></td>
+								<td></td>
+							</tr>
+						</table>
+					</section>
+
+					<section>
+						<h3>Lamport's bakery algorithm</h3>
+						<blockquote style="text-align: left;">
+							In computer science, it is common for multiple threads/processors/computers to simultaneously access the same resources. <u>Data corruption can occur if two or more threads try to write into the same memory location</u>. 
+						</blockquote>
+						<h5>Lamport's bakery algorithm is one of the many <a href="https://en.wikipedia.org/wiki/Mutual_exclusion">mutual exclusion algorithms</a> designed to prevent concurrent threads entering critical sections of code concurrently to eliminate the risk of data corruption.</h5>
+					</section>
+
+					<section>
+						<h3>Lamport's bakery algorithm</h3>
+						<h4>Problem:</h4>
+						<h5>Multiple computers/processors/threads execute common and <u>critical sections</u>. The critical section is that part of code that requires exclusive access to resources and <u>may only be executed by one thread at a time</u></h5>
+						<h4>Requirement:</h4>
+						<h5>At any time, at most one computer may be in its critical section.</h5>
+						<h5>Each computer must eventually be able to enter its critical section (unless it halts).</h5>
+						<h5>Any computer may halt in its noncritical section.</h5>
+					</section>
+
+					<section>
+						<h3>Lamport's bakery algorithm</h3>
+						<!-- <table>
+							<td width="70%"><img src="../../resources/ranc/turing/lamport/bakery.png"></td>
+							<td style="vertical-align: middle;" width="30%">
+								
+							</td>
+						</table> -->
+						<img src="../../resources/ranc/turing/lamport/bakery.png">
+						<table style="font-size: 24px;">
+							<tr>
+								<td>Consumer</td>
+								<td>P0</td>
+								<td>P1</td>
+								<td>P2</td>
+								<td>P3</td>
+								<td>P4</td>
+							</tr>
+							<tr>
+								<td>Ticket</td>
+								<td>0</td>
+								<td>3</td>
+								<td>1</td>
+								<td>2</td>
+								<td>0</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>0</td>
+								<td>2</td>
+								<td>0</td>
+								<td>1</td>
+								<td>0</td>
+							</tr>
+							<tr>
+								<td>Ticket</td>
+								<td>0</td>
+								<td>1</td>
+								<td>0</td>
+								<td>0</td>
+								<td>0</td>
+							</tr>
+							<tr>
+								<td>Ticket</td>
+								<td>0</td>
+								<td>0</td>
+								<td>0</td>
+								<td>0</td>
+								<td>0</td>
+							</tr>
+						</table>
+					</section>
+
+					<section>
+						<h3>More complex bakeries?</h3>
+						<img src="../../resources/ranc/turing/lamport/kitchen.jpg" alt="">
+					</section>
+
+					<section>
+						<h3>Byzantine generals</h3>
+						<img width="60%" src="../../resources/ranc/turing/lamport/byzantine.png">
+						<ul>
+							<li>If all generals agree to attack &rightarrow; win</li>
+							<li>If some generals retreat &rightarrow; lose</li>
+						</ul>
+						<p style="text-decoration:underline;">It is about consensus</p>
+					</section>
+
+					<section>
+						<h3>Byzantine fault tolerance</h3>
+						<h4>Byzantine fault: </h4>
+						<h5>Any fault presenting different symptoms to different observers.</h5>
+						<h4>A Byzantine failure:</h4>
+						<h5>The loss of a system service due to a Byzantine fault in systems that require consensus</h5>
+					</section>
+
+					<section>
+						<h3>Byzantine fault tolerance</h3>
+						<h4>Interactive consistency problem, Robert Shostak</h4>
+						<h4>Context: <u>SIFT: design and analysis of a fault-tolerant computer for aircraft control</u></h4>
+						<h5>Using multiple general-purpose computers that would communicate through pairwise messaging in order to reach a consensus, even if some of the computers were faulty. </h5>
+						<h5>Pease, Shostak, Lamport, <a href="https://lamport.azurewebsites.net/pubs/reaching.pdf">Reaching Agreement in the Presence of Faults</a></h5>
+					</section>
+
+					<section>
+						<h3>Byzantine fault tolerance</h3>
+						<h4>Problem settings:</h4>
+						<ul>
+							<li>n components, out of which t dishonest</li>
+							<li>p2p channel between all the components</li>
+						</ul>
+						<h4>Properties:</h4>
+						<blockquote style="text-align: left; font-size: 28px;">
+							The system is said to <u>Byzantine fault tolerant</u> if a component A can broadcast a value x, and then:
+							<ol>
+								<li>If A is honest, then all honest components agree on the value x.</li>
+								<li>In any case, all honest components agree on the same value y.</li>
+							</ol>
+						</blockquote>
+					</section>
+
+					<section>
+						<h3>Byzantine fault tolerance</h3>
+						<h4>Shostak</h4>
+						<h5>A minimum of 3n+1 are needed for consensus</h5>
+						<h5>A two-round 3n+1 messaging protocol for n=1</h5>
+						<h4>Pease</h4>
+						<h5>Generalized the algorithm for any n > 0, proving that 3n+1 is both necessary and sufficient</h5>
+						<h4>Lamport</h4>
+						<h5>Sufficiency of 3n using digital signatures</h5>
+						<h5>Alabanian army &rightarrow; Lamport, Shostak, Pease. <a href="http://research.microsoft.com/en-us/um/people/lamport/pubs/byz.pdf">The Byzantine Generals Problem</a></h5>
+					</section>
+
+					<section>
+						<h3>Byzantine fault tolerance</h3>
+						<h4>Practical BFT</h4>
+						<h5>Castro, Liskov, "Practical Byzantine Fault Tolerance and Proactive Recovery". ACM Transactions on Computer Systems, 1999.</h5>
+						<h4>Blockchain consensus</h4>
+						<h5>PBFT, Proof of Work, Proof of Stake, Raft, Ripple, Paxos, Zookeeper</h5>
+					</section>
+
+					<section>
+						<h3>Paxos</h3>
+						<h4>Distributed state machine</h4>
+						<img width="40%" src="../../resources/ranc/turing/lamport/dist-database.png" alt="">
+						<h5>Replicated, redundant servers</h5>
+						<h5>Need to guarantee consistency among replicas</h5>
+						<h5>Operations to replicas must follow the same order</h5>
+					</section>
+
+					<section>
+						<h3>Distributed consensus</h3>
+						<h4>Intuitive solution: One syncs all</h4>
+						<h5>Not fault tolerant</h5>
+						<h4><a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/tr-2005-33.pdf">Paxos</a> (why paxos?)</h4>
+						<h5>Achieve consensus in distributed manner</h5>
+						<h5>Achieve consensus with fault tolerance</h5>
+						<img width="40%" src="../../resources/ranc/turing/lamport/paxos-city.jpg" alt="">
+					</section>
+
+					<section>
+						<h3>Assumptions</h3>
+						<h4>Fail stop</h4>
+						<h5>When a node fails, it stops entirely.</h5>
+						<h5>May resume normal operations when restarted</h5>
+						<h4>Messages</h4>
+						<h5>could be lost</h5>
+						<h5>could be duplicated</h5>
+						<h5>could be delayed</h5>
+						<h5>cannot be corrupted</h5>
+						<h4>Stable storage</h4>
+					</section>
+
+					<section>
+						<h3>Notations</h3>
+						<table style="font-size: 28px;">
+							<td style="vertical-align: top;" width="30%">
+								<ul><b>Proposer</b>
+									<ol>
+										<li>
+											suggest values for Acceptors.
+										</li>
+										<li>
+											advocate for a client
+										</li>
+									</ol>
+								</ul>
+							</td>
+							<td style="vertical-align: top;" width="30%">
+								<ul><b>Acceptor</b>
+									<ol>
+										<li>
+											consider the values proposed by proposers.
+										</li>
+										<li>
+											render an accept/reject decision.
+										</li>
+									</ol>
+								</ul>
+							</td>
+							<td style="vertical-align: top;" width="30%">
+								<ul><b>Learner</b>
+									<ol>
+										<li>
+											learn the chosen value
+										</li>
+									</ol>
+								</ul>
+							</td>
+						</table>
+						<ul style="font-size: 28px; text-align:left;">
+							<b>Proposal</b>
+							<li>An alternative proposed by a proposer.</li>
+							<li>Consists of a unique number and a proposed value (13, V)</li>
+						</ul>
+						<ul style="font-size: 28px; text-align:left;">
+							<b>Chosen</b>
+							<li>a value is chosen when consensus is reached on that value.</li>
+						</ul>
+						<p style="font-size: 24px; text-align:right;">*In practice, each node will usually play all three roles.</p>
+					</section>
+
+					<section>
+						<h3>Fault-tolerant consensus</h3>
+						<h4>Requirements:Safety and liveness</h4>
+						<h5><u>Validity</u>: Only proposed values can be chosen and learned.</h5>
+						<h5><u>Agreement</u>: There can't be more than one decided value</h5>
+						<h5><u>Liveness</u> (or termination): If value C has been proposed, then eventually learner L will learn some value (if sufficient processors remain non-faulty)</h5>
+					</section>
+
+					<section>
+						<h3>Quorum</h3>
+						<h4>Strong majority</h4>
+						<h5>A set of acceptors consisting of more than half of all acceptors.</h5>
+						<h5>Any two quorums have a nonempty intersection.</h5>
+						<h5>Helps avoid “split-brain” problem.</h5>
+						<ul style="font-size: 28px;">
+							<li>Acceptors decisions are not in agreement</li>
+							<li>Common node acts as “tie-breaker.”</li>
+						</ul>
+						<h5>In a system with 2n+1 acceptors, n acceptors can fail and we'll be OK.</h5>
+					</section>
+
+					<section>
+						<h3>Quorum</h3>
+						<img width="40%" src="../../resources/ranc/turing/lamport/quorum.png" alt="">
+						<p>Quorums in a system with 7 acceptors</p>
+					</section>
+
+					<section  data-visibility="hidden">
+						<h3>Consensus</h3>
+						<img width="65%" src="../../resources/ranc/turing/lamport/consensus-reach.png" alt="">
+						<ul style="font-size: 28px;">
+							<li>Values proposed by proposers are constrained so that once consensus has been reached, all future proposals will carry the chosen value</li>
+							<li>For any v and n, if a proposal with value v and number n is issued, then there is a set S consisting of a majority of acceptors such that either:
+								<ul>
+									<li>(a) no acceptor in S has accepted any proposal numbered less than n, or</li>
+									<li>(b) v is the value of the highest-numbered proposal among all proposals numbered less than n accepted by the acceptors in S.
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</section>
+
+					<section>
+						<h3>Basic Paxos Alg</h3>
+						<table style="font-size: 22px;">
+							<thead>
+								<th>Proposer</th>
+								<th>Acceptor</th>
+							</thead>
+							<tbody>
+								<tr>
+									<td style="border: none;"><u>Prepare</u>: Select proposal number* N and send a prepare(N) request to a quorum of acceptors</td>
+									<td style="border: none;"></td>
+								</tr>
+								<tr>
+									<td style="border: none;"></td>
+									<td style="border: none;"><u>Promise</u>:<br>If N > number of any previous promises or acceptances,
+										- send a promise(N, U) response
+									  (where U is the highest-numbered proposal accepted so far)
+									</td>
+								</tr>
+								<tr>
+									<td style="border: none;"><u>Accept</u>:<br>If proposer received promise responses from a quorum,
+										- send an accept(N, W) request to those acceptors
+									  (where W is the value of highest-numbered proposal among promise responses, or any value if no promise contained a proposal)
+									</td>
+									<td style="border: none;"></td>
+								</tr>
+								<tr>
+									<td style="border: none;"></td>
+									<td style="border: none;"><u>Accepted</u>:If N >= number of any previous promise,
+										* accept the proposal
+										- send an accepted notification to the learner
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+
+					<section>
+						<h3>Example</h3>
+						<img width="90%" src="../../resources/ranc/turing/lamport/alg1.png" alt="">
+					</section>
+
+					<section>
+						<h3>Example</h3>
+						<img width="85%" src="../../resources/ranc/turing/lamport/alg2.png" alt="">
+					</section>
+
+					<section>
+						<h3>Example</h3>
+						<img width="85%" src="../../resources/ranc/turing/lamport/alg3.png" alt="">
+					</section>
+
+					<section>
+						<h3>Example</h3>
+						<img width="85%" src="../../resources/ranc/turing/lamport/alg4.png" alt="">
+					</section>
+
+					<section>
+						<h3>Multi-Paxos</h3>
+						<table>
+							<tr>
+								<td>chosen value</td>
+								<td>S</td>
+								<td>P</td>
+								<td>?</td>
+								<td>O</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>instance</td>
+								<td>39</td>
+								<td>40</td>
+								<td>41</td>
+								<td>42</td>
+								<td></td>
+							</tr>
+						</table>
+						<ul>
+							<li>A single instance of Paxos yields a single chosen value.</li>
+							<li>To form a sequence of chosen values, simply apply Paxos iteratively.
+								<ul><li>Include an instance number in messages.</li></ul>
+							</li>
+							<li>Facilitates replication of a state machine.</li>
+						</ul>
+					</section>
+
+					<section>
+						<h3>Extensions</h3>
+						<h4>Cheap Paxos</h4>
+						<h5>Reconfigurations (e.g., eject failed acceptors)</h5>
+						<h4>Fast Paxos</h4>
+						<h5>Reduce message traffic.</h5>
+						<h4>Byzantine Paxos</h4>
+						<h5>Arbitrary failures - lying, collusion, fabricated messages, selective non-participation.</h5>
+						<h5>Adds an extra “verify” phase to the algorithm.</h5>
+						<h4>Paxos=Democracy?</h4>
+					</section>
+
+
+					<section>
+						<h3>Interview with Lamport</h3>
+						<video controls src="../../resources/vid/lamport.mp4"></video>
+						</p>
+					</section>
+
+				</section>
+			</div>
+
+		</div>
+
+		<script src="../../templates/dist/reveal.js"></script>
+		<script src="../../templates/plugin/zoom/zoom.js"></script>
+		<script src="../../templates/plugin/notes/notes.js"></script>
+		<script src="../../templates/plugin/search/search.js"></script>
+		<script src="../../templates/plugin/markdown/markdown.js"></script>
+		<script src="../../templates/plugin/highlight/highlight.js"></script>
+		<script>
+
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: false,
+				hash: true,
+				slideNumber: true,
+				transitionSpeed: 'fast',
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+			});
+
+		</script>
+
+	</body>
+</html>

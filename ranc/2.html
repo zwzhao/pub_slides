@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Advances in Network Computing - Zhiwei Zhao</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="../templates/dist/reset.css">
+		<link rel="stylesheet" href="../templates/dist/reveal.css">
+		<link rel="stylesheet" href="../templates/dist/theme/simple-z.css" id="theme">
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="../templates/plugin/highlight/monokai.css">
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section class="outline-page">
+					<img src="../resources/ranc/turing1.png" style="height: 160px; margin: 3rem auto auto auto; background: transparent;" class="demo-logo">
+					<h2 style="font-size: 46px;"><span style="color: lightcoral;">R</span>ecent <span style="color:lightgreen;">A</span>dvances in <span style="color:cornflowerblue;">N</span>etwork <span style="color: crimson;">C</span>omputing</h2>
+					<hr>
+					<p>
+						<small><a href="https://mobinets.cn/zzw">Zhiwei Zhao</a><br>zhiwei@mobinets.org</small>
+						<br>
+					</p>
+					<p style="font-size: 18px; text-align: center;">
+						<small><img width="20%" src="../resources/ranc/homelink.png"></small>
+						<!-- <br>
+						https://mns.uestc.cn/course/ranc -->
+					</p>					
+				</section>
+
+				<section class="outline-page">
+					<div class="logo">
+						<a href="https://mobinets.cn"><img src="../resources/ranc/mobinetslogo.png"/></a>
+					</div>
+					<section>
+						<h3>Recent advances</h3>
+						<h4><span style="color: cornflowerblue;">NDN</span>: Named Data Networking.</h4>
+						<ul>
+							<li>An instance of ICN<a href="https://www.it.uu.se/edu/course/homepage/projektDV/ht14/ASurveyofInformation-CentricNetworking-published.pdf">[1]</a><a href="http://trac.tools.ietf.org/group/irtf/trac/wiki/icn">[2]</a>.</li>
+							<li>Data has names and can be identified.</li>
+						</ul>
+						<h4><span style="color: cornflowerblue;">SDN</span>: Software Defined Networks</h4>
+						<h4><span style="color: cornflowerblue;">NFV</span>: Network Function Virtualization</h4>
+						<h4><span style="color: cornflowerblue;">Edge</span>: Edge Computing</h4>
+						<ul>
+							<li>Cloud in proximity.</li>
+							<li>Dispersed and resource constrained.</li>
+						</ul>
+					</section>
+
+					<section>
+						<h3 style="margin-top: 20px;">Named Data Networks</h3>
+						<h4>Addressing: IP vs ID</h4>
+						<img src="../resources/ranc/xdn/ndn-sigcomm14.png" width="80%">
+						<p class="bot_notes_left">[1] <a href="https://web.cs.ucla.edu/~lixia/">Lixia Zhang</a> et al. <a href="https://irl.cs.ucla.edu/data/files/techreports/ndn0019-1.pdf">Named data newtorking</a>, ACM SigComm 2014.</p>
+						<!-- <p class="bot_notes">* <a href="https://irl.cs.ucla.edu/data/files/techreports/ndn0019-1.pdf">Named data newtorking, ACM SigComm 2014.</a></p> -->
+						
+					</section>
+
+					<section>
+						<h3 style="margin-top: 20px;">Software Defined Network</h2>
+						<img width="70%" src="../resources/ranc/xdn/sdn-cover.png">
+						<p class="bot_notes_left">
+							[1] N Gude et al. <a href="http://www.sigcomm.org/sites/default/files/ccr/papers/2008/July/1384609-1384625.pdf">NOX: Towards an Operating System for Networks</a>. ACM SigComm 2008.
+							<br>
+							[2] N McKeown et al. <a href="http://www.sigcomm.org/sites/default/files/ccr/papers/2008/April/1355734-1355746.pdf">OpenFlow: Enabling Innovation in Campus Networks</a>. ACM SigComm 2008.
+						</p>
+					</section>
+
+					<section class="content-page">
+						<h3 class="toptitle">Network Function Virtualization</h3>
+						<img width="90%" src="../resources/ranc/xdn/nfv-cover.png">
+						<p class="bot_notes_left">
+							[1] ESTI, <a href="http://portal.etsi.org/NFV/NFV_White_Paper.pdf">Network Functions Virtualisation</a>, White Paper.
+							<br>
+							[2] Bo Han et al. <a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.673.8097&rep=rep1&type=pdf">Network function virtualization: Challenges and opportunities for innovations</a>, IEEE Comm. Mag. 2015.
+						</p>
+					</section>
+					<section>
+						<h3 class="toptitle">Edge Computing</h3>
+						<img width="50%" src="../resources/ranc/xdn/edge-cover.png">
+						<p class="bot_notes_left">
+							[1] <a href="http://www.cs.cmu.edu/~satya/">Mahadev Satya</a> et al. <a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/cloudlets09.pdf">The Case for VM-based Cloudlets in Mobile Computing</a>, IEEE Pervasive Computing, 2009.
+							<br>
+							[2] <a href="http://www.cs.cmu.edu/~satya/">Mahadev Satya</a>, <a href="https://www.cse.psu.edu/~gxc27/teach/597/satya-edge2016.pdf">The Emergence of Edge Computing</a>, Computer, 2017.
+							<br>
+							[3] <a href="https://www.cs.ucr.edu/~jiasi/">J Chen</a> and X Ran, <a href="https://www.cs.ucr.edu/~jiasi/pub/deep_edge_review.pdf">Deep learning with edge computing: A review</a>, Proc. of IEEE, 2019.
+						</p>
+					</section>
+				</section>
+
+				<section class="outline-page">
+					<div class="logo">
+						<a href="https://mobinets.cn"><img src="../resources/netai/mobinetslogo.png"/></a>
+					</div>
+					<section>
+						<h3>Turing Award</h3>
+						<img width="40%" src="../resources/ranc/turing/turing-head.png">
+						<p>
+							The ACM Alan Mathison Turing Award - "Nobel Prize of Computing".
+						</p>
+					</section>
+					<section>
+						<h3>56 Turing Awards</h3>
+						<table>
+							<thead>
+								<tr>
+									<th>Field</th>
+									<th>Awards</th>
+									<th>Percentage</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Programming lauguage</td>
+									<td>16</td>
+									<td>28.6%</td>
+								</tr>
+								<tr>
+									<td>Computing theory</td>
+									<td>12</td>
+									<td>21.4%</td>
+								</tr>
+								<tr>
+									<td><span class="fragment highlight-blue">Network system</span></td>
+									<td>8</td>
+									<td>14.3%</td>
+								</tr>
+								<tr>
+									<td>Database</td>
+									<td>7</td>
+									<td>12.5%</td>
+								</tr>
+								<tr>
+									<td>AI</td>
+									<td>6</td>
+									<td>10.7%</td>
+								</tr>
+								<tr>
+									<td>CHI</td>
+									<td>4</td>
+									<td>7%</td>
+								</tr>
+								<tr>
+									<td>Security</td>
+									<td>3</td>
+									<td>5.4%</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+					<section>
+						<h3>Stars in networks</h3>
+						<table style="width: 90%;">
+							<tbody>
+								<tr>
+									<td><img height="100px" src="../resources/photos/Thompson_and_Ritchie.png">
+										<br><a href="https://dl.acm.org/profile/81100436668">Ken Thompson</a> & <a href="https://www.bell-labs.com/usr/dmr/www/">Dennis Ritchie</a> (1983)</td>
+									<td><img height="100px" src="../resources/photos/rkarp.png">
+										<br><a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/karp.html">Richard M. Karp</a> (1985)</td>
+								</tr>
+								<tr>
+									<td><img height="100px" src="../resources/photos/fjc.png">
+										<br><a href="https://www.computer.org/profiles/fernando-corbato">Fernando J. Corbató</a> (1990)</td>
+									<td><img height="100px" src="../resources/photos/blampson.png">
+									<br><a href=" http://butler.lampsons.us">Butler W. Lampson</a> (1992)</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+					<section>
+						<h3>Stars in networks</h3>
+						<table style="width: 90%;">
+							<tbody>
+								<tr>
+									<td><img height="100px" src="../resources/photos/vcerf.png"><img height="100px" src="../resources/photos/bkhan.png">
+										<br><a href="https://research.google/people/author32412/">Vint Cerf</a> & <a href="https://amturing.acm.org/award_winners/kahn_4598637.cfm">Robert Kahn</a> (2004)</td>
+									<td><img height="100px" src="../resources/photos/cThacker.png">
+										<br><a href="https://amturing.acm.org/award_winners/thacker_1336106.cfm">Charles P. Thacker</a> (2009)</td>
+								</tr>
+								<tr>
+									<td><img height="100px" src="../resources/photos/llamport.png">
+										<br><a href="http://www.lamport.org/">Leslie Lamport</a> (2013)</td>
+									<td><img height="100px" src="../resources/photos/tbLee.png">
+									<br><a href="https://www.w3.org/People/Berners-Lee/">Tim Berners-Lee</a> (2016)</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="../templates/dist/reveal.js"></script>
+		<script src="../templates/plugin/zoom/zoom.js"></script>
+		<script src="../templates/plugin/notes/notes.js"></script>
+		<script src="../templates/plugin/search/search.js"></script>
+		<script src="../templates/plugin/markdown/markdown.js"></script>
+		<script src="../templates/plugin/highlight/highlight.js"></script>
+		<script>
+
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: false,
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+			});
+
+		</script>
+
+	</body>
+</html>

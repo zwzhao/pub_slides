@@ -1,0 +1,894 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Advances in Network Computing - Zhiwei Zhao</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="../../templates/dist/reset.css">
+		<link rel="stylesheet" href="../../templates/dist/reveal.css">
+		<link rel="stylesheet" href="../../templates/dist/theme/simple-z.css" id="theme">
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="../../templates/plugin/highlight/monokai.css">
+	</head>
+
+	<body>
+
+		<div class="reveal">
+			<div class="slides">
+				<section class="outline-page">
+					<section>
+					<img src="../../resources/ranc/turing1.png" style="height: 160px; margin: 3rem auto auto auto; background: transparent;" class="demo-logo">
+					<h2 style="font-size: 46px;"><span style="color: lightcoral;">R</span>ecent <span style="color:lightgreen;">A</span>dvances in <span style="color:cornflowerblue;">N</span>etwork <span style="color: crimson;">C</span>omputing</h2>
+					<hr>
+					<p>
+						<small><a href="https://mobinets.cn/zzw">Zhiwei Zhao</a><br>zhiwei@mobinets.org</small>
+					</p>
+					<p style="font-size: 18px; text-align: center;">
+						<small><img width="20%" src="../../resources/ranc/homelink.png"></small>
+						<!-- <br>
+						https://mns.uestc.cn/course/ranc -->
+					</p>
+				</section>
+				</section>
+
+				<section class="outline-page">
+					<div class="logo">
+						<a href="https://mobinets.cn"><img src="../../resources/ranc/mobinetslogo.png"/></a>
+					</div>
+					<section>
+						<h3>Two lines</h3>
+						<table>
+							<thead>
+								<th>Recent advances</th>
+								<th>Turing award winners</th>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1. NDN/SDN/NFV</td>
+									<td>1. Stories</td>
+								</tr>
+								<tr>
+									<td>2. Edge computing</td>
+									<td>2. Interesting works</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>3. Lectures</td>
+								</tr>
+							</tbody>
+						</table>
+						<br>
+						<img width="70%" src="../../resources/ranc/fashion-classic.png">
+					</section>
+					<section>
+						<h3>Coursework (60%+40%)</h3>
+						<h4>A one-column, two-page course work.</h4>
+						<h5><a href="../../resources/ranc/Two_page_coursework.pdf">Sample pdf</a>, <a href="../../resources/ranc/ranc.tex">Template tex file</a>.</h5>
+						<h4>Attendance</h4>
+						<h5>The roll will be called when many are absent.</h5>
+						<h5>No final score if you are found absent for ≥3 times.</h5>
+						<h4>Submission</h4>
+						<h5>Email: fmi_course@mobinets.org</h5>
+						<h5>Deadline: May 26, 2022.</h5>
+					</section>
+				</section>
+
+				<section class="outline-page">
+					<div class="logo">
+						<a href="https://mobinets.cn"><img src="../../resources/ranc/mobinetslogo.png"/></a>
+					</div>
+					<section>
+						<h3>Recent advances</h3>
+						<h4><span style="color: cornflowerblue;">NDN</span>: Named Data Networking.</h4>
+						<ul>
+							<li>An instance of ICN<a href="https://www.it.uu.se/edu/course/homepage/projektDV/ht14/ASurveyofInformation-CentricNetworking-published.pdf">[1]</a><a href="http://trac.tools.ietf.org/group/irtf/trac/wiki/icn">[2]</a>.</li>
+							<li>Data has names and can be identified.</li>
+						</ul>
+						<h4><span style="color: cornflowerblue;">SDN</span>: Software Defined Networks</h4>
+						<h4><span style="color: cornflowerblue;">NFV</span>: Network Function Virtualization</h4>
+						<h4><span style="color: cornflowerblue;">Edge</span>: Edge Computing</h4>
+						<ul>
+							<li>Cloud in proximity.</li>
+							<li>Dispersed and resource constrained.</li>
+						</ul>
+					</section>
+
+					<section>
+						<h3 style="margin-top: 20px;">Named Data Networks</h3>
+						<h4>Addressing: IP vs ID</h4>
+						<img src="../../resources/ranc/xdn/ndn-sigcomm14.png" width="80%">
+						<p class="bot_notes_left">[1] <a href="https://web.cs.ucla.edu/~lixia/">Lixia Zhang</a> et al. <a href="https://irl.cs.ucla.edu/data/files/techreports/ndn0019-1.pdf">Named data newtorking</a>, ACM SigComm 2014.</p>
+						<!-- <p class="bot_notes">* <a href="https://irl.cs.ucla.edu/data/files/techreports/ndn0019-1.pdf">Named data newtorking, ACM SigComm 2014.</a></p> -->
+						
+					</section>
+
+					<section>
+						<h3 style="margin-top: 20px;">Software Defined Network</h2>
+						<img width="70%" src="../../resources/ranc/xdn/sdn-cover.png">
+						<p class="bot_notes_left">
+							[1] N Gude et al. <a href="http://www.sigcomm.org/sites/default/files/ccr/papers/2008/July/1384609-1384625.pdf">NOX: Towards an Operating System for Networks</a>. ACM SigComm 2008.
+							<br>
+							[2] N McKeown et al. <a href="http://www.sigcomm.org/sites/default/files/ccr/papers/2008/April/1355734-1355746.pdf">OpenFlow: Enabling Innovation in Campus Networks</a>. ACM SigComm 2008.
+						</p>
+					</section>
+
+					<section class="content-page">
+						<h3 class="toptitle">Network Function Virtualization</h3>
+						<img width="90%" src="../../resources/ranc/xdn/nfv-cover.png">
+						<p class="bot_notes_left">
+							[1] ESTI, <a href="http://portal.etsi.org/NFV/NFV_White_Paper.pdf">Network Functions Virtualisation</a>, White Paper.
+							<br>
+							[2] Bo Han et al. <a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.673.8097&rep=rep1&type=pdf">Network function virtualization: Challenges and opportunities for innovations</a>, IEEE Comm. Mag. 2015.
+						</p>
+					</section>
+					<section>
+						<h3 class="toptitle">Edge Computing</h3>
+						<img width="50%" src="../../resources/ranc/xdn/edge-cover.png">
+						<p class="bot_notes_left">
+							[1] <a href="http://www.cs.cmu.edu/~satya/">Mahadev Satya</a> et al. <a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/cloudlets09.pdf">The Case for VM-based Cloudlets in Mobile Computing</a>, IEEE Pervasive Computing, 2009.
+							<br>
+							[2] <a href="http://www.cs.cmu.edu/~satya/">Mahadev Satya</a>, <a href="https://www.cse.psu.edu/~gxc27/teach/597/satya-edge2016.pdf">The Emergence of Edge Computing</a>, Computer, 2017.
+							<br>
+							[3] <a href="https://www.cs.ucr.edu/~jiasi/">J Chen</a> and X Ran, <a href="https://www.cs.ucr.edu/~jiasi/pub/deep_edge_review.pdf">Deep learning with edge computing: A review</a>, Proc. of IEEE, 2019.
+						</p>
+					</section>
+				</section>
+
+				<section class="outline-page">
+					<div class="logo">
+						<a href="https://mobinets.cn"><img src="../../resources/ranc/mobinetslogo.png"/></a>
+					</div>
+					<section>
+						<h3>Network computing</h3>
+						<p style="color: rgb(5, 99, 99);">Centralized🔁Distributed</p>
+						<table>
+							<tbody>
+								<tr>
+									<td><img class="" style="" height="270" data-src="../../resources/netai/lyx.png"></td>
+									<td><img class="" style="" height="270" data-src="../../resources/netai/wxh.png"></td>
+								</tr>
+								<tr>
+									<td><small>* 刘云新. 智能边缘计算中的挑战和机遇.中国计算机学会通讯 2021.09. </small></td>
+									<td><small>* 汪学海等. 边缘计算技术研究报告. 中科院计算所 信息技术与信息化前瞻FIAR-02. 2018.02.</small></td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+					<section>
+						<h3>Grow ripe</h3>
+						<img src="../../resources/netai/netcom-history-light.png">
+					</section>
+
+					<section>
+						<h3>Tech. vision</h3>
+						<img src="../../resources/netai/techComb.png">
+					</section>
+
+					<section>
+						<h3>Embedding each other</h3>
+						<img width="30%" src="../../resources/netai/taichi.png">
+						<p style="text-align: left;">
+							<ul>
+								<li>C → N: SDN、NFV</li>
+								<li>N → C: Cloud、<font color="red">Edge</font>、D2D/D4D</li>
+							</ul>
+						</p>
+					</section>
+
+					<section>
+						<h3>Edge enables AIoT</h3>
+						<img width="50%" src="../../resources/netai/aiot.png">
+						<p class="statements">Advances in <span style="color: blue;">network</span> brings <span style="color: brown;">computing</span> on board.</p>
+						<table style="font-size: 30px;">
+							<thead>
+								<th>🏡IoT</th>
+								<th>🔄Link</th>
+								<th>🖥Server</th>
+							</thead>
+							<tr>
+								<td>Offloading decisions</td>
+								<td>Task transfer</td>
+								<td>Task processing</td>
+							</tr>
+							<tr style="color: dimgray;">
+								<td>Analysis/divisions</td>
+								<td>Multi-access</td>
+								<td>Service management</td>
+							</tr>
+						</table>
+					</section>
+				</section>
+
+
+				<section class="outline-page">
+					<div class="logo">
+						<a href="https://mobinets.cn"><img src="../../resources/ranc/mobinetslogo.png"/></a>
+					</div>
+					<section>
+						<h3>Edge Computing</h3>
+						<h4>Why is it named "Edge"?</h4>
+						<h4>Similar concepts</h4>
+						<h5>Cloudlet</h5>
+						<h5>Fog</h5>
+						<h5>MEC</h5>
+					</section>
+
+					<section>
+						<h3>Architecture</h3>
+						<h4>Cloud-edge-end (云边端)</h4>
+						<img width="70%" src="../../resources/ranc/edge/edge-arch.png" alt="">
+					</section>
+
+					<section>
+						<h3>Architecture</h3>
+						<h4>Cloud-edge-end (云边端)</h4>
+						<img width="80%" src="../../resources/ranc/edge/edge-frame.png" alt="">
+					</section>
+
+					<section>
+						<h3>Architecture</h3>
+						<h4>Cloud-edge-end (云边端)</h4>
+						<img width="50%" src="../../resources/ranc/xdn/edge-cover.png">
+					</section>
+
+					<section>
+						<h3>Architecture</h3>
+						<h4>Tecent's attempt</h4>
+						<img width="90%" src="../../resources/ranc/edge/Tecent-arch.png" alt="">
+						<p class="bot_notes_right">* 算力网络? 算网融合?</p>
+					</section>
+
+					<section>
+						<h3>Application requirements</h3>
+						<table style="font-size: 23px;">
+							<thead>
+								<th>Type</th>
+								<th>Latency</th>
+								<th>QoE</th>
+							</thead>
+							<tbody>
+								<tr>
+									<td>AR</td>
+									<td>High</td>
+									<td><10ms</td>
+								</tr>
+								<tr>
+									<td>VR</td>
+									<td>High</td>
+									<td><10ms</td>
+								</tr>
+								<tr>
+									<td>Game</td>
+									<td>Fair</td>
+									<td>1-30ms Perfect <br>
+										31-50ms Satisfactory<br>
+										51-100ms Acceptable<br>
+										100-200ms Poor<br>
+										200-500ms Unsatisfactory<br>
+										>500ms Unacceptable
+										</td>
+								</tr>
+								<tr>
+									<td>Voice call</td>
+									<td></td>
+									<td>
+										0-100ms Good <br>
+										100-250ms Fair <br>
+										250-1100ms Unacceptable <br>
+									</td>
+								</tr>
+								<tr>
+									<td>Video streaming</td>
+									<td>Low</td>
+									<td>0.2-2s Good <br>
+										2-6s Fair<br>
+										6-18s Poor<br>
+										</td>
+								</tr>
+								<tr>
+									<td>Web browsing</td>
+									<td>Low</td>
+									<td>0-350ms Good<br>
+										400-700ms Average
+										</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+
+					<section>
+						<h3>Differences from cloud</h3>
+						<h4>Ultra-low latency</h4>
+						<table style="font-size:32px;">
+							<thead>
+								<th>Scenario</th>
+								<th>Comm.</th>
+								<th>Latency</th>
+								<th>Energy</th>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Mobie computing</td>
+									<td>5G/6G</td>
+									<td> 5ms </td>
+									<td>High</td>
+								</tr>
+								<tr>
+									<td>Mobie computing</td>
+									<td>4G</td>
+									<td> 50ms </td>
+									<td>High</td>
+								</tr>
+								<tr>
+									<td>Indoor</td>
+									<td>WiFi</td>
+									<td> 150ms </td>
+									<td>Fair</td>
+								</tr>
+								<tr>
+									<td>Indoor</td>
+									<td>Bluetooth</td>
+									<td> 200ms </td>
+									<td>High</td>
+								</tr>
+								<tr>
+									<td>Embedded</td>
+									<td>ZigBee</td>
+									<td> 1s </td>
+									<td>Low</td>
+								</tr>
+								<tr>
+									<td>Embedded</td>
+									<td>LoRa</td>
+									<td> 2s </td>
+									<td>Low</td>
+								</tr>
+								<tr>
+									<td>Embedded</td>
+									<td>NB-IoT</td>
+									<td> 2s </td>
+									<td>Low</td>
+								</tr>
+								<tr>
+									<td>Embedded</td>
+									<td>Sigfox</td>
+									<td> 2s </td>
+									<td>Low</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+
+					<section>
+						<h3>Heterogeneity</h3>
+						<h4>Heterogeneous devices directly connected</h4>
+						<h4>Wireless communications</h4>
+						<table style="text-decoration-line: underline;">
+							<td>WiFi</td>
+							<td>Bluetooth</td>
+							<td>ZigBee</td>
+						</table>
+						<h4>Service types</h4>
+						<table style="text-decoration-line: underline;">
+							<tr>
+								<td width="20%" style="border: none;"></td>
+								<td style="border: none;">Face recognition</td>
+								<td style="border: none;">Object tracking</td>
+								<td style="border: none;">Voice identification</td>
+							</tr>
+							<tr>
+								<td width="20%"></td>
+								<td>Remote sensing</td>
+								<td>Event detection</td>
+								<td>Fed-server</td>
+							</tr>
+						</table>
+					</section>
+
+					<section>
+						<h3>Limited resource</h3>
+						<table style="font-size: 23px;">
+							<thead>
+								<th>Product</th>
+								<th>CPU</th>
+								<th>GPU</th>
+								<th>Memory</th>
+								<th>Storage</th>
+								<th>Perf</th>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Jetson Nano</td>
+									<td>Cortex-A57 (4core) @1.43GHz</td>
+									<td>128core Maxwell @921MHz</td>
+									<td>4GB LPDDR4</td>
+									<td>16GB</td>
+									<td>472 GFLOPS</td>
+								</tr>
+								<tr>
+									<td>Jetson TX2</td>
+									<td>Cortex-A57 (4core) @2GHz<br>nVidia Denver (2core) @2GHz</td>
+									<td>256core Pascal @1300MHz</td>
+									<td>8GB LPDDR4</td>
+									<td>32GB</td>
+									<td>1.3 TFLOPS</td>
+								</tr>
+								<tr>
+									<td>Jetson AGX Xavier</td>
+									<td>nVidia Camel ARMv8.2 (8core) @2.26GHz</td>
+									<td>512core Volta @1377MHz + 64 Tensor cores</td>
+									<td>32GB LPDDR4</td>
+									<td>32GB</td>
+									<td>32 TOPS</td>
+								</tr>
+								<tr>
+									<td>华为昇腾Atlas</td>
+									<td>Unknown</td>
+									<td>Unknown</td>
+									<td></td>
+									<td></td>
+									<td>22TOPS</td>
+								</tr>
+								<tr>
+									<td>海思Hi3559A</td>
+									<td>Cortex A73+A53+A51 @1.6+1.2+1.0GHz </td>
+									<td></td>
+									<td>4GB</td>
+									<td>8GB</td>
+									<td>4TOPS</td>
+								</tr>
+								<tr>
+									<td>Cloud</td>
+									<td>32core CPU</td>
+									<td>Titan 24G</td>
+									<td>64GB</td>
+									<td>24TB</td>
+									<td>375GOPS</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+
+					<section>
+						<h3>Mobility sensitive</h3>
+						<h4>Direct connection</h4>
+						<h5>Limited coverage</h5>
+						<h4>More mobile devices</h4>
+						<h5>🚘 Auto driving</h5>
+						<h5>🚶 Pedestrians</h5>
+						<h5>🤖 Mobile robots</h5>
+					</section>
+
+					<section>
+						<h3>Mobility</h3>
+						<img width="80%" src="../../resources/ranc/edge/mobility-table.png" alt="">
+					</section>
+
+					<section>
+						<h3>Privacy preserving</h3>
+						<h4>Data does not go far</h4>
+						<h4>More complex crypto methods can be supported by edge enhancement</h4>
+						<h4>Novel paradigms like <a href="https://arxiv.org/abs/1907.09693">Federated Learning</a></h4>
+						<h5>Edge-based vs Cloud-based</h5>
+						<h5>Centralized vs Decentralized</h5>
+					</section>
+
+					<section>
+						<h3>Driving force</h3>
+						<img width="50%" src="../../resources/ranc/edge/driving-force.png" alt="">
+					</section>
+
+					<section>
+						<h3>Importance</h3>
+						<h4>Enabling anywhere computing</h4>
+						<h4>Energy efficient</h4>
+						<table>
+							<td width="40%"><img src="../../resources/ranc/edge/enable.png" alt=""></td>
+							<td width="50%"><img src="../../resources/ranc/edge/data-size-yoy.png" alt=""></td>
+						</table>
+						<table style="font-size: 24px;">
+							<tr>
+								<td>2000</td>
+								<td>2005</td>
+								<td>2007</td>
+								<td>2020</td>
+								<td style="border: none;"></td>
+							</tr>
+							<tr>
+								<td>700亿度</td>
+								<td>1525亿度</td>
+								<td>3300亿度</td>
+								<td>>1万亿度</td>
+								<td style="font-style: italic;">*三峡大坝一年发电量1000亿度</td>
+							</tr>
+						</table>
+						<p class="bot_notes_right"></p>
+					</section>
+
+					<section>
+						<h3>Change way of life</h3>
+						<h4>Everything now can be smart</h4>
+						<h4>Transparent computing</h4>
+						<img width="60%" src="../../resources/ranc/edge/transcomp.png" alt="">
+						<p style="font-size: 20px;" class="bot_notes_right">*<a href="../../resources/refs/transComputing.pdf">透明计算</a>的争议<br>*Network Operating System (Disaggregated OS)<br>*Remote Direct Memory Access</a></p>
+					</section>
+
+					<section>
+						<h3>Much more secure</h3>
+						<h4>Edge servers can be owned by user</h4>
+						<h4>Data can never go out of edge</h4>
+						<h4>Edge allows more secure and privacy preserving paradigms</h4>
+					</section>
+
+				</section>
+				
+
+				<section class="outline-page">
+					<div class="logo">
+						<a href="https://mobinets.cn"><img src="../../resources/ranc/mobinetslogo.png"/></a>
+					</div>
+					<section>
+						<h3>Recent papers</h3>	
+						<img width="80%" src="../../resources/ranc/edge/paper-trend.png" alt="">
+					</section>
+
+					<section>
+						<h3>IoT+Edge (AIoT)</h3>
+						<h4>Hottest term in the statistics</h4>
+						<h4>IoT access to Edge services</h4>
+						<h5>Low-power cosntraints</h5>
+						<h5>Pervasive interference</h5>
+						<h5>Massive, diverse and heterogeneous</h5>
+					</section>
+
+					<section>
+						<h3>5G+Edge computing</h3>
+						<h4>Ultra-low latency</h4>
+						<h4>Ultra-small coverage</h4>
+						<table>
+							<td width="50%" style="vertical-align: top;"><blockquote style="font-size: 36px;">
+								5G network is meaningless without edge computing. <br>
+								<span style="text-align: right;">---- Many experts</span>
+							</blockquote></td>
+							<td width="50%"><img src="../../resources/ranc/edge/edge-deploy.png" alt=""></td>
+						</table>
+					</section>
+
+					<section>
+						<h3>Virtualization</h3>
+						<h4>Service on COTS hardware</h4>
+						<h4>Various techs</h4>
+						<h5>Instruction level: Bochs</span></span>, Qemu</h5>
+						<h5>Hardware abstraction: Hypervisor (all resources), Hosted (no resources), Hybrid (program and memory); XEN/KVM/VMware.</h5>
+						<h5>OS level: chroot, Linux Vserver, Open VZ, LXC, Docker</h5>
+						<h5>Library level: Wine (OSX), WSL</h5>
+						<h5>Programming language level: JVM, CLR (common language runtime)</h5>
+					</section>
+
+					<section>
+						<h3>Offloading</h3>
+						<h4>"Offload" tasks from devices to edge servers</h4>
+						<h4>Decision, gaming, transfer, etc.</h4>
+						<img width="50%" src="../../resources/ranc/edge/edge-frame.png" alt="">
+					</section>
+
+					<section>
+						<h3>Offloading (1)</h3>
+						<h4>0-1 Offloading decision</h4>
+						<h5>Offloading whole tasks, regardless the dependencies.</h5>
+						<img width="30%" src="../../resources/ranc/edge/01-offload.png" alt="">
+					</section>
+
+					<section>
+						<h3>Offloading (2)</h3>
+						<h4>Sub task offloading</h4>
+						<h5>Offloading the (bottleneck) sub-tasks</h5>
+						<img width="60%" src="../../resources/ranc/edge/sub-offload.png" alt="">
+					</section>
+
+					<section>
+						<h3>Offloading (3)</h3>
+						<h4>Offloading many sub-tasks with dependencies</h4>
+						<img width="60%" src="../../resources/ranc/edge/sub-dag-offload.png" alt="">
+					</section>
+
+					<section>
+						<h3>Offloading (4)</h3>
+						<h4>Reliable and timely task transfer</h4>
+						<img width="60%" src="../../resources/ranc/edge/offload-transfer.png" alt="">
+					</section>
+
+					<section>
+						<h3>Offloading (5)</h3>
+						<h4>Offloading - Processing pipeline</h4>
+						<h5>Establish pipelining and avoids time wastes at the edge servers.</h5>
+						<img width="60%" src="../../resources/ranc/edge/off-process-pipeline.png" alt="">
+					</section>
+
+					<section>
+						<h3>Offloading (6)</h3>
+						<h4>Architectural offloading</h4>
+						<img width="60%" src="../../resources/ranc/edge/self-orgnized.png" alt="">
+					</section>
+
+					<section>
+						<h3>Resource allocation</h3>
+						<h4>"Allocate" resources to services (VMs)</h4>
+						<h4>Optimization problem, scheduling strategies</h4>
+						<h4>Integer Programming</h4>
+						<img width="30%" src="../../resources/ranc/edge/integer-program.png" alt="">
+					</section>
+
+					<section>
+						<h3>Service cache</h3>
+						<h4>Overhead, hitrate, request amount, etc.</h4>
+						<h4>Knapsack problem</h4>
+						<img width="40%" src="../../resources/ranc/edge/knapsack.png" alt="">
+					</section>
+
+					<section>
+						<h3>Edge AI</h3>
+						<h4>Lightweight training/inference</h4>
+						<h5>TinyML, Pruning, FPGA</h5>
+						<h4>Federated Learning</h4>
+						<h4>Distributed learning</h4>
+						<h5>Model based, data based</h5>
+					</section>
+
+					<section>
+						<h3>Summary</h3>
+						<table style="font-size: 32px;">
+							<tr>
+								<td><img src="../../resources/ranc/edge/problem-edge-side.png" alt=""></td>
+								<td><img src="../../resources/ranc/edge/problem-end-side.png" alt=""></td>
+								<td><img src="../../resources/ranc/edge/problem-inter.png" alt=""></td>
+							</tr>
+							<tr>
+								<td>Cloud/Edge</td>
+								<td>End device</td>
+								<td>Interactions</td>
+							</tr>
+							<tr>
+								<td>Service framework, task scheduling, <u>resource allocation</u>, server deployment, <u>service caching</u>, internetworking, <u>service routing</u>, distributed storage, etc.</td> 
+								<td><u>Task partitioning</u>, <u>offloading decision</u>, call graph analysis, structure analysis, service-aware compiling, <u>lightweight AI</u>, etc.</td>
+								<td>Bulk data transfer, multi-access, <u>service discovery</u>, channel allocation, <u>offloading game</u>, etc.</td>
+							</tr>
+						</table>
+					</section>
+
+					<section>
+						<h3>Some more sys</h3>
+						<img width="70%" src="../../resources/ranc/edge/smart-city-edge.png" alt="">
+						<table>
+							<td width="10%"></td>
+							<td>Orbital Edge</td>
+							<td>Edge infrastructure</td>
+							<td>VANET Edge</td>
+							<td>UAV Edge</td>
+							<td width="10%"></td>
+						</table>
+					</section>
+
+					<section>
+						<h3>OEC (1)</h3>
+						<img width="70%" src="../../resources/ranc/edge/oec.png" alt="">
+					</section>
+
+					<section>
+						<h3>OEC (2)</h3>
+						<h4>Inter-sat pipeline</h4>
+						<h5>Frame-level, block-level vs Sparse, Gathered</h5>
+						<img width="70%" src="../../resources/ranc/edge/oec-pipeline.png" alt="">
+						
+					</section>
+
+					<section>
+						<h3>Federated Learning (1)</h3>
+						<h4>Can data live at the edge?</h4>
+						<h5>Improved latency</h5>
+						<h5>Works offline</h5>
+						<h5>Better battery life</h5>
+						<h5>Privacy advantages</h5>
+						<p class="bot_notes_right">on-device inference for mobile keyboards and cameras.</p>
+					</section>
+
+					<section>
+						<h3>Federated Learning (2)</h3>
+						<h4>Three choices back in 2014:</h4>
+						<h5>Don't use data to improve products</h5>
+						<h5>Log the data centrally anyway</h5>
+						<h5>Invent a new solution<span class="fragment" style="color: brown;">, Federated Learning</span></h5>
+					</section>
+
+					<section>
+						<h3>Federated Learning (3)</h3>
+						<h4>Model engineer workflow</h4>
+						<img width="50%" src="../../resources/ranc/edge/fed-train.png" alt="">
+					</section>
+
+					<section>
+						<h3>Federated Learning (4)</h3>
+						<h4>Model engineer workflow</h4>
+						<img width="50%" src="../../resources/ranc/edge/fed-validate.png" alt="">
+					</section>
+
+					<section>
+						<h3>Federated Learning (5)</h3>
+						<h4>Model deployment workflow</h4>
+						<img width="50%" src="../../resources/ranc/edge/fed-deploy.png" alt="">
+					</section>
+
+					<section>
+						<h3>Federated Learning (6)</h3>
+						<h4>Model engineer workflow</h4>
+						<img width="50%" src="../../resources/ranc/edge/fed-dist-train.png" alt="">
+					</section>
+
+					<section>
+						<h3>Federated Learning (7)</h3>
+						<h4>FL workflow</h4>
+						<img width="50%" src="../../resources/ranc/edge/fed-update.png" alt="">
+					</section>
+
+					<section>
+						<h3>Federated Learning (8)</h3>
+						<h4>FL workflow</h4>
+						<img width="50%" src="../../resources/ranc/edge/fed-priv-1.png" alt="">
+					</section>
+
+					<section>
+						<h3>Federated Learning (9)</h3>
+						<h4>FL workflow</h4>
+						<img width="50%" src="../../resources/ranc/edge/fed-priv-2.png" alt="">
+					</section>
+
+					<section>
+						<h3>Federated Learning (10)</h3>
+						<h4>FL workflow</h4>
+						<img width="50%" src="../../resources/ranc/edge/fed-combine.png" alt="">
+						<p class="bot_notes_right">Only-in-aggregate  Engineer may only access combined device reports</p>
+					</section>
+
+					<section>
+						<h3>Federated Learning (11)</h3>
+						<h4>FL workflow</h4>
+						<img width="50%" src="../../resources/ranc/edge/fed-another.png" alt="">
+					</section>
+
+					<section>
+						<h3>Federated Learning (12)</h3>
+						<h4>FL workflow</h4>
+						<img width="50%" src="../../resources/ranc/edge/fed-another-2.png" alt="">
+						<p class="bot_notes_left">100-1000s of users per round, 100-1000s of rounds to convergence, 1-10 minutes per round</p>
+					</section>
+
+					<section>
+						<h3>Federated Learning (13)</h3>
+						<table>
+							<td width="50%" style="vertical-align: top; font-size:20px;">
+								<ul><b>Data locality and distribution</b>
+									<ol>
+										<li>massively decentralized, naturally arising (non-IID) partition</li>
+										<li>Data is siloed, held by a small number of coordinating entities</li>
+										<li>system-controlled (e.g. shuffled, balanced)</li>
+									</ol>
+								</ul>
+								<ul><b>Data availability</b>
+									<ol>
+										<li>limited availability, time-of-day variations</li>
+										<li>almost all data nodes always available</li>
+									</ol>
+								</ul>
+								<ul><b>Addressability</b>
+									<ol>
+										<li>data nodes are anonymous and interchangeable</li>
+										<li>data nodes are addressable</li>
+									</ol>
+								</ul>
+								<ul><b>Node statefulness</b>
+									<ol>
+										<li>stateless (generally no repeat computation)</li>
+										<li>stateful</li>
+									</ol>
+								</ul>
+							</td>
+							<td width="50%" style="vertical-align: top; font-size:20px;">
+								<ul><b>Node reliability</b>
+									<ol>
+										<li>unreliable (~10% failures)</li>
+										<li>reliable</li>
+									</ol>
+								</ul>
+								<ul><b>Wide-area communication pattern</b>
+									<ol>
+										<li>hub-and-spoke topology</li>
+										<li>peer-to-peer topology (fully decentralized)</li>
+										<li>none (centralized to one datacenter)</li>
+									</ol>
+								</ul>
+								<ul><b>Distribution scale</b>
+									<ol>
+										<li>massively parallel (1e9 data nodes)</li>
+										<li>single datacenter</li>
+									</ol>
+								</ul>
+								<ul><b>Primary bottleneck</b>
+									<ol>
+										<li>communication</li>
+										<li>computation</li>
+									</ol>
+								</ul>
+								<ul class="fragment"><b><u>Open issues</u></b>
+									<ol style="text-decoration-line: underline;;">
+										<li>Low convergence</li>
+										<li>Averaging</li>
+										<li>Client selection</li>
+										<li>Clustered edge network</li>
+									</ol>
+								</ul>
+							</td>
+						</table>
+					</section>
+
+				</section>
+
+				<section class="outline-page">
+					<div class="logo">
+						<a href="https://mobinets.cn"><img src="../../resources/ranc/mobinetslogo.png"/></a>
+					</div>
+					<section>
+						<h3>Talk with Satya</h3>
+						<video controls src="../../resources/vid/satya_talk_edge.mp4"></video>
+					</section>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="../../templates/dist/reveal.js"></script>
+		<script src="../../templates/plugin/zoom/zoom.js"></script>
+		<script src="../../templates/plugin/notes/notes.js"></script>
+		<script src="../../templates/plugin/search/search.js"></script>
+		<script src="../../templates/plugin/markdown/markdown.js"></script>
+		<script src="../../templates/plugin/highlight/highlight.js"></script>
+		<script>
+
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: false,
+				hash: true,
+				slideNumber: true,
+				transitionSpeed: 'fast',
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+			});
+		</script>
+		<script>
+			// When the user clicks on <div>, open the popup
+			function popFunc() {
+				var popup = document.getElementById("myPopup");
+				popup.classList.toggle("show");
+			}
+		</script>
+
+	</body>
+</html>

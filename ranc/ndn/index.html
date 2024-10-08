@@ -1,0 +1,1341 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Advances in Network Computing - Zhiwei Zhao</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="../../templates/dist/reset.css">
+		<link rel="stylesheet" href="../../templates/dist/reveal.css">
+		<link rel="stylesheet" href="../../templates/dist/theme/simple-z.css" id="theme">
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="../../templates/plugin/highlight/monokai.css">
+	</head>
+
+	<body>
+
+		<div class="reveal">
+			<div class="slides">
+				<section class="outline-page">
+					<section>
+					<img src="../../resources/ranc/turing1.png" style="height: 160px; margin: 3rem auto auto auto; background: transparent;" class="demo-logo">
+					<h2 style="font-size: 46px;"><span style="color: lightcoral;">R</span>ecent <span style="color:lightgreen;">A</span>dvances in <span style="color:cornflowerblue;">N</span>etwork <span style="color: crimson;">C</span>omputing</h2>
+					<hr>
+					<p>
+						<small><a href="https://mobinets.cn/zzw">Zhiwei Zhao</a><br>zhiwei@mobinets.org</small>
+						<br>
+					</p>
+					<p style="font-size: 18px; text-align: center;">
+						<small><img width="20%" src="../../resources/ranc/homelink.png"></small>
+						<!-- <br>
+						https://mns.uestc.cn/course/ranc -->
+					</p>
+				</section>				
+				</section>
+
+				<section class="outline-page">
+					<div class="logo">
+						<a href="https://mobinets.cn"><img src="../../resources/ranc/mobinetslogo.png"/></a>
+					</div>
+					<section>
+						<h3>Two lines</h3>
+						<table>
+							<thead>
+								<th>Recent advances</th>
+								<th>Turing award winners</th>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1. NDN/SDN/NFV</td>
+									<td>1. Stories</td>
+								</tr>
+								<tr>
+									<td>2. Edge computing</td>
+									<td>2. Interesting works</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>3. Lectures</td>
+								</tr>
+							</tbody>
+						</table>
+						<br>
+						<img width="70%" src="../../resources/ranc/fashion-classic.png">
+					</section>
+					<section>
+						<h3>Coursework (60%+40%)</h3>
+						<h4>A one-column, two-page course work.</h4>
+						<h5><a href="../../resources/ranc/Two_page_coursework.pdf">Sample pdf</a>, <a href="../../resources/ranc/ranc.tex">Template tex file</a>.</h5>
+						<h4>Attendance</h4>
+						<h5>The roll will be called when many are absent.</h5>
+						<h5>No final score if you are found absent for ≥3 times.</h5>
+						<img width="20%" src="../../resources/ranc/classqr.jpg">
+					</section>
+				</section>
+
+				<section class="outline-page">
+					<div class="logo">
+						<a href="https://mobinets.cn"><img src="../../resources/ranc/mobinetslogo.png"/></a>
+					</div>
+					<section>
+						<h3>Recent advances</h3>
+						<h4><span style="color: cornflowerblue;">NDN</span>: Named Data Networking.</h4>
+						<ul>
+							<li>An instance of ICN<a href="https://www.it.uu.se/edu/course/homepage/projektDV/ht14/ASurveyofInformation-CentricNetworking-published.pdf">[1]</a><a href="http://trac.tools.ietf.org/group/irtf/trac/wiki/icn">[2]</a>.</li>
+							<li>Data has names and can be identified.</li>
+						</ul>
+						<h4><span style="color: cornflowerblue;">SDN</span>: Software Defined Networks</h4>
+						<h4><span style="color: cornflowerblue;">NFV</span>: Network Function Virtualization</h4>
+						<h4><span style="color: cornflowerblue;">Edge</span>: Edge Computing</h4>
+						<ul>
+							<li>Cloud in proximity.</li>
+							<li>Dispersed and resource constrained.</li>
+						</ul>
+					</section>
+
+					<section>
+						<h3 style="margin-top: 20px;">Named Data Networks</h3>
+						<h4>Addressing: IP vs ID</h4>
+						<img src="../../resources/ranc/xdn/ndn-sigcomm14.png" width="80%">
+						<p class="bot_notes_left">[1] <a href="https://web.cs.ucla.edu/~lixia/">Lixia Zhang</a> et al. <a href="https://irl.cs.ucla.edu/data/files/techreports/ndn0019-1.pdf">Named data newtorking</a>, ACM SigComm 2014.</p>
+						<!-- <p class="bot_notes">* <a href="https://irl.cs.ucla.edu/data/files/techreports/ndn0019-1.pdf">Named data newtorking, ACM SigComm 2014.</a></p> -->
+						
+					</section>
+
+					<section>
+						<h3 style="margin-top: 20px;">Software Defined Network</h2>
+						<img width="70%" src="../../resources/ranc/xdn/sdn-cover.png">
+						<p class="bot_notes_left">
+							[1] N Gude et al. <a href="http://www.sigcomm.org/sites/default/files/ccr/papers/2008/July/1384609-1384625.pdf">NOX: Towards an Operating System for Networks</a>. ACM SigComm 2008.
+							<br>
+							[2] N McKeown et al. <a href="http://www.sigcomm.org/sites/default/files/ccr/papers/2008/April/1355734-1355746.pdf">OpenFlow: Enabling Innovation in Campus Networks</a>. ACM SigComm 2008.
+						</p>
+					</section>
+
+					<section class="content-page">
+						<h3 class="toptitle">Network Function Virtualization</h3>
+						<img width="90%" src="../../resources/ranc/xdn/nfv-cover.png">
+						<p class="bot_notes_left">
+							[1] ESTI, <a href="http://portal.etsi.org/NFV/NFV_White_Paper.pdf">Network Functions Virtualisation</a>, White Paper.
+							<br>
+							[2] Bo Han et al. <a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.673.8097&rep=rep1&type=pdf">Network function virtualization: Challenges and opportunities for innovations</a>, IEEE Comm. Mag. 2015.
+						</p>
+					</section>
+					<section>
+						<h3 class="toptitle">Edge Computing</h3>
+						<img width="50%" src="../../resources/ranc/xdn/edge-cover.png">
+						<p class="bot_notes_left">
+							[1] <a href="http://www.cs.cmu.edu/~satya/">Mahadev Satya</a> et al. <a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/cloudlets09.pdf">The Case for VM-based Cloudlets in Mobile Computing</a>, IEEE Pervasive Computing, 2009.
+							<br>
+							[2] <a href="http://www.cs.cmu.edu/~satya/">Mahadev Satya</a>, <a href="https://www.cse.psu.edu/~gxc27/teach/597/satya-edge2016.pdf">The Emergence of Edge Computing</a>, Computer, 2017.
+							<br>
+							[3] <a href="https://www.cs.ucr.edu/~jiasi/">J Chen</a> and X Ran, <a href="https://www.cs.ucr.edu/~jiasi/pub/deep_edge_review.pdf">Deep learning with edge computing: A review</a>, Proc. of IEEE, 2019.
+						</p>
+					</section>
+				</section>
+
+				<section class="outline-page">
+					<div class="logo">
+						<a href="https://mobinets.cn"><img src="../../resources/ranc/mobinetslogo.png"/></a>
+					</div>
+					<section>
+						<h2 style="margin-top:20%;font-size: 60px;"><a href="http://named-data.net">Named Data Networking</a></h2>
+						<ul>
+							<li>A US NSF Project.</li>
+							<li>An instance of ICN*.</li>
+							<li><a href="https://web.cs.ucla.edu/~lixia/">Lixia Zhang@UCLA</a></li>
+						</ul>
+						<p class="bot_notes_right" style="margin-left: 50%;">ICN*: Transfer data based on its properties not opaque bytes and addresses</p>
+					</section>
+					<section>
+						<h3>Recap for TCP/IP</h3>
+						<h4>Today's Internet is established in 1970's</h4>
+							<h5>Originates from telephony systems</h5>
+						<h4>End-to-end communication</h4>
+							<h5>Source-destination</h5>
+							<h5>No packet states</h5>
+						<img src="../../resources/ranc/xdn/net-architecture.gif" style="display: inline; float: right; margin-top: 0%;">
+					</section>
+
+					<section>
+						<h3>Finding a content</h3>
+						<ul>
+						<li>You enter a URL into a web browser</li>
+						<li style="color: brown;">The browser looks up the IP address for the domain name via DNS</h5>
+						<li>The browser sends a HTTP request to the <span  style="color: brown;">server</span></li>
+						<li>The server sends back a HTTP response</li>
+						<li>The browser begins rendering the HTML</li>
+						<li>The browser sends requests for additional objects embedded in HTML (images, css, JavaScript) and repeats steps 3-5.</li>
+						<li>Once the page is loaded, the browser sends further async requests as needed.</li>
+						<ul>
+					</section>
+
+					<section>
+						<h3>Finding a content</h3>
+						<h5 class="fragment">To find content in the network</h5>
+						<h5 class="fragment">..you have to learn where the content is</h5>
+						<h5 class="fragment">..and then ask the network to take you there</h5>
+						<h5 class="fragment">..so you can tell the server what you want</h5>
+						<p class="fragment" style="font-style: italic;color: brown;">Hmm.. Why do we care about the servers really!</p>
+					</section>
+
+					<section>
+						<h3>Things have changed</h3>			
+						<h4>Most communications are end-to-end.</h4>
+						<h4>Security is not built into the TCP/IP Internet, but was added as an add-on.</h4>
+					</section>
+
+					<section>
+						<h3>Things have changed</h3>
+						<h4>Main communications are no longer end-to-end (<a href="https://www.fiercevideo.com/video/video-will-account-for-82-all-internet-traffic-by-2022-cisco-says">82% are videos!</a>).</h4>
+						<img width="60%" style="margin-top: 0%;" src="../../resources/ranc/xdn/mobi-traffic-stats.png">
+					</section>
+
+					<section>
+						<h3>Things have changed</h3>
+						<h4>New communication paradigms</h4>
+						<h5>Content-intensive communications</h5>
+						<h5>Mobility</h5>
+						<h5>Cloud computing</h5>
+						<h4>Suffers from security challenges</h4>
+					</section>
+
+					<section>
+						<h3>Inefficient</h3>
+						<img width="60%" src="../../resources/ranc/xdn/bili-dist.png">
+					</section>
+					<section>
+						<h3>Ideal solution</h3>
+						<img width="60%" src="../../resources/ranc/xdn/bili-idea.png">
+					</section>
+
+					<section>
+						<h3>Next generation Internet</h3>
+						<h4>More efficient</h4>
+						<h5>content oriented</h5>
+						<h5>more scalable</h5>
+						<h5>less overhead</h5>
+						<h5>...</h5>
+						<h4>More secure</h4>
+					</section>
+					
+					<section>
+						<h3>Next generation Internet</h3>
+						<h4>Content-centric networking</h4>
+						<h4>Named Data Networking</h4>
+						<h4>Many others</h4>
+						<h5><a href="https://people.cs.umass.edu/~arun/papers/MF-CCR.pdf">MobilityFirst</a></h5>
+						<h5><a href="https://www.cs.princeton.edu/~mfreed/docs/nebula-ccr14.ps">NEBULA</a></h5>
+						<h5><a href="https://www.cs.cmu.edu/~xia/resources/Documents/xia-hotnets.pdf">XIA</a></h5>
+						<h5><a href="https://rouskas.csc.ncsu.edu/Publications/Talks/ONDM-2013-ChoiceNet.pdf">ChoiceNet</a></h5>
+						<p class="bot_notes_right">*US NSF's FIA program.</p>
+					</section>
+
+					<section>
+						<h3>Main principles</h3>
+						<h4>Built-in security</h4>
+						<h4>Content is the first-class citizen</h4>
+						<h5>Cache content</h5>
+						<h5>Name content</h5>
+						<h5>Look for content</h5>
+						<h4>Mobility is pervasive</h4>
+						<h4>Computing is ubiquitous</h4>
+					</section>
+
+					<section>
+						<h3>CCN/NDN Design</h3>
+						<h4>The narrow waist becomes <span style="color:brown;"><b>content</b></h4>
+						<img src="../../resources/ranc/xdn/ndn_illstr.png">
+					</section>
+
+					<section>
+						<h3>NDN Design</h3>
+						<h4>Name the content instead of end hosts.</h4>
+						<ul>
+							<li>Consumers: send <u>Interest</u> packets</li>
+							<li>Producers: return <u>pulled</u> contents</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Routing in TCP/IP</h3>
+						<img src="../../resources/ranc/xdn/bili-tcp.png">
+					</section>
+					<section>
+						<h3>Routing in NDN</h3>
+						<img src="../../resources/ranc/xdn/bili-ndn.png">
+					</section>
+
+					<section>
+						<h3>Comparison</h3>
+						<table style="width: 80%;">
+							<tr>
+								<td>TCP/IP</td>
+								<td>NDN</td>
+							</tr>
+							<tr>
+								<td>Name end-hosts (e.g., IP addresses)</td>
+								<td>Name content</td>
+							</tr>
+							<tr>
+								<td>Communication</td>
+								<td>Content distribution</td>
+							</tr>
+							<tr>
+								<td>Mobility is difficult</td>
+								<td>Mobility-friendly</td>
+							</tr>
+							<tr>
+								<td>Make processes secure</td>
+								<td>Make content secure</td>
+							</tr>
+						</table>
+					</section>
+
+					<section>
+						<h3>NDN Security</h3>
+						<h4>All contents are signed by publishers</h4>
+						<h5>Authenticity</h5>
+						<h5>Integrity</h5>
+						<h4>Content objects are encrypted</h4>
+						<h5>Confidentity of content</h5>
+						<h4>Privacy?</h4>
+					</section>
+
+					<section>
+						<h3>NDN: Privacy</h3>
+						<h4>No "source address" in content interests (no need for routing)</h4>
+						<h4>Traffic monitoring less effective for non-global adversaries</h4>
+						<img width="80%" src="../../resources/ranc/xdn/bili-ndn-2.png">
+					</section>
+
+					<section>
+						<h3>NDN: Privacy challenges</h3>
+						<h4>Name privacy</h4>
+						<h5>/Bili/Video/BV1j4411W7F7</h5>
+						<h4>Content privacy</h4>
+						<h5>Public content</h5>
+						<h4>Cache privacy</h4>
+						<h5>Detect hit/miss</h5>
+						<h4>Signature privacy</h4>
+						<h5>Reveal publisher identity</h5>
+					</section>
+
+					<section>
+						<h3>Stateful Forwarding</h3>
+						<img width="80%" src="../../resources/ranc/xdn/ndn-forwarding.png">
+					</section>
+
+					<section>
+						<h3>Stateful Forwarding</h3>
+						<img width="80%" src="../../resources/ranc/xdn/ndn-forwarding-ingress.png">
+					</section>
+					
+					<section>
+						<h3>Stateful Forwarding</h3>
+						<h4>Interest forwarding is determined by:</h4>
+						<h5>FIB</h5>
+						<h5>Measurement of Interest-data exchange (and more local information)</h5>
+						<h5>Per-namespace forwarding policies</h5>
+						<img width="60%" src="../../resources/ranc/xdn/ndn-forwarding-strategy.png">
+					</section>
+
+					<section>
+						<h3>Resillient data availability</h3>
+						<ul>
+							<!-- <li>Host multihoming</li> -->
+							<li>Multicast delivery</li>
+							<li>Pervasive in-network caching</li>
+							<li>Delay/disruption tolerance</li>
+							<li>Multipath forwarding</li>
+						</ul>
+						<p style="color: brown;" class="bot_notes_mid">🤔 Can be solved by IP network? <span class="fragment">with many many tweaks</span></p>
+						<h4>All the above add redundant means to obtain data.</h4>
+						<h4>NDN make data identifiable, independent from its containers or channels</h4>
+					</section>
+
+					<section>
+						<h3>How we secure data today</h3>
+						<h4>Encrypting point-to-point channels</h4>
+						<h5>TLS, QUIC</h5>
+						<h4>Assumptions</h4>
+						<h5>Synchronized connectivity between two communicating ends</h5>
+						<h5>All CAs' keys configured into all nodes</h5>
+						<h4>Delay and disruptions everywhere</h4>
+						<h5>No centralized CAs</h5>
+					</section>
+
+					<section>
+						<h3>How about NDN?</h3>
+						<h4>The NDN design mandates that all Data packets are
+							secured at the time of production</h4>
+						<h5>Signed</h5>
+						<h5>Encrypted as needed</h5>
+						<h5>Interest can be secured as needed</h5>
+						<h4>Enabling secure communication independent from
+							data containers or underlying communication
+							channels</h4>
+					</section>
+
+					<section>
+						<h3>NDN enables E2E security</h3>
+						<img width="60%" src="../../resources/ranc/xdn/e2e-data-auth.png">
+						<p>independent from intermediate communication channels, middle boxes, intermittent connectivity</p>
+					</section>
+
+					<section>
+						<h3>NDN enables E2E security</h3>
+						<img width="60%" src="../../resources/ranc/xdn/e2e-data-auth-boot.png">
+						<h4>Security bootstrapping</h4>
+						<h5>Installing trust anchor(s) into all entities</h5>
+						<h5>All data producing entities receive crypto certificates</h5>
+					</section>
+
+					<section>
+						<h3>Security is simple in NDN</h3>
+						<h4>Data authentication → Sign/Verify produced/received data</h4>
+						<h4>Data confidentiality → Encrypting data</h4>
+						<h5>NDN supports name & attribute-based encryption</h5>
+						<h4>Data availability → via redundancy</h4>
+						<h5>Maintaining multiple copies</h5>
+						<h5>Trying multiple paths</h5>
+						<p style="font-size: 20px; text-align: right; font-style: italic;">native properties built into the NDN forwarding plane</p>
+					</section>
+
+					<section>
+						<h3>Concept Takeways</h3>
+						<h4>A new way to communicate</h4>
+						<h5>without need for network addressing</h5>
+						<h4>Fetching named data at network layer</h4>
+						<h5>demanded by new apps and scenarios</h5>
+						<h5>enabled by technology advances</h5>
+						<h4>Networking by app-defined data names</h4>
+						<h5>Securing data directly</h5>
+						<h5>Increasing data availability via multicast delivery, in-network cache, ...</h5>
+					</section>					
+					</section>
+
+					<section class="outline-page">
+						<div class="logo">
+							<a href="https://mobinets.cn"><img src="../../resources/ranc/mobinetslogo.png"/></a>
+						</div>
+						<section>
+							<h3>Traffic engineering in NDN</h3>
+							<table>
+								<td width="50%" style="vertical-align: middle;">
+									<ul style="font-size: 32px;">
+										<li>Manipulation of traffic to
+											reflect network intent
+											(mission requirements)
+											<ol>
+												<li>Traffic prioritization</li>
+												<li>Traffic shaping</li>
+												<li>QoS signaling</li>
+											</ol>
+										</li>
+										<li>Primary focus of a number
+											of protocols such as OSPF-
+											TE
+										</li>
+									</ul>
+								</td>
+								<td width="50%">
+									<img src="../../resources/ranc/xdn/ndn-te.png">
+								</td>
+							</table>
+						</section>
+
+						<section>
+							<h3>Elements of TE</h3>
+							<table>
+								<tr>
+									<td><span style="color: brown;">Load balancing</span></td>
+									<td>Load distribution</td>
+									<td>Diff. Obj. functions</td>
+								</tr>
+								<tr>
+									<td>Bcast, Mcast, and Ucast</td>
+									<td>Estimation and measurements</td>
+									<td>Priority signaling</td>
+								</tr>
+							</table>
+							<img width="60%" src="../../resources/ranc/xdn/ndn-te-lb.png">
+						</section>
+
+						<section>
+							<h3>Elements of TE</h3>
+							<table>
+								<tr>
+									<td>Load balancing</td>
+									<td><span style="color: brown;">Load distribution</span></td>
+									<td>Diff. Obj. functions</td>
+								</tr>
+								<tr>
+									<td>Bcast, Mcast, and Ucast</td>
+									<td>Estimation and measurements</td>
+									<td>Priority signaling</td>
+								</tr>
+							</table>
+							<img width="60%" src="../../resources/ranc/xdn/ndn-te-ld.png">
+						</section>
+
+						<!-- <section>
+							<h3>Elements of TE</h3>
+							<table>
+								<tr>
+									<td>Load balancing</td>
+									<td>Load distribution</span></td>
+									<td>Diff. Obj. functions</td>
+								</tr>
+								<tr>
+									<td>Bcast, Mcast, and Ucast</td>
+									<td>Estimation and measurements</td>
+									<td>Priority signaling</td>
+								</tr>
+							</table>
+							<img width="60%" src="../../resources/ranc/xdn/ndn-te-ld.png">
+						</section> -->
+
+						<section>
+							<h3>Elements of TE</h3>
+							<table>
+								<tr>
+									<td>Load balancing</td>
+									<td>Load distribution</td>
+									<td><span style="color: brown;">Diff. Obj. functions</span></td>
+								</tr>
+								<tr>
+									<td>Bcast, Mcast, and Ucast</td>
+									<td>Estimation and measurements</td>
+									<td>Priority signaling</td>
+								</tr>
+							</table>
+							<img width="60%" src="../../resources/ranc/xdn/ndn-te-dof.png">
+						</section>
+
+						<section>
+							<h3>Elements of TE</h3>
+							<table>
+								<tr>
+									<td>Load balancing</td>
+									<td>Load distribution</td>
+									<td>Diff. Obj. functions</td>
+								</tr>
+								<tr>
+									<td><span style="color: brown;">Bcast, Mcast, and Ucast</span></td>
+									<td>Estimation and measurements</td>
+									<td>Priority signaling</td>
+								</tr>
+							</table>
+							<img width="40%" src="../../resources/ranc/xdn/ndn-te-bmu.png">
+						</section>
+
+						<section>
+							<h3>Elements of TE</h3>
+							<table>
+								<tr>
+									<td>Load balancing</td>
+									<td>Load distribution</td>
+									<td>Diff. Obj. functions</td>
+								</tr>
+								<tr>
+									<td>Bcast, Mcast, and Ucast</td>
+									<td><span style="color: brown;">Estimation and measurements</span></td>
+									<td>Priority signaling</td>
+								</tr>
+							</table>
+							<img width="45%" src="../../resources/ranc/xdn/ndn-te-est.png">
+						</section>
+
+						<section>
+							<h3>Elements of TE</h3>
+							<table>
+								<tr>
+									<td>Load balancing</td>
+									<td>Load distribution</td>
+									<td>Diff. Obj. functions</td>
+								</tr>
+								<tr>
+									<td>Bcast, Mcast, and Ucast</td>
+									<td>Estimation and measurements</td>
+									<td><span style="color: brown;">Priority signaling</span></td>
+								</tr>
+							</table>
+							<img width="45%" src="../../resources/ranc/xdn/ndn-te-signal.png">
+						</section>
+
+						<section>
+							<h3>Who signals prioritization</h3>
+							<img width="80%" src="../../resources/ranc/xdn/ndn-te-who-signal.png">
+						</section>
+
+						<section>
+							<h3>Today's model</h3>
+							<h4>Today's traffic engineering model is anchored off of end-points, not content</h4>
+							<h5>Anchored off of TCP/IP header information</h5>
+							<h5>Per-flow granularity</h5>
+							<img width="80%" src="../../resources/ranc/xdn/ndn-te-todaymodel.png">
+						</section>
+
+						<section>
+							<h3>Why limiting</h3>
+							<table>
+								<td width="50%" style="vertical-align: middle;">
+									<ul style="font-size: 32px;">
+										<li>QoS must reflect content not end-point semantics
+											<ol>
+												<li>Different chunks of data
+													may carry information
+													with different QoS
+													requirements</li>
+												<li>Per-chunk granularity as
+													apposed to per flow
+													granularity</li>
+											</ol>
+										</li>
+										<!-- <li>The dynamics and
+											challenges of tactical
+											networks mandate an
+											adaptive approach
+										</li> -->
+									</ul>
+								</td>
+								<td width="50%">
+									<img src="../../resources/ranc/xdn/ndn-te-limiting.png">
+								</td>
+							</table>
+						</section>
+
+						<section>
+							<h3>NDN functions for TE</h3>
+							<img src="../../resources/ranc/xdn/ndn-te-func.png">
+						</section>
+
+						<section>
+							<h3>Producer driven</h3>
+							<h4>Explicit signaling (embedded in name)</h4>
+							<h5>/ndn/uestc/ranc/2022/QoS/latency-max=2</h5>
+							<h5>Same data can be served at diff. QoS</h5>
+							<h4>Implicit signaling (inferred from name)</h4>
+							<h5>/task-a/states/room1/vip → reliable/fast</h5>
+							<h5>/task-a/states/room1/common → reliable</h5>
+							<h5>Data chunks can carry different QoS signals</h5>
+							<h4>Forwarding strategy will attempt to honor both QoS
+								signaling approaches</h4>
+						</section>
+
+						<section>
+							<h3>Consumer driven</h3>
+							<h4>QoS signaling can be part of the ApplicationParameters of an Interest packet</h4>
+							<h5>/task-a/states/room1/vip</h5>
+							<h5>Forwarders will attempt to honor the embedded QoS signal</h5>
+							<img width="50%" src="../../resources/ranc/xdn/ndn-te-cdriven.png">
+						</section>
+
+						<section>
+							<h3>TE Driven</h3>
+							<table>
+								<td width="60%" style="vertical-align: middle;">
+									<ul style="font-size: 32px;">
+										<li>Forwarding strategies are equipped to provide very strong TE mechanisms
+											<ol>
+												<li>Can derive link (or path) <u>reliability</u> through the Interest ←→ Packet feedback loop.</li>
+												<li>Can derive link (or path) <u>latency</u> through the Interest ←→ Packet feedback loop.</li>
+												<li>NDN-LP provides reliability and latency information between NDN nodes</li>
+											</ol>
+										</li>
+									</ul>
+								</td>
+								<td width="40%">
+									<img src="../../resources/ranc/xdn/ndn-te-tedriven.png">
+								</td>
+							</table>
+							<p class="bot_notes_right">Can also measure traffic demand from Interest rate/class of service</p>
+						</section>
+
+						<section>
+							<h3>TE Driven</h3>
+							<table>
+								<td width="50%" style="vertical-align: middle;">
+									<ul style="font-size: 32px;">
+										<li>Forwarding decision can
+											be based on QoS
+											signaling from consumer
+											and/or producer
+										</li>
+										<li>Forwarding strategy can
+											continue to leverage the
+											in-band Interest/Data
+											feedback loop to
+											measure demand as well
+											as link (or path)
+											characteristics and adjust
+											FIB accordingly
+										</li>
+									</ul>
+								</td>
+								<td width="50%">
+									<img src="../../resources/ranc/xdn/ndn-te-tedriven-strat.png">
+								</td>
+							</table>
+						</section>
+
+						<section>
+							<h3>Traditional load balancing</h3>
+							<h5>Load balancing is typically not
+								implemented because
+								of the impact of putting
+								TCP segments from the
+								same flow on two
+								different links (different
+								latencies can cause out-
+								of-order delivery)</h5>
+							<h4>Forwarding strategies
+								drive load balancing</h4>
+							<h5>An NDN forwarding
+								strategy can be devised
+								to accomplish load
+								balancing (and/or load
+								distribution)</h5>
+							<img width="45%" src="../../resources/ranc/xdn/ndn-te-tradition.png">
+						</section>
+
+						<section>
+							<h3>TE Driven Forwarding Strategies</h3>
+							<h4>Forwarding strategies
+								can easily service
+								unicast, multicast, as
+								well as anycast request
+							</h4>
+							<h4>Examples</h4>
+							<ul style="font-size: 32px;">
+								<li>/task-a/states/room1/common
+									<ul>
+										<li>Bcast since the info is
+											important to deliver to all nodes
+											fast
+										</li>
+										<li>Other nodes can enable
+											opportunistic caching for this
+											prefix</li>
+									</ul>
+								</li>
+								<li>/task-a/states/room1/vip/latency=x
+									<ul>
+										<li>Send on link with latency less than x/2.</li>
+									</ul>
+								</li>
+								<li>/task-a/ftp/file-111219
+									<ul>
+										<li>Send on highest capacity link</li>
+									</ul>
+								</li>
+							</ul>
+						</section>
+
+						<section>
+							<h3>QoS-aware Caching</h3>
+							<h4>Insertion/eviction
+								policies can factor
+								QoS</h4>
+							<h5>Retaining chunks that
+								are latency-sensitive in
+								the network (e.g.
+								hostile tracks)</h5>
+							<h5>Factor in the value of
+								the information over
+								time</h5>
+							<h5>Factor in reliability of
+								links where the data is
+								typically serviced</h5>
+							<h4>Example policies</h4>
+							<h5>Retain only latest
+								sequence of chunks
+								where older sequence
+								numbers do not matter</h5>
+							<h5>Retain chunks longest
+								when the only path to
+								retrieve them is through
+								an unreliable link</h5>
+						</section>
+
+						<section>
+							<h3>Policy synchronization</h3>
+							<h4>QoS policy dataset can be retained and synched in network using Sync protocols</h4>
+							<h4>Appropriate security measures can be provided</h4>
+							<h5>Access control</h5>
+							<h5>Authentication (tie specific policies to specific administrative
+								domains)</h5>
+							<h5>Confidentiality</h5>
+							<h5>Integrity</h5>
+							<h5>Policy override (domain overrides local)</h5>
+						</section>
+					</section>
+					
+
+					<section class="outline-page">
+						<div class="logo">
+							<a href="https://mobinets.cn"><img src="../../resources/ranc/mobinetslogo.png"/></a>
+						</div>
+						<section>
+							<h3>Thinking about NDN</h3>
+							<blockquote cite="https://named-data.net/wp-content/uploads/2018/09/ICN18-App-Tutorial-2-NDN-Thinking-opt.pdf">
+								&ldquo;It is widely accepted that creative design is not a
+								matter of first fixing the problem and then
+								searching for a satisfactory solution concept;
+								instead it seems more to be a matter of
+								developing and refining together both the
+								formulation of the problem and ideas for its
+								solution.&rdquo;
+							</blockquote>
+							<p class="bot_notes_right">——Cross & Dorst (1999)</p>
+							<p class="bot_notes_right">Thinking provided by Alex Afanasyev, Jeff Burke</p>
+						</section>
+
+						<section>
+							<h3>Outline</h3>
+							<h4>How NDN (rather than IP) impact the app design and development</h4>
+							<h4>Outline affordances of NDN and design principles that may be good starting points for application research.</h4>
+							<h4>Introduce an example application -- AR Browser <a href="../../resources/vid/ar-ndn.mp4"><strike>irrelevant video</strike></a></h4>
+						</section>
+
+						<section>
+							<h3>NDN's offer to AR</h3>
+							<ul style="font-size: 32px;">
+								<li><b>Low latency interactivity</b> via packet granularity requests with
+									app semantics and enabling edge acceleration;</li>
+								<li><b>Context-dependent</b> retrieval of media, ranging from location
+									to content preferences and demographics;</li>
+								<li><b>High throughput</b> for scene video and content overlays;</li>
+								<li><b>Progressive retrieval</b> for responsive/scalable display, variable
+									level-of-detail, predictive fetching;</li>
+								<li><b>Reverse CDN</b> to scale consumers: Content and context
+									publishing, incl. users' mobile terminals;</li>
+								<li><b>Heterogeneous wireless</b>: Mobile terminals should be able to
+									transparently use a variety of comm technologies;</li>
+								<li><b>Real-world trust</b>: Diverse, non-binary trust models;</li>
+								<li><b>IoT Integration</b>: Ability to integrate with data/devices that may
+									not / should not be be Internet-accessible.</li>
+							</ul>
+						</section>
+
+						<section>
+							<h3>Challenges with IP</h3>
+							<img style="margin-top: 0%;" width="90%" src="../../resources/ranc/xdn/ip-ar-challenge.png">
+						</section>
+
+						<section>
+							<h3>From Architecture to Apps</h3>
+							<h4>Define apps in terms of named data</h4>
+							<h5>Emphasize real-world principles, data ecosystems, rather than devices</h5>
+							<h4>Borrow what works from existing Internet</h4>
+							<h5>End-to-end principle, request-response model, SPKI-style security</h5>
+							<h4>Implement data-centric design and deployment patterns</h4>
+							<h5>Avoid what comes with point-to-point connection assumptions</h5>
+						</section>
+
+						<section>
+							<h3>Define apps with NDN</h3>
+							<table>
+								<td width="40%"><img src="../../resources/ranc/xdn/data-thin.png"><br>Data: thin waist</td>
+								<td width="35%"><img src="../../resources/ranc/xdn/data-anywhere.png">Get anywhere</td>
+								<td width="25%"><img src="../../resources/ranc/xdn/data-signed-packet.png">All signed</td>
+							</table>
+							<ul>
+								<li>Names facilitate management and trust derivation.</li>
+								<li>Signed by producer and verified by consumers.</li>
+								<li>Repos enable persistent storage of data objects.</li>
+								<li>Sync enables multi-party synchronized state.</li>
+							</ul>
+						</section>
+
+						<section>
+							<h3>Generalizing AR and web</h3>
+							<p style="font-size: 28px; text-align: left; display: inline-block; margin-left: 40px;"><b>Observation</b>: Context and content require processing and storage not achievable on mobile handsets or well-served by cloud. </p>
+							<img src="../../resources/ranc/xdn/gen-ar.png">
+						</section>
+
+						<section>
+							<h3>"In terms of named data"</h3>
+							<table style="font-size: 32px;">
+								<tr>
+									<td>What are the various kinds of data?</td>
+									<td>What process creates them?</td>
+									<td>Who owns them?</td>
+								</tr>
+								<tr>
+									<td>Who (what) processes can access then?</td>
+									<td>When are they needed?</td>
+									<td>How will the data evolve over time?</td>
+								</tr>
+							</table>
+							<img width="80%" src="../../resources/ranc/xdn/gen-ar.png">
+						</section>
+
+						<section>
+							<h3>AR Example #1</h3>
+							<h4>Even cinematic content will not be linear</h4>
+							<img width="80%" src="../../resources/ranc/xdn/ar-example1.png">
+						</section>
+
+						<section>
+							<h3>AR Example #2</h3>
+							<h4>Context will be determined in real-time, with edge assistance</h4>
+							<img width="80%" src="../../resources/ranc/xdn/ar-example2.png">
+						</section>
+
+						<section>
+							<h3>Augmented Reality as web</h3>
+							<h4>Borrow what works from existing Internet</h4>
+							<span style="font-size: 26px;">
+							<h5><b>A (decentralized, interoperable) data web integrated with physical 
+								world.</b> Layers instead of tabs.</h5>
+							<h5>Apps as per-layer unikernels / containers.</h5>
+							<h5>Consumer responsible for requesting what it needs. </h5>
+							<h5>Sessions replaced by <b>multi-party context-content exchange</b>.</h5>
+							<h5>URLs as user-facing names that start in-network discovery. Many 
+								entry points into content navigation – brand, location, etc.</h5>
+							<h5>Common service interactions expressed as data-centric protocols.</h5>
+							<h5>Edge supported context analysis (and content generation).</h5>
+						</span>
+						</section>
+
+						<section>
+							<h3>All named...</h3>
+							<h4>Context,Content, Metadata, Certs, Service, Storage, Identity</h4>
+							<img width="60%" src="../../resources/ranc/xdn/ar-all-data-named.png">
+						</section>
+
+						<section>
+							<h3>Implementation</h3>
+							<h4>Implementing data-centric design and deployment patterns</h4>
+							<ul style="font-size: 28px;">
+								<li> Create host-independent behavior</li>
+								<li>Embrace Multicast</li>
+								<li>Enable (and Use) Storage Everywhere</li>
+								<li>Communicate Assertively & Opportunistically</li>
+								<li>Share Namespace Updates, Not Connections</li>
+							</ul>
+							<p style="color: brown; font-style: italic; display: inline-block; font-size: 24px; text-align: right; margin-left: 120px;">Aspects of these show up in cloud-based designs but don't work well in highly dynamic/mobile environments.</p>
+							<h4>A prerequisite for how NDN achieves these</h4>
+							<h5>Secure data at its creation.</h5>
+						</section>
+
+						<section>
+							<h3>Secure data at creation</h3>
+							<table>
+								<td width="40%" style="vertical-align: middle;">
+									<ul style="font-size: 24px;">
+										<li>Simple concept. 
+											Required for all the rest to work. </li>
+										<li>Key granularity (in data type, time, identity 
+											dimensions) is closely tied to granularity of 
+											control. </li>
+										<li>Foregrounds identity and ownership.</li>
+										<li>Applications must consider retention, privacy, 
+											etc.</li>
+									</ul>
+								</td>
+								<td width="60%">
+									<img src="../../resources/ranc/xdn/ar-browser.png">
+								</td>
+							</table>
+						</section>
+
+						<section>
+							<h3>Name all data</h3>
+							<img src="../../resources/ranc/xdn/ar-name-all.png">
+						</section>
+
+						<section>
+							<h3 style="font-size: 42px;">Create Host-Independent Behavior</h3>
+							<table>
+								<td width="45%" style="vertical-align: middle;">
+									<ul style="font-size: 24px;">
+										<li>A reason for "cloud" success</li>
+										<li>Now possibly in a wider variety of networking 
+											situations by using named, signed data. </li>
+										<li>In IP, requires mapping services, which add 
+											brittleness / complexity and increase attack 
+											surface.</li>
+										<li>Instead, name (and sign) all the things.</li>
+										<li>Requires designing (and coding) with host-independent thinking, even for data about 
+											hosts.</li>
+										<li>More work to do: In-network name discovery.</li>
+									</ul>
+								</td>
+								<td width="55%">
+									<img src="../../resources/ranc/xdn/ar-browser-behavior.png">
+								</td>
+							</table>
+						</section>
+
+						<section>
+							<h3>Embrace Multicast</h3>
+							<table>
+								<td width="50%" style="vertical-align: middle;">
+									<ul style="font-size: 24px;">
+										<li>Though TCP/IP supports multicast in theory, 
+											in practice, build around unicast
+											<ol>
+												<li>Because of connection-level security</li>
+												<li>Limited infrastructure support</li>
+												<li>Handling in a host-based way is cumbersome</li>
+											</ol>
+										</li>
+										<li>NDN provides intrinsically
+											<ol>
+												<li>In networks, via stateful forwarding</li>
+												<li>In local context, e.g., by leveraging broadcast nature of many media</li>
+											</ol>
+										</li>
+										<li>Follows easily from host independence</li>
+									</ul>
+								</td>
+								<td width="50%">
+									<img src="../../resources/ranc/xdn/ar-browser-multicast.png">
+								</td>
+							</table>
+						</section>
+
+						<section>
+							<h3 style="font-size: 42px;">Enable/Use Storage Everywhere</h3>
+							<table>
+								<td width="50%" style="vertical-align: middle;">
+									<ul style="font-size: 24px;">
+										<li>No difference at network layer between 
+											accessing stored and on-demand data</li>
+										<li>Every node has some storage</li>
+										<li>Publish-and-forget for high level applications; 
+											using in-memory and persistent storage</li>
+										<li>Challenges:
+											<ol>
+												<li>Retention policies</li>
+												<li>Data for namespaces you don't control</li>
+												<li>Relationship to data access patterns.</li>
+											</ol>
+										</li>
+									</ul>
+								</td>
+								<td width="50%">
+									<img src="../../resources/ranc/xdn/ar-browser-enable.png">
+								</td>
+							</table>
+						</section>
+
+						<section>
+							<h3 style="font-size: 36px;">Communicate Assertively & Opportunistically</h3>
+							<table>
+								<td width="50%" style="vertical-align: middle;">
+									<ul style="font-size: 24px;">
+										<li>Best-effort delivery is an important part of 
+											Internet's success</li>
+										<li>Extend best-effort to attempts to 
+											communicate</li>
+										<li>In many cases, data-centric designs and 
+											deployments should aim for async
+											communications, whenever they can</li>
+										<li>Offers resilience</li>
+										<li>Considered originally for tactical applications 
+											and other IoT, but applicable even just for 
+											one's laptop or desktop</li>
+									</ul>
+								</td>
+								<td width="50%">
+									<img src="../../resources/ranc/xdn/ar-browser-communicate.png">
+								</td>
+							</table>
+						</section>
+
+						<section>
+							<h3 style="font-size: 32px;">Share Namespace Updates, Not Connections</h3>
+							<table>
+								<td width="50%" style="vertical-align: middle;">
+									<ul style="font-size: 24px;">
+										<li>Namespaces as (selectively) shared memory 
+											between different ecosystem components. </li>
+										<li>TCP can be seen as two-party 
+											synchronization, with simple chunk 
+											numbering (for each end) as the namespace</li>
+										<li>NDN can generalize this to multi-party sync 
+											using app namespace</li>
+										<li>Leverage efficient set reconciliation 
+											techniques</li>
+										<!-- <li>Not covered due to time limits. See previous tutorials and NDN Tech Report NDN-0053.</li> -->
+									</ul>
+								</td>
+								<td width="50%">
+									<img src="../../resources/ranc/xdn/ar-browser-share.png">
+								</td>
+							</table>
+						</section>
+					</section>
+
+					<section class="outline-page">
+						<div class="logo">
+							<a href="https://mobinets.cn"><img src="../../resources/ranc/mobinetslogo.png"/></a>
+						</div>
+						<section>
+							<h3 style="font-size: 54px;">Low-latency media over NDN</h3>
+							<h4>NDN Real-Time Communication</h4>
+							<h4>“Low-latency media”-friendly forwarding strategies</h4>
+							<h4>Congestion control</h4>
+							<h4>Real-time Data Retrieval (RDR) protocol</h4>
+						</section>
+
+						<section>
+							<h3 style="font-size: 52px;">Low-Latency Streaming for AR</h3>
+							<table>
+								<td width="40%" style="vertical-align: middle;">
+									<ul style="font-size: 36px;">
+										<li>AR browser "under the hood"</li>
+										<li>NDN communication throughout</li>
+										<li><a href="https://github.com/remap/ndnrtc">NDN-RTC library for low-latency media delivery</a></li>
+										<li>C++ library & tools.</li>
+									</ul>
+								</td>
+								<td width="60%">
+									<img src="../../resources/ranc/xdn/ndnrtc.png">
+								</td>
+							</table>
+						</section>
+
+						<section>
+							<h3 style="font-size: 52px;">NDN-RTC C++ Library</h3>
+							<ul style="font-size: 36px;">
+								<li>First prototype in fall 2013</li>
+								<li>Peer-to-peer approach, host-independent</li>
+								<li>HD-capable video streaming</li>
+								<li>Multiple bitrate streaming</li>
+								<li>Audio streaming (echo cancellation)</li>
+								<li>NDN-RTC-based NDN apps
+									<ol>
+										<li>2013 - ndnrtc-demo, command-line</li>
+										<li>2014 - ndncon, desktop conferencing app</li>
+										<li>2015 - ndnrtc-client, headless client</li>
+										<li>2017 - Docker containers</li>
+										<li>2017 - Flume (prototype)</li>
+										<li>2018 - AR Browser</li>
+									</ol>
+								</li>
+							</ul>
+						</section>
+
+						<section>
+							<h3 style="font-size: 52px;">Impressive syswork</h3>
+							<img width="60%" src="../../resources/ranc/xdn/ndnrtc-syswork.png">
+						</section>
+
+						<!-- <section>
+							<h3 style="font-size: 52px;">Schematized Trust</h3>
+							<img width="100%" src="../../resources/ranc/xdn/ndnrtc-trust.png">
+						</section> -->
+
+						<section>
+							<h3 style="font-size: 52px;">Library Architecture</h3>
+							<table>
+								<td width="50%" style="vertical-align: middle;">
+									<ul style="font-size: 28px;">
+										<li>Producer
+											<ol>
+												<li>slices encoded frame into segments</li>
+												<li>stores segments to the memory cache</li>
+											</ol>
+										</li>
+										<li>Consumer
+											<ol>
+												<li>ensures low-latency delivery using 
+													Interest pipeline</li>
+												<li>re-assembles segments into frames</li>
+												<li>queues frames in the buffer</li>
+												<li>decodes & plays back frames</li>
+											</ol>
+										</li>
+									</ul>
+								</td>
+								<td width="50%">
+									<img src="../../resources/ranc/xdn/ndnrtc-libarc.png">
+								</td>
+							</table>
+						</section>
+
+						<section>
+							<h3 style="font-size: 52px;">NDN-RTC Development</h3>
+							<ul style="font-size: 28px;">
+								<li>Continuous development & improvements
+									since 2013</li>
+								<li>Multi-peer testing over the testbed</li>
+								<li>Test out NDN with real apps</li>
+								<li>Drive network architecture and NDN app 
+									development</li>
+								<li>Build essentials: streaming over NDN</li>
+							</ul>
+							<img width="70%" src="../../resources/ranc/xdn/ndnrtc-testbed.png">
+						</section>
+
+						<section>
+							<h3>Forwarding strategies</h3>
+							<h4>Challenges</h4>
+							<!-- <h5>"A forwarding strategy decides how to 
+								forward an Interest."</h5> -->
+							<h5>How to distinguish multiple 
+								consumers <u>with retransmissions from 
+								the same consumer</u></h5>
+							<h5>Forwarding plane measurements for 
+								applications <u>with diverse naming 
+								schemes</u></h5>
+							<img width="60%" src="../../resources/ranc/xdn/ndnrtc-forward.png">
+						</section>
+
+						<section>
+							<h3>Lessons learned</h3>
+							<h4>Best route strategy</h4>
+							<h5>Interest with same Name+Selectors coming from the same face → retransmission*</h5>
+							<h5>Interest with same Name+Selectors coming from a different face → another consumer is 
+								requesting the same Data, should be suppressed for the first time*</h5>
+							<h4>Strategy measurements of forwarding plane performance</h4>
+							<h5>Work with diverse application namespaces (not only “/prefix/segment-number”)</h5>
+						</section>
+
+						<section>
+							<h3>Congestion control</h3>
+							<ul>
+								<li>Traditional congestion controls dont work for NDN</li>
+								<li>Congestion control in NDN is challenging
+									<ol>
+										<li>pull-based approach</li>
+										<li>multiple paths and endpoints</li>
+										<li>diverse deployment scenarios (wired, IP tunnels, wireless, etc.)</li>
+										<li>hard to determine “per-content fairness“ with interest aggregation</li>
+									</ol>
+								</li>
+							</ul>
+							<img width="40%" src="../../resources/ranc/xdn/ndnrtc-congest.png">
+						</section>
+
+						<section>
+							<h3>Hop-by-Hop congestion control</h3>
+							<h4>Design principles</h4>
+							<ul>
+								<li>detect congestion at the bottleneck</li>
+								<li>signal congestion towards consumer</li>
+								<li>remove strong assumptions:
+									<ul>
+										<li>unknown link capacity & Data chunk size</li>
+										<li>no route-labels or data location predictions</li>
+									</ul>
+								</li>
+							</ul>
+							<img width="50%" src="../../resources/ranc/xdn/ndnrtc-congest-design.png">
+						</section>
+
+						<section>
+							<h3>Real time retrieval protocol</h3>
+							<h5>How to fetch the latest generated real-time data in a network with caching</h5>
+							<h5>Segment numbers instead of application-level timestamps</h5>
+							<h5>Need to know the exact data names to pipeline Interests to fetch multiple data segments</h5>
+							<h5>Need to know the exact name of data that has not been produced yet</h5>
+							<img width="30%" src="../../resources/ranc/xdn/ndnrtc-retrival.png">
+						</section>
+
+						<section>
+							<h3>Why bother?</h3>
+							<img width="90%" src="../../resources/ranc/xdn/ndnrtc-retrival-why.png">
+						</section>
+
+						<section>
+							<h3>Retrieve Latest Data</h3>
+							<h4>Producers gen. metadata for RT sessions</h4>
+							<h5>Determines for how long metadata stays fresh at each-hop CS (FreshnessPeriod)</h5>
+							<h5>Name of the latest data</h5>
+							<h5>(Optionally piggybacking) Latest gen. segment</h5>
+							<h4>Consumers fetch fresh metadata</h4>
+							<h5>Bypass “non-fresh” cached metadata</h5>
+							<h5>Learn the exact name of the latest generated data</h5>
+							<h5>Determine exact name of data to be produced in the future through naming conventions</h5>
+						</section>
+
+						<section>
+							<h3>Metadata for NDN-RTC Streaming</h3>
+							<img width="90%" src="../../resources/ranc/xdn/ndnrtc-retrival-meta.png">
+						</section>
+
+						<section>
+							<h3>FreshnessPeriod Considerations</h3>
+							<h4>FreshnessPeriod: per-hop relative metric</h4>
+							<h4>Metadata may stay fresh for a longer time further away from the producer (due to processing and propagation delays)</h4>
+							<h4>FreshnessPeriod value:</h4>
+							<ul style="font-size: 30px;">
+								<li><u>Short enough</u>: Avoid stale metadata
+									further away from the producer</li>
+								<li><u>Long enough</u>: protect producers from excessive requests</li>
+							</ul>
+							<table style="font-size: 24px;">
+								<td width="50%" style="text-align: center;vertical-align: middle;">Metadata FreshnessPeriod = 10ms</td>
+								<td width="50%" style="text-align:left;"><img width="60%" src="../../resources/ranc/xdn/ndnrtc-retrival-fresh.png"></td>
+							</table>
+							
+						</section>
+
+					</section>
+
+					<section class="outline-page">
+						<div class="logo">
+							<a href="https://mobinets.cn"><img src="../../resources/ranc/mobinetslogo.png"/></a>
+						</div>
+						<section>
+							<h3>More interesting topics</h3>
+							<div style="text-align: left; margin-left:10%;">
+							<ul>
+								<li>NDN + Edge computing</li>
+								<li>NDN conferencing</li>
+								<li>NDN + IoT (NDNoT)</li>
+								<li>Blockchain for NDN</li>
+								<li>P2P file sharing with NDN</li>
+								<li>Satellite Edge with NDN</li>
+								<li>NDN for AutoDrive</li>
+								<li>Battlefield NDN</li>
+								<li class="fragment">Next step for network architectures?</li>
+								<p class="bot_notes_right" style="font-size: 20px;">Content vs Service<br>structures, resources, uncertainties, etc.</p>
+							</ul>
+							</div>
+						</section>
+					</section>
+
+				</section>
+			</div>
+
+		</div>
+
+		<script src="../../templates/dist/reveal.js"></script>
+		<script src="../../templates/plugin/zoom/zoom.js"></script>
+		<script src="../../templates/plugin/notes/notes.js"></script>
+		<script src="../../templates/plugin/search/search.js"></script>
+		<script src="../../templates/plugin/markdown/markdown.js"></script>
+		<script src="../../templates/plugin/highlight/highlight.js"></script>
+		<script>
+
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: false,
+				hash: true,
+				transitionSpeed: 'fast',
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+			});
+
+		</script>
+
+	</body>
+</html>

@@ -1,0 +1,696 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>从计算机到网络算力——网络化计算模式的演变与发展</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="../templates/dist/reset.css">
+		<link rel="stylesheet" href="../templates/dist/reveal.css">
+		<link rel="stylesheet" href="../templates/dist/theme/simple-z.css" id="theme">
+		<link rel="stylesheet" href="logo.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="../templates/plugin/highlight/monokai.css">
+		
+	</head>
+
+	<body>
+
+		<div class="reveal">
+			<div class='footer' style="position: absolute;top:0px;right:0; text-align:center;font-size: 20px;">
+				<!-- 在线访问 https://mns.uestc.cn/course/edgecom -->
+				<!-- <img src="../resources/edgecom/edgecomqr.png" width="30%" alt=""> -->
+			</div>
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section class="outline-page">
+					<img src="../resources/netai/aiwings.png" style="height: 320px; margin: 0 auto 0 auto; background: transparent;" class="demo-logo">
+					<h3 style="text-align: left;">从计算机到网络算力</h3>
+					<p style="margin-right: 10%; text-align: right;">
+						网络化计算模式的演变与发展
+					</p>
+					<table>
+						<tbody>
+							<tr>
+								<td style="vertical-align: middle;" align="right" width="55%"><small ><a target="_blank" href="https://mobinets.cn/zzw">赵志为</a>, 电子科技大学 <br>zzw@uestc.edu.cn</small></td>
+								<td align="left" width="45%"><img width="30%" src="../resources/edgecom/edgecomqr.png"></td>
+							</tr>
+						</tbody>
+					</table>
+					<!-- <p style="text-align: center;">
+						<br>
+						<small ><a target="_blank" href="https://mobinets.cn/zzw">赵志为</a>, 电子科技大学</small><br>
+						<small>zzw@uestc.edu.cn</small> -->
+						<!-- <br> -->
+						<!-- <img width="10%" src="../resources/edgecom/edgecomqr.png">
+					</p> -->
+					
+				</section>
+
+				<!-- Example of nested vertical slides -->
+				<section class="outline-page">
+					<section>
+						<h3>计算形态的剧变</h3>
+						<h4>一间屋子到一副眼镜</h4>
+						<img src="../resources/edgecom/eniac2glass.png" width="60%" alt="">
+					</section>
+					<section>
+						<h3>什么原因？</h3>
+						<p>人类的需求：服务随时随地、代价越小越好</p>
+						<img class="" style="" height="300" data-src="../resources/netai/trend.png">
+						<p class="fragment">随时随地：互联网；代价小：摩尔定律</p>
+					</section>
+					<section>
+						<h3>算网融合是必由的途径</h3>
+						<img src="../resources/edgecom/ronghe.png" width="70%" alt="">
+					</section>
+				</section>
+				
+				<section class="outline-page">
+					<section>
+						<h3><font color="green">互联网</font>的发展</h3>
+						<p class="fragment fade-out">解释解释什么是互联网</p>
+						<span class="fragment">
+						<p>Inter意为 ...之间</p>
+						<table>
+							<tbody>
+								<tr>
+									<td>Interaction</td>
+									<td>互动、交流</td>
+								</tr>
+								<tr>
+									<td>International</td>
+									<td>国际的、跨国的</td>
+								</tr>
+								<tr>
+									<td><span class="fragment"><font color="red">Internet</font></span></td>
+									<td><span class="fragment"><b>跨...网的？？</b></span></td>
+								</tr>
+							</tbody>
+						</table>
+						</span>
+						<span class="fragment"><img class="" style="" height="150" data-src="../resources/netai/heiren.png"></span>
+						
+					</section>
+					<section>
+						<h3>互联网的使命</h3>
+						<br>
+						<img class="" style="" height="150" data-src="../resources/netai/internet.png">
+						<br>
+						<p>寻址 & 交换</p>
+						<br>
+						<p><small>* 互联网与电信网的区别？</small></p>
+					</section>
+
+					<section>
+						<h3>互联的网络</h3>
+						<table>
+							<thead>
+								<tr>
+									<th>网络类型</th>
+									<th>带宽分配Mbps</th>
+									<th>占比%</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>中国电信</td>
+									<td>4,537,680</td>
+									<td>50.72</td>
+								</tr>
+								<tr>
+									<td>中国联通</td>
+									<td>2,234,738</td>
+									<td>24.98</td>
+								</tr>
+								<tr>
+									<td>中国移动</td>
+									<td>1,997,000</td>
+									<td>22.32</td>
+								</tr>
+								<tr>
+									<td>中国科技网</td>
+									<td>115,712</td>
+									<td>1.29</td>
+								</tr>
+								<tr>
+									<td>CERNET</td>
+									<td>61,440</td>
+									<td>0.69</td>
+								</tr>
+								<tr>
+									<td>总计</td>
+									<td>8,946,570</td>
+									<td>100</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+
+					<section data-background-iframe="https://www.cstnet.cn/" data-background-interactive>
+						<div style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(248, 227, 227, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+							<h2>中国科技网</h2>
+						</div>
+					</section>
+
+					<section>
+						<h3>互联网 vs 电信网</h3>
+						<br>
+						<p style="align-content: center;">
+						<ul>
+							<li>互联网愿景：互联（IETF, IEEE）</li>
+							<li>电信网愿景：业务（ITU, 3GPP）</li>
+							<li>关系：
+								<ul>
+									<li>后者是前者一部分、前者是后者技术支撑</li>
+									<li>前者希望容纳更多类型的网络</li>
+									<li>后者希望将业务扩展到更多类型的设备</li>
+									<!-- <li style="color: brown;" class="fragment">未来看好谁？</li> -->
+								</ul>
+							</li>
+						</ul></p>
+						<br>
+						<p class="fragment" style="font-style: italic; color: brown;"><small>* 全球与漂亮国？</small></p>
+					</section>
+					<section>
+						<h3>互联网的变化</h3>
+						<h4>📌 寻址</h4>
+						<ul>
+							<li>Content Centric Network</li>
+							<li>Named Data Network</li>
+						</ul>
+						<br><br>
+						<h4>🍻 交换</h4>
+						<ul>
+							<li>Quality of Service</li>
+							<li>Quality of Experience</li>
+							<li>End-to-end Requirements</li>
+						</ul>
+						<br><br>
+					</section>
+					<section class="content-page">
+						<h3 class="content-page">各网络技术的变化</h3>
+						<ul>
+							<li>3G/4G/5G/6G</li>
+							<li>卫星通信</li>
+							<li>可见光通信</li>
+							<li>低功耗物联网</li>
+						</ul>
+						<br>
+						<table>
+							<tbody>
+								<tr><img src="../resources/netai/bs.png"></tr>
+								<tr><img src="../resources/netai/sat.png"></tr>
+								<tr><img src="../resources/netai/vlc.png"></tr>
+								<tr><img src="../resources/netai/iot.png"></tr>
+							</tbody>
+						</table>
+						<p>主要强调通信理论与创新及其引发的新型组网技术</p>
+
+					</section>
+
+					<section>
+						<h3>移动通信技术</h3>
+						
+						<table>
+							<thead>
+								<tr>
+									<th>通信技术</th>
+									<th>传输速率</th>
+									<th>传输延迟</th>
+									<th>覆盖范围</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>3G</td>
+									<td>2Mbps</td>
+									<td>100-300ms</td>
+									<td>2-5公里</td>
+								</tr>
+								<tr>
+									<td>4G</td>
+									<td>100Mbps</td>
+									<td>100ms</td>
+									<td>1-3公里</td>
+								</tr>
+								<tr>
+									<td style="color: red;">5G</td>
+									<td>1-10Gbps</td>
+									<td>1-10ms</td>
+									<td>50-300米</td>
+								</tr>
+								<tr>
+									<td style="color: red;">6G</td>
+									<td>100G-1Tbps</td>
+									<td>0.1-1ms</td>
+									<td>10米级</td>
+								</tr>
+							</tbody>
+						</table>
+						<p>速率越来越高、覆盖越来越小、移动越来越强</p>
+						<p style="text-align: right;"><small>*一辆60Km/h汽车的刹车紧急制动的距离：<br>50ms为≈1m，10ms为≈20cm，1ms为≈20mm</small></p>
+					</section>
+				</section>
+				<section class="outline-page">
+					<section>
+						<h3>网络算力的出现</h3>
+						<h4>中国：东数西算、新基建</h4>
+						<h4>欧美：EuroHPC</h4>
+						<h4>企业：算力网络</h4>
+						<blockquote style="text-align: left;">
+							计算应该像电话系统一样，成为一个公共服务，用户可以随用随取，按用付费<br>
+						</blockquote>
+						<p align="right" style="margin-right: 10%;" >John McCarthy from MIT, 1961</p>	
+					</section>
+					<section>
+						<h3>网络计算模式</h3>
+						<p style="color: darkcyan;">合久必分分久必合？</p>
+						<table>
+							<tbody>
+								<tr>
+									<td><img class="" style="" height="270" data-src="../resources/netai/lyx.png"></td>
+									<td><img class="" style="" height="270" data-src="../resources/netai/wxh.png"></td>
+								</tr>
+								<tr>
+									<td><small>* 刘云新. 智能边缘计算中的挑战和机遇.中国计算机学会通讯 2021.09. </small></td>
+									<td><small>* 汪学海等. 边缘计算技术研究报告. 中科院计算所 信息技术与信息化前瞻FIAR-02. 2018.02.</small></td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+					<section>
+						<!-- <h2>一个现象</h2><br> -->
+						<h3>不同应用不同阶段</h3>	
+						<img class="" style="" height="380" data-src="../resources/netai/goup.png">
+					</section>
+					<section>
+						<h3>熟果子周期</h3>
+						<h4>🌱幼苗期 - 本地出现</h4>
+						<h5>充分利用本地计算资源</h5>
+						<h4>🍏发育期 - 持续优化</h4>
+						<h5>持续优化降低资源需求</h5>
+						<h4>🍎成熟期 - 网络执行</h4>
+						<h5>需求＜网络化资源</h5>
+						<h5>网络化运行</h5>
+						<p align="right" style="font-style: italic;"><small><a href="https://dl.ccf.org.cn/article/articleDetail.html?type=xhtx_thesis&_ack=1&id=6305835860953088">赵志为, 关于网络化计算模式的重新思考, CCCF, 19(1), 2023.</a></small></p>
+					</section>
+					<section>
+						<h3>微观计算服务的演变</h3>
+						<table style="font-size: 20px;">
+							<thead>
+								<tr>
+									<th colspan="2">计算服务</th>
+									<th>幼苗期</th>
+									<th>发育期</th>
+									<th>成熟期</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td rowspan="2">办公软件</td>
+									<td>Office</td>
+									<td>初代仅支持i286/i386、Windows系统(1990)</td>
+									<td rowspan="6">功能逐渐丰富<br>硬件与系统门槛逐渐降低<br>网络条件向体验要求逼近</td>
+									<td>Office Online</td>
+								</tr>
+								<tr>
+									<td>Photoshop</td>
+									<td>PS2.5仅支持当时最新的i386/i486(1990)</td>
+									<td>Photopea</td>
+								</tr>
+								<tr>
+									<td rowspan="3">开发软件</td>
+									<td>Matlab</td>
+									<td>稳定版V3.5仅支持当时最新的i386/i486(1990)</td>
+									<td>Matlab online</td>
+								</tr>
+								<tr>
+									<td>Visual studio</td>
+									<td>安装需3张CD，要求最新i486或Pentium(1997)</td>
+									<td>VS online</td>
+								</tr>
+								<tr>
+									<td>AutoCAD</td>
+									<td>V1.0需要当时最新的IBM CGA 显卡(1982)</td>
+									<td>AutoCAD Web App</td>
+								</tr>
+								<tr style="border-bottom:1px solid black">
+									<td colspan="2">3D视频游戏</td>
+									<td>新型大型3D游戏仅支持最强GPU/CPU</td>
+									<td>网络运行3D游戏</td>
+								</tr>
+							</tbody>
+						</table>
+						<table class="fragment" style="font-size: 18px;">
+							<tbody align="center">
+								<tr>
+									<td><img src="../resources/edgecom/gta-online.gif" width="50%" alt=""></td>
+									<td><img src="../resources/edgecom/shooting-online.gif" width="50%" alt=""></td>
+									<td><img src="../resources/edgecom/n4s-online.gif" alt=""></td>
+								</tr>
+								<tr>
+									<td>网页版GTA</td>
+									<td>网页版射击</td>
+									<td>网页版极品飞车</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+					<section>
+						<h3>网络化计算模式的演变</h3>
+						<img src="../resources/netai/netcom-history-light.png">
+					</section>
+
+					<section>
+						<h3>技术融合的过程</h3>
+						<img src="../resources/netai/techComb.png">
+					</section>
+
+					<section>
+						<h3>计算与网络的融合</h3>
+						<img width="30%" src="../resources/netai/taichi.png">
+						<p style="text-align: left;">
+							<ul>
+								<li>计算改造网络：SDN、NFV</li>
+								<li>网络改造计算：Cloud、<font color="red">Edge</font>、D2D/D4D</li>
+							</ul>
+						</p>
+					</section>
+
+					<section>
+						<h3>边缘计算</h3>
+						<img width="80%" src="../resources/netai/edgedef.png">
+						<p style="text-align: left;">边缘计算是一种<span style="color: cadetblue;" class="fragment">计算资源与用户接近、</span><span style="color: coral;" class="fragment">计算过程与用户协同、</span><span style="color: steelblue;" class="fragment">整体计算性能高于本地和云计算的</span>计算模式<span class="fragment">，是实现无处不在的“泛在算力”的具体手段。</span></p>
+						<p align="right" class="fragment"><small>* 机械工业出版社《边缘计算:原理、技术与实践》（赵志为、闵革勇编著）</small></p>
+					</section>
+
+				</section>
+
+				<section class="outline-page">
+					<section>
+						<h3>实现算力网络的手段</h3>
+						<h4>云边端架构</h4>
+						<table>
+							<tbody>
+								<tr>
+									<td width="55%">
+										<img src="../resources/edgecom/cloudedge.png">
+									</td>
+									<td width="35%" style="vertical-align: middle; align-self: center;">
+										<ul>
+											<li>云计算</li>
+											<!-- <ol><li>数据密集</li></ol> -->
+											<li>边缘计算</li>
+											<li>泛在算力</li>
+										</ul>
+									</td>
+									
+								</tr>
+							</tbody>
+						</table>
+					</section>
+					<section>
+						<h3>边缘网络逐步融合计算</h3>
+						<table>
+							<tbody>
+								<tr>
+									<td style="vertical-align: top;" width="40%"><img src="../resources/netai/newsm.png">
+										<!-- <img src="resources/news2.png">
+										<img src="resources/news3.png"> -->
+										<!-- <ul>
+											<li><small>2003年：EdgeComputing Powered by WebSphere (Akamai & IBM)</small></li>
+											<li><small>20世纪：Amazon为代表的云技术快速普及</small></li>
+											<li><small>2008年：明确提出了Cloudlet的概念</sma1ll></li>
+										</ul> -->
+									</td>
+									<td width="60%"><ul>
+										<small><li>2003：EdgeComputing (Akamai & IBM)</li></small>
+										<small><li>20世纪：Amazon为代表的云技术快速普及</li></small>
+										<small><li>2008：Cloudlet的概念出现</li></small>
+										<small><li>2012：Fog Computing的概念出现</li></small>
+										<small><li>2013：ESTI定义Mobile Edge Computing</li></small>
+										<small><li>2015：OpenFog开放雾计算联盟成立</li></small>
+										<small><li>2016：专注边缘计算的国际高水平学术会议</li></small>
+										<small><li>2017：边缘计算产业联盟在北京成立</li></small>
+										<small><li>2018：ESTI将MEC调整为多接入边缘计算</li></small>
+										<small><li>2019：边缘计算产业联盟发布</li></small>
+										<small><li>2020：卫星边缘计算等开始涌现</li></small>
+										</ul>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+
+					<section>
+						<h3>从Gartner的视角看</h3>
+						<table>
+							<thead>
+									<th>年份</th>
+									<th>关键词</th>
+									<th>所处位置</th>
+							</thead>
+							<tbody>
+								<tr>
+									<td>2017</td>
+									<td>Edge Computing</td>
+									<td>Innovation Trigger</td>
+								</tr>
+								<tr>
+									<td>2018</td>
+									<td>Edge AI</td>
+									<td>Innovation Trigger</td>
+								</tr>
+								<tr>
+									<td>2019</td>
+									<td>Edge AI/Analytics</td>
+									<td>Peak of inflated expectations</td>
+								</tr>
+								<tr>
+									<td>2020</td>
+									<td>Low-cost single-board computers at edge</td>
+									<td>Innovation Trigger</td>
+								</tr>
+								<tr>
+									<td>2022</td>
+									<td>Industrial cloud</td>
+									<td>Innovation Trigger</td>
+								</tr>
+							</tbody>
+						</table>
+						<p align="right" style="font-style: italic;"><small><font color="red">* TinyML, Embedded AI, Lightweight ML, etc.</font></small></p>
+					</section>
+
+					
+
+					<section>
+						<h3>算力上天入地?</h3>
+						<p>先解决移动性</p>
+						<table>
+							<thead>
+									<th>场景</th>
+									<th>速度</th>
+									<th>切换</th>
+							</thead>
+							<tbody>
+								<tr>
+									<td>无人机/车+5G</td>
+									<td>60 KM/h</td>
+									<td>5 AP/m</td>
+								</tr>
+								<tr>
+									<td>高铁+5G</td>
+									<td>300 KM/h</td>
+									<td>25 AP/m</td>
+								</tr>
+								<tr>
+									<td>AR/VR+5G</td>
+									<td>4 KM/h</td>
+									<td>0.33 AP/m</td>
+								</tr>
+								<tr>
+									<td>商场园区行人+WiFI6</td>
+									<td>4 KM/h</td>
+									<td>0.33 AP/m</td>
+								</tr>
+							</tbody>
+						</table>
+						<p style="font-style: italic;">想想看影响在哪? <br>
+							<font color="brown"><span class="fragment">服务切换、计算协同、系统服务部署、服务发现...</span></font></p>
+					</section>
+
+					<section>
+						<h3>服务爆炸</h3>
+						<p style="color: cadetblue; font-style: italic;">几乎所有的计算服务都可以放到边缘</p>
+						
+						<br>
+						<table>
+							<tbody>
+								<tr>
+									<td width="40%">
+										<img src="../resources/netai/serviceboom.png">
+									</td>
+									<td width="50%" style="vertical-align: middle; align-self: center;">
+										<ul>
+											<li>边缘资源<span style="color: brown;">受限</span></li>
+											<li>服务类型<span style="color: brown;">异构</span></li>
+											<li>服务数量<span style="color: brown;">极大</span></li>
+										</ul>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<span class="fragment" style="color: brown;">以及大量的系统工作......</span>
+					</section>
+				</section>
+
+
+				<section class="outline-page">
+				
+					<section>
+						<h3>真有必要吗?应用需求?</h3>
+						<img width="80%" src="../resources/netai/iot-app.png">
+						<h4>Internet-of-Things</h4>
+						<h4>Pervasive computing</h4>
+					</section>
+
+					<section>
+						<h3>Internet-of-Things</h3>
+						<img width="80%" src="../resources/netai/iot-app2.png">
+					</section>
+					<section>
+						<h3>IoT发展历程</h3>
+						<img width="100%" src="../resources/edgecom/iot-history.png">
+					</section>
+
+					<section>
+						<h3>IoT+AI产生海量需求</h3>
+						<img width="80%" src="../resources/netai/iot-change.png">
+						<h4>智能水杯？</h4>
+						<h4 class="fragment">IoT发展催生海量计算需求</h4>
+					</section>
+
+					<section>
+						<h3>AI+IoT=AIoT(智能物联网)</h3>
+						<img width="50%" src="../resources/netai/aiot.png">
+						<p style="color: brown;">IoT海量的AI需求交给边缘智能</p>
+						<table>
+							<td>卸载决策</td>
+							<td>任务传输</td>
+							<td>运算处理</td>
+						</table>
+					</section>
+
+					<section>
+						<h3>边缘计算还是云计算?</h3>
+						<p>重要区别：系统与应用场景深度融合</p>
+						<img src="../resources/netai/edge-cloud.png">
+						<ul>
+							<li>接入卸载：泛在不可靠环境</li>
+							<li>系统部署：低成本实现服务覆盖</li>
+							<li>服务架构：分布式+云边端协同</li>
+						</ul>
+						<p align="right" style="font-style: italic;"><small><font color="red">* 感通算融合</font></small></p>
+					</section>
+
+				</section>
+
+				<section class="outline-page">
+					<section>
+						<h3>回顾</h3>
+						<h4><span style="color: dodgerblue;">计算需求爆炸</span>：AI/IoT/普适智能</h4>
+						<h4><span style="color: dodgerblue;">熟果子</span>：本地出现>>持续优化>>网络执行</h4>
+						<h4><span style="color: dodgerblue;">算网博弈</span>：本地出现>>网络化>>网络原生</h4>
+						<h4><span style="color: dodgerblue;">现状</span>：5G/6G临界点将催生新一批网络化</h4>
+						<h4><span style="color: dodgerblue;">趋势</span>：云无法替代，但重心会向边端倾斜</h4>
+						<h4><span style="color: dodgerblue;">应用</span>：XR/自动驾驶/智慧生活/智能制造</h4>
+						<br><br>
+					</section>
+					<section>
+						<h3>延伸阅读</h3>
+						<ul>
+							<li style="color: burlywood;">SigComm'18, AuTO: Scaling Deep Reinforcement Learning for Datacenter-Scale Automatic Traffic Optimization</li>
+							<li style="color: burlywood;">SOSR'21, Accelerating Distributed Deep Learning using Multi-Path RDMA in Data Center Networks</li>
+							<li style="color: cadetblue;">SigComm'21, MimicNet: Fast Performance Estimates for Data Center Networks with Machine Learning</li>
+							<li style="color: cadetblue;">SigComm'20, Interpreting Deep Learning-Based Networking Systems</li>
+						</ul>
+					</section>
+
+					<section>
+						<h3>还有几篇</h3>
+						<img width="25%" src="../resources/netai/edge-paper.png"><img width="25%" src="../resources/netai/sensingframe.png">
+						<ul>
+							<li style="color: cadetblue;"><a href="../../resources/vid/paper-emp.mp4">MobiCom'21</a>, EMP: Edge-assisted Multi-vehicle Perception</li>
+							<li style="color: cadetblue;"><a href="../../resources/vid/tunable.mp4">MobiCom'21</a>, Flexible High-resolution Object Detection on Edge Devices with Tunable Latency</li>
+							<li style="color: cadetblue;">MobiCom'19, Edge Assisted Real-time Object Detection for Mobile Augmented Reality</li>
+						</ul>
+					</section>
+					<section>
+						<h3>一些小视频🚴‍♀️</h3>
+					</section>
+					<section>
+						<h3>AI + IoT + Wireless/Mobile</h3>
+						<p style="text-align: left;">
+						<a href="../resources/vid/blocknet.mp4" target="_blank">block net</a>: Ad hoc network with computing ability.<br>
+						<a href="../resources/vid/remotehand.mp4" target="_blank">remote gesture</a>: real time graph analysis & control.<br>
+						<a href="../resources/vid/mole.mp4" target="_blank">mole</a>: sensing input with smartwatch.<br>
+						<a href="../resources/vid/autodrive1.mp4" target="_blank">AutoDrive1</a>, <a href="../resources/vid/autodrive2.mp4">AutoDrive2</a>, <a href="../resources/vid/autodrive3.mp4">AutoDrive3</a>.<br>
+						<a href="../resources/vid/gesture.mp4" target="_blank">gesture1</a>, <a href="../resources/vid/gesture2.mp4">gesture2</a>: sensing gestures <span style="font-style: italic;">wirelessly</span>.<br>
+						<a href="../resources/vid/mobar.mp4" target="_blank">mobile AR</a>: mobile augmented reality (early), <a href="../resources/vid/meta-ar.mp4">MetaAR</a>.<br>
+						<a href="../resources/vid/cablerobot.mp4" target="_blank">Cable robot</a>, <a href="../resources/vid/cablerobot2.mp4">userview</a>: 360 VR. <a href="../resources/vid/chatdog.mp4">ChatDog</a>.<br>
+						<a href="../resources/vid/mblock.mp4" target="_blank">mblocks</a>: self learning, sensing and navigating.<br>
+						<a href="../resources/vid/lowedge.mp4" target="_blank">pocket edge</a>: low cost edge server using smartphones.<br>
+						<a href="../resources/vid/uavnet.mp4" target="_blank">UAV network</a>: Self organizing and target tracking.<br>
+						<!-- <div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
+							<h2>Video Backgrounds</h2>
+							<pre><code class="hljs html" style="word-wrap: break-word;">&lt;section data-background-video="video.mp4,video.webm"&gt;</code></pre>
+						</div> -->
+						</p>
+					</section>
+				</section>
+				<section class="outline-page">
+					<p style="font-size: 60px;">谢谢大家，欢迎探讨</p>
+					<img src="../resources/edgecom/edgecomqr.png" width="20%" alt="">
+					<p style="font-size: 28px;">更多信息访问 mobinets.cn/zzw</p>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="../templates/dist/reveal.js"></script>
+		<script src="../templates/plugin/zoom/zoom.js"></script>
+		<script src="../templates/plugin/notes/notes.js"></script>
+		<script src="../templates/plugin/search/search.js"></script>
+		<script src="../templates/plugin/markdown/markdown.js"></script>
+		<script src="../templates/plugin/highlight/highlight.js"></script>
+		<script>
+
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+				slideNumber: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+			});
+
+		</script>
+
+	</body>
+</html>

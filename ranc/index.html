@@ -1,0 +1,818 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Advances in Network Computing - Zhiwei Zhao</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="../templates/dist/reset.css">
+		<link rel="stylesheet" href="../templates/dist/reveal.css">
+		<link rel="stylesheet" href="../templates/dist/theme/simple-z.css" id="theme">
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="../templates/plugin/highlight/monokai.css">
+	</head>
+
+	<body>
+
+		<div class="reveal">
+			<div class="slides">
+				<section class="outline-page">
+					<section>
+					<img src="../resources/ranc/turing1.png" style="height: 160px; margin: 60px auto auto auto; background: transparent;">
+					<h2 style="font-size: 46px;"><span style="color: lightcoral;">R</span>ecent <span style="color:lightgreen;">A</span>dvances in <span style="color:cornflowerblue;">N</span>etwork <span style="color: crimson;">C</span>omputing</h2>
+					<hr>
+					<p>
+						<small><a href="https://mobinets.cn/zzw" target="_blank">Zhiwei Zhao</a><br>zzw@uestc.edu.cn
+						</small>
+					</p>
+						<small><img width="20%" src="../resources/ranc/homelink.png">
+						<br>
+						<span style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif"><a href="https://mobinets.cn" target="_blank"><span style="color: rgb(99, 99, 99);">mobinets</span></a> <span style="color: rgb(110, 110, 110);">@ SCSE, UESTC</span></span>
+						</small>
+					
+					<table style="font-size: 24px;">
+						<td><a href="ndn/">1. Named Data Network</a></td>
+						<td><a href="taw/">2. Turing Awards</a></td>
+						<td><a href="edge/">3. Edge Computing</a></td>
+					</table>
+					</section>
+				</section>
+
+				<section class="outline-page">
+					<div class="logo">
+						<a href="https://mobinets.cn"><img src="../resources/ranc/mobinetslogo.png"/></a>
+					</div>
+					<section>
+						<h3>Two lines</h3>
+						<table>
+							<thead>
+								<th>Recent advances</th>
+								<th>Turing award winners</th>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1. NDN/SDN/NFV</td>
+									<td>1. Stories</td>
+								</tr>
+								<tr>
+									<td>2. Edge computing</td>
+									<td>2. Interesting works</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>3. Lectures</td>
+								</tr>
+							</tbody>
+						</table>
+						<br>
+						<img width="70%" src="../resources/ranc/fashion-classic.png">
+					</section>
+					<section>
+						<h3>Coursework (60%+40%)</h3>
+						<h4>A one-column, two-page course work.</h4>
+						<h5><a href="../resources/ranc/Two_page_coursework.pdf">Sample pdf</a>, <a href="../resources/ranc/ranc.tex">Template tex file</a>.</h5>
+						<h4>Attendance</h4>
+						<h5>The roll will be called when many are absent.</h5>
+						<h5>No final score if you are found absent for ≥3 times.</h5>
+						<h4>Submission</h4>
+						<h5>Email: fmi_course@mobinets.org</h5>
+						<h5>Deadline: May 26, 2022.</h5>
+					</section>
+				</section>
+
+				<section class="outline-page">
+					<div class="logo">
+						<a href="https://mobinets.cn"><img src="../resources/ranc/mobinetslogo.png"/></a>
+					</div>
+					<section>
+						<h3>Recent advances</h3>
+						<h4><span style="color: cornflowerblue;">NDN</span>: Named Data Networking.</h4>
+						<ul>
+							<li>An instance of ICN<a href="https://www.it.uu.se/edu/course/homepage/projektDV/ht14/ASurveyofInformation-CentricNetworking-published.pdf">[1]</a><a href="http://trac.tools.ietf.org/group/irtf/trac/wiki/icn">[2]</a>.</li>
+							<li>Data has names and can be identified.</li>
+						</ul>
+						<h4><span style="color: cornflowerblue;">SDN</span>: Software Defined Networks</h4>
+						<h4><span style="color: cornflowerblue;">NFV</span>: Network Function Virtualization</h4>
+						<h4><span style="color: cornflowerblue;">Edge</span>: Edge Computing</h4>
+						<ul>
+							<li>Cloud in proximity.</li>
+							<li>Dispersed and resource constrained.</li>
+						</ul>
+					</section>
+
+					<section>
+						<h3 style="margin-top: 20px;">Named Data Networks</h3>
+						<h4>Addressing: IP vs ID</h4>
+						<img src="../resources/ranc/xdn/ndn-sigcomm14.png" width="80%">
+						<p class="bot_notes_left">[1] <a href="https://web.cs.ucla.edu/~lixia/">Lixia Zhang</a> et al. <a href="https://irl.cs.ucla.edu/data/files/techreports/ndn0019-1.pdf">Named data newtorking</a>, ACM SigComm 2014.</p>
+						<!-- <p class="bot_notes">* <a href="https://irl.cs.ucla.edu/data/files/techreports/ndn0019-1.pdf">Named data newtorking, ACM SigComm 2014.</a></p> -->
+						
+					</section>
+
+					<section>
+						<h3 style="margin-top: 20px;">Software Defined Network</h2>
+						<img width="70%" src="../resources/ranc/xdn/sdn-cover.png">
+						<p class="bot_notes_left">
+							[1] <a href="https://girlgeek.io/speaker/natasha-gude/">N Gude</a> et al. <a href="http://www.sigcomm.org/sites/default/files/ccr/papers/2008/July/1384609-1384625.pdf">NOX: Towards an Operating System for Networks</a>. ACM SigComm 2008.
+							<br>
+							[2] <a href="http://yuba.stanford.edu/~nickm/">N McKeown</a> et al. <a href="http://www.sigcomm.org/sites/default/files/ccr/papers/2008/April/1355734-1355746.pdf">OpenFlow: Enabling Innovation in Campus Networks</a>. ACM SigComm 2008.
+						</p>
+					</section>
+
+					<section class="content-page">
+						<h3 class="toptitle">Network Function Virtualization</h3>
+						<img width="90%" src="../resources/ranc/xdn/nfv-cover.png">
+						<p class="bot_notes_left">
+							[1] ESTI, <a href="http://portal.etsi.org/NFV/NFV_White_Paper.pdf">Network Functions Virtualisation</a>, White Paper.
+							<br>
+							[2] Bo Han et al. <a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.673.8097&rep=rep1&type=pdf">Network function virtualization: Challenges and opportunities for innovations</a>, IEEE Comm. Mag. 2015.
+						</p>
+					</section>
+					<section>
+						<h3 class="toptitle">Edge Computing</h3>
+						<img width="50%" src="../resources/ranc/xdn/edge-cover.png">
+						<p class="bot_notes_left">
+							[1] <a href="http://www.cs.cmu.edu/~satya/">Mahadev Satya</a> et al. <a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/cloudlets09.pdf">The Case for VM-based Cloudlets in Mobile Computing</a>, IEEE Pervasive Computing, 2009.
+							<br>
+							[2] <a href="http://www.cs.cmu.edu/~satya/">Mahadev Satya</a>, <a href="https://www.cse.psu.edu/~gxc27/teach/597/satya-edge2016.pdf">The Emergence of Edge Computing</a>, Computer, 2017.
+							<br>
+							[3] <a href="https://www.cs.ucr.edu/~jiasi/">J Chen</a> and X Ran, <a href="https://www.cs.ucr.edu/~jiasi/pub/deep_edge_review.pdf">Deep learning with edge computing: A review</a>, Proc. of IEEE, 2019.
+						</p>
+					</section>
+				</section>
+
+				<section class="outline-page">
+					<div class="logo">
+						<a href="https://mobinets.cn"><img src="../resources/ranc/mobinetslogo.png"/></a>
+					</div>
+					<section>
+						<h3>👑 Turing Award</h3>
+						<img width="40%" src="../resources/ranc/turing/turing-head.png">
+						<p>
+							The ACM Alan Mathison Turing Award - "Nobel Prize of Computing".
+						</p>
+					</section>
+					<section>
+						<h3>56 Turing Awards</h3>
+						<table>
+							<thead>
+								<tr>
+									<th>Field</th>
+									<th>Awards</th>
+									<th>Percentage</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Programming lauguage</td>
+									<td>16</td>
+									<td>28.6%</td>
+								</tr>
+								<tr>
+									<td>Computing theory</td>
+									<td>12</td>
+									<td>21.4%</td>
+								</tr>
+								<tr class="fragment highlight-blue">
+									<td>Network system</td>
+									<td>8</td>
+									<td>14.3%</td>
+								</tr>
+								<tr>
+									<td>Database</td>
+									<td>7</td>
+									<td>12.5%</td>
+								</tr>
+								<tr>
+									<td>AI</td>
+									<td>6</td>
+									<td>10.7%</td>
+								</tr>
+								<tr>
+									<td>CHI</td>
+									<td>4</td>
+									<td>7%</td>
+								</tr>
+								<tr>
+									<td>Security</td>
+									<td>3</td>
+									<td>5.4%</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+					<section>
+						<h3>Stars in networks (1)</h3>
+						<table style="width: 90%;">
+							<tbody>
+								<tr>
+									<td style="text-align: center;"><img height="100px" src="../resources/photos/Thompson_and_Ritchie.png">
+										<br><a href="https://dl.acm.org/profile/81100436668">Ken Thompson</a> & <a href="https://www.bell-labs.com/usr/dmr/www/">Dennis Ritchie</a> (1983)</td>
+									<td style="text-align: center;"><img height="100px" src="../resources/photos/rkarp.png">
+										<br><a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/karp.html">Richard M. Karp</a> (1985)</td>
+								</tr>
+								<tr>
+									<td style="text-align: center;"><img height="100px" src="../resources/photos/fjc.png">
+										<br><a href="https://www.computer.org/profiles/fernando-corbato">Fernando J. Corbató</a> (1990)</td>
+									<td style="text-align: center;"><img height="100px" src="../resources/photos/blampson.png">
+									<br><a href=" http://butler.lampsons.us">Butler W. Lampson</a> (1992)</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+					<section>
+						<h3>Stars in networks (2)</h3>
+						<table style="width: 90%;">
+							<tbody>
+								<tr>
+									<td style="text-align: center;"><img height="100px" src="../resources/photos/vcerf.png"><img height="100px" src="../resources/photos/bkhan.png">
+										<br><a href="https://research.google/people/author32412/">Vint Cerf</a> & <a href="https://amturing.acm.org/award_winners/kahn_4598637.cfm">Robert Kahn</a> (2004)</td>
+									<td style="text-align: center;"><img height="100px" src="../resources/photos/cThacker.png">
+										<br><a href="https://amturing.acm.org/award_winners/thacker_1336106.cfm">Charles P. Thacker</a> (2009)</td>
+								</tr>
+								<tr>
+									<td style="text-align: center;"><img height="100px" src="../resources/photos/llamport.png">
+										<br><a href="http://www.lamport.org/">Leslie Lamport</a> (2013)</td>
+									<td style="text-align: center;"><img height="100px" src="../resources/photos/tbLee.png">
+									<br><a href="https://www.w3.org/People/Berners-Lee/">Tim Berners-Lee</a> (2016)</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+					<section>
+						<h3>On our stage..</h3>
+						<table style="width: 90%;">
+							<tbody>
+								<tr style="font-size: 32px;">
+									<td style="text-align: center;"><img height="100px" src="../resources/photos/vcerf.png"><img height="100px" src="../resources/photos/bkhan.png">
+										<br><a href="https://research.google/people/author32412/">Vint Cerf</a> & <a href="https://amturing.acm.org/award_winners/kahn_4598637.cfm">Robert Kahn</a> (2004)</td>
+									<td style="text-align: center;"><img height="100px" src="../resources/photos/rkarp.png">
+										<br><a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/karp.html">Richard M. Karp</a> (1985)</td>
+									<td style="text-align: center;"><img height="100px" src="../resources/photos/llamport.png">
+										<br><a href="http://www.lamport.org/">Leslie Lamport</a> (2013)</td>
+								</tr>
+								<tr>
+									<td style="text-align: center; vertical-align: top;"><br>🤔
+										<br>Explore their problems</td>
+									<td style="text-align: center; vertical-align: top;"><br>📜
+										<br>Seminal works</td>
+									<td style="text-align: center; vertical-align: top;"><br>🎤
+										<br>Stories and Interviews</td>
+									<!-- <td class="fragment" style="text-align: center; opacity: 50%; vertical-align: top; font-size: large;"><img height="100px" src="../resources/photos/tbLee.png"><br><a href="https://www.w3.org/People/Berners-Lee/">Tim Berners-Lee</a> (2016)<br>If there is time...</td> -->
+								</tr>
+							</tbody>
+						</table>
+					</section>
+				</section>
+
+				<section class="outline-page">
+					<div class="logo">
+						<a href="https://mobinets.cn"><img src="../resources/ranc/mobinetslogo.png"/></a>
+					</div>
+					<section>
+						<!-- <h2>一个现象</h2><br> -->
+						<h3>Network ≈ Blackhole! </h3>
+						<h4>More and more apps become networked</h4>
+						<img class="" style="" height="380" data-src="../resources/netai/goup.png">
+						<p class="fragment" style="color: darkcyan;">Overleaf, cloud games, cloud native apps, etc.</p>
+					</section>
+					<section>
+						<h3>Reason?</h3>
+						<h4>Human desires: Service close, cost away</h4>
+						<img class="" style="" height="400" data-src="../resources/netai/trend.png">
+					</section>
+
+					<section>
+						<h3>Driver: Evolutional <font color="green">Internet</font></h3>
+						<p class="fragment fade-out">Inter...net?</p>
+						<span class="fragment">
+						<p>Inter意为 ...之间</p>
+						<table>
+							<tbody>
+								<tr>
+									<td>Interaction</td>
+									<td>互动、交流</td>
+								</tr>
+								<tr>
+									<td>International</td>
+									<td>国际的、跨国的</td>
+								</tr>
+								<tr>
+									<td><span class="fragment"><font color="red">Internet</font></span></td>
+									<td><span class="fragment"><b>跨...网的？？</b></span></td>
+								</tr>
+							</tbody>
+						</table>
+						</span>
+						<!-- <span class="fragment"><img class="" style="" height="150" data-src="../resources/netai/heiren.png"></span> -->
+					</section>
+					<section>
+						<h3>Internet's essential goals</h3>
+						<br>
+						<img class="" style="" height="150" data-src="../resources/netai/internet.png">
+						<br>
+						<p>Addressing & Switching</p>
+						<br>
+						<p class="fragment highlight-blue"><small>* Internet and Telecommunication network？</small></p>
+					</section>
+
+					<section>
+						<h3>Interconnected networks</h3>
+						<table>
+							<thead>
+								<tr>
+									<th>网络类型</th>
+									<th>带宽分配Mbps</th>
+									<th>占比%</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>中国电信</td>
+									<td>4,537,680</td>
+									<td>50.72</td>
+								</tr>
+								<tr>
+									<td>中国联通</td>
+									<td>2,234,738</td>
+									<td>24.98</td>
+								</tr>
+								<tr>
+									<td>中国移动</td>
+									<td>1,997,000</td>
+									<td>22.32</td>
+								</tr>
+								<tr>
+									<td>中国科技网</td>
+									<td>115,712</td>
+									<td>1.29</td>
+								</tr>
+								<tr>
+									<td>CERNET中国教育<br>和科研计算机网</td>
+									<td>61,440</td>
+									<td>0.69</td>
+								</tr>
+								<tr>
+									<td>总计</td>
+									<td>8,946,570</td>
+									<td>100</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+
+					<section data-background-iframe="https://www.cstnet.cn/" data-background-interactive>
+						<div style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(248, 227, 227, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+							<h2>中国科技网</h2>
+						</div>
+					</section>
+
+					<section>
+						<h3>Inet vs Tnet</h3>
+						<p style="align-content: center;">
+						<ul>
+							<li>Internet wishes: Inter-connections (IETF, IEEE)</li>
+							<li>Tele. Net wishes: Business (ITU, 3GPP)</li>
+							<li>Relationships
+								<ul>
+									<li>Tnet is part of Inet</li>
+									<li>Inet wants more networks</li>
+									<li>Tnet wants more users</li>
+								</ul>
+							</li>
+						</ul></p>
+						<br>
+						<p class="fragment" style="font-style: italic; color: brown;"><small>* 全球与漂亮国？</small></p>
+					</section>
+				</section>
+
+				<section  class="outline-page">
+					<div class="logo">
+						<a href="https://mobinets.cn"><img src="../resources/ranc/mobinetslogo.png"/></a>
+					</div>
+					<section>
+						<h3>Advances in Internet</h3>
+						<h4>📌 Addressing</h4>
+						<ul>
+							<li>Content centric network</li>
+							<li>Named Data Network</li>
+						</ul>
+						<br><br>
+						<h4>🍻 Switching</h4>
+						<ul>
+							<li>Quality of Service</li>
+							<li>Quality of Experience</li>
+							<li>End-to-end requirements</li>
+						</ul>
+						
+					</section>
+					<section class="content-page">
+						<h3 class="content-page">News in various networks</h3>
+						
+						<ul>
+							<li>3G/4G/5G/6G</li>
+							<li>Orbital</li>
+							<li>Visible light</li>
+							<li>Low-power</li>
+						</ul>
+						<br>
+						<table>
+							<tbody>
+								<tr><img src="../resources/netai/bs.png"></tr>
+								<tr><img src="../resources/netai/sat.png"></tr>
+								<tr><img src="../resources/netai/vlc.png"></tr>
+								<tr><img src="../resources/netai/iot.png"></tr>
+							</tbody>
+						</table>
+						<p>Novel Information and Communication Theories, and new networking technologies driven by them.</p>
+
+					</section>
+
+					<section>
+						<h3>Telecommunications</h3>
+						<table>
+							<thead>
+								<tr>
+									<th>Name</th>
+									<th>Bandwidth</th>
+									<th>Coverage</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>3G</td>
+									<td>2Mbps</td>
+									<td>2-5km</td>
+								</tr>
+								<tr>
+									<td>4G</td>
+									<td>100Mbps</td>
+									<td>1-3km</td>
+								</tr>
+								<tr>
+									<td style="color: red;">5G</td>
+									<td>1Gbps</td>
+									<td>50-300m</td>
+								</tr>
+								<tr>
+									<td style="color: red;">6G</td>
+									<td>1Tbps</td>
+									<td>10m</td>
+								</tr>
+							</tbody>
+						</table>
+						<p>Bandwidth↗ Coverage↘ Mobility↗</p>
+						<p class="fragment" style="color: darkcyan;">Apps are dragged into network as the end-to-end latency decreases and throughput increases.</p>
+					</section>
+				</section>
+				<section class="outline-page">
+					<div class="logo">
+						<a href="https://mobinets.cn"><img src="../resources/ranc/mobinetslogo.png"/></a>
+					</div>
+					<section>
+						<h3>Network computing</h3>
+						<p style="color: rgb(5, 99, 99);">Centralized🔁Distributed</p>
+						<table>
+							<tbody>
+								<tr>
+									<td><img class="" style="" height="270" data-src="../resources/netai/lyx.png"></td>
+									<td><img class="" style="" height="270" data-src="../resources/netai/wxh.png"></td>
+								</tr>
+								<tr>
+									<td><small>* 刘云新. 智能边缘计算中的挑战和机遇.中国计算机学会通讯 2021.09. </small></td>
+									<td><small>* 汪学海等. 边缘计算技术研究报告. 中科院计算所 信息技术与信息化前瞻FIAR-02. 2018.02.</small></td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+					<section>
+						<h3>Grow ripe</h3>
+						<img src="../resources/netai/netcom-history-light.png">
+					</section>
+
+					<section>
+						<h3>Tech. vision</h3>
+						<img src="../resources/netai/techComb.png">
+					</section>
+
+					<section>
+						<h3>Embedding each other</h3>
+						<img width="30%" src="../resources/netai/taichi.png">
+						<p style="text-align: left;">
+							<ul>
+								<li>C → N: SDN、NFV</li>
+								<li>N → C: Cloud、<font color="red">Edge</font>、D2D/D4D</li>
+							</ul>
+						</p>
+					</section>
+
+					<section>
+						<h3>Edge computing</h3>
+						<img width="80%" src="../resources/netai/edgedef.png">
+						<p style="text-align: left;">边缘计算是一种<span style="color: cadetblue;" class="fragment">计算资源与用户接近、</span><span style="color: coral;" class="fragment">计算过程与用户协同、</span><span style="color: steelblue;" class="fragment">整体计算性能高于本地和云计算的</span>计算模式<span class="fragment">，是实现无处不在的“泛在算力”的具体手段。</span></p>
+						<p align="right" class="fragment"><small>* 机械工业出版社《边缘计算:原理、技术与实践》（赵志为、闵革勇编著）</small></p>
+					</section>
+
+				</section>
+
+				<section class="outline-page">
+					<div class="logo">
+						<a href="https://mobinets.cn"><img src="../resources/ranc/mobinetslogo.png"/></a>
+					</div>
+					<section>
+						<h3>Needs</h3>
+						<h4>Internet-of-Things</h4>
+						<p class="statements">More "things" are getting smart, with increasing computational needs.</p>
+						<img width="80%" src="../resources/netai/iot-app.png">
+					</section>
+
+					<section>
+						<h3>Internet-of-Things</h3>
+						<img width="80%" src="../resources/netai/iot-app2.png">
+					</section>		
+
+					<section>
+						<h3>IoT Brief History</h3>
+						<img width="100%" src="../resources/netai/iot-history.png">
+						<p class="fragment bot_notes_mid" style="color: lightblue;">📥 Build a network for things</p>
+						<p class="fragment bot_notes_mid" style="color: rgb(134, 203, 246);">🔗 Connect things into a network</p>
+						<p class="fragment bot_notes_mid" style="color: rgb(31, 123, 244);">🌃 Connected everything</p>
+					</section>
+
+					<section>
+						<h3>IoT Essense</h3>
+						<img width="80%" src="../resources/netai/iot-change.png">
+						<p class="fragment bot_notes_right" style="color: lightcoral;">IoT-Human gap mainly lies in sensing and <u>computing</u>.</p>
+					</section>
+
+					<section>
+						<h3>AI+IoT=AIoT</h3>
+						<img width="50%" src="../resources/netai/aiot.png">
+						<p class="statements">Advances in <span style="color: blue;">network</span> brings <span style="color: brown;">computing</span> on board.</p>
+						<table style="font-size: 30px;">
+							<thead>
+								<th>🏡IoT</th>
+								<th>🔄Link</th>
+								<th>🖥Server</th>
+							</thead>
+							<tr>
+								<td>Offloading decisions</td>
+								<td>Task transfer</td>
+								<td>Task processing</td>
+							</tr>
+							<tr style="color: dimgray;">
+								<td>Analysis/divisions</td>
+								<td>Multi-access</td>
+								<td>Service management</td>
+							</tr>
+						</table>
+					</section>
+
+				</section>
+				<section class="outline-page">
+					<div class="logo">
+						<a href="https://mobinets.cn"><img src="../resources/ranc/mobinetslogo.png"/></a>
+					</div>
+					<section>
+						<h3>A brief history of edge</h3>
+						<table>
+							<tbody>
+								<tr>
+									<td style="vertical-align: top;" width="40%"><img src="../resources/netai/newsm.png">
+										<!-- <img src="resources/news2.png">
+										<img src="resources/news3.png"> -->
+										<!-- <ul>
+											<li><small>2003年：EdgeComputing Powered by WebSphere (Akamai & IBM)</small></li>
+											<li><small>20世纪：Amazon为代表的云技术快速普及</small></li>
+											<li><small>2008年：明确提出了Cloudlet的概念</sma1ll></li>
+										</ul> -->
+									</td>
+									<td width="60%"><ul>
+										<small><li>2003:EdgeComputing (Akamai&IBM).</li></small>
+										<small><li>20th: Cloud rapidly popularized.</li></small>
+										<small><li>2008: <span style="color: brown;">Cloudlet</span> was clearly put forward.</li></small>
+										<small><li>2012: Concept of <span style="color: brown;">Fog</span> Computing.</li></small>
+										<small><li>2013: ESTI defines <span style="color: brown;">Mobile Edge Computing</span>.</li></small>
+										<small><li>2015: Open Fog Computing Alliance.</li></small>
+										<small><li>2016: ACM/IEEE Symp. on Edge computing.</li></small>
+										<small><li>2017: Edge Computing Industry Alliance.</li></small>
+										<small><li>2018: <span style="color: brown;">MEC re-explained</span>.</li></small>
+										<small><li>2019: Edge/Green Computing Commitee.</li></small>
+										<small><li>2020: Scene-oriented edge systems (OEC).</li></small>
+										</ul>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+
+					<section>
+						<h3>Gartner's view</h3>
+						<table>
+							<thead>
+									<th>Year</th>
+									<th>Keywords</th>
+									<th>Stage</th>
+							</thead>
+							<tbody>
+								<tr>
+									<td>2017</td>
+									<td>Edge Computing</td>
+									<td>Innovation Trigger</td>
+								</tr>
+								<tr>
+									<td>2018</td>
+									<td>Edge AI</td>
+									<td>Innovation Trigger</td>
+								</tr>
+								<tr>
+									<td>2019</td>
+									<td>Edge AI/Analytics</td>
+									<td>Peak of inflated expectations</td>
+								</tr>
+								<tr>
+									<td>2020</td>
+									<td>Low-cost single-board computers at edge</td>
+									<td>Innovation Trigger</td>
+								</tr>
+							</tbody>
+						</table>
+						<p align="right" style="font-style: italic;"><small><font color="red">* TinyML, Embedded AI, Lightweight ML, etc.<br></font>
+							* <a href="../resources/vid/gartner_explained.mp4">Gartner's Hype Cycle.</a></small></p>
+						<!-- <p align="right" style="font-style: italic;"><small><font color="red">* <a href="">Gartner's Tech. Hype Circle</a>.</font></small></p> -->
+					</section>
+
+					<section>
+						<h3>EdgeAI or CloudAI?</h3>
+						<p>Distinguishment: <u>Scenarios matter</u>.</p>
+						<img src="../resources/netai/edge-cloud.svg">
+						<ul>
+							<li>Access & Offloading: <u>Ambient and unreliable</u>.</li>
+							<li>Deployment: <u>High cost</u></li>
+							<li>Architecture: <u>Cloud-edge-end</u></li>
+						</ul>
+						<p align="right" style="font-style: italic;"><small><font color="red">* Integrating sensing, communication and computation.</font></small></p>
+					</section>
+
+					<section>
+						<h3>AI everywhere?</h3>
+						<h4>Mobility is perhaps the first challenge.</h4>
+						<table>
+							<thead>
+									<th>Scene</th>
+									<th>Speed</th>
+									<th>Handovers</th>
+							</thead>
+							<tbody>
+								<tr>
+									<td>AutoDrive+5G</td>
+									<td>60 KM/h</td>
+									<td>5 AP/m</td>
+								</tr>
+								<tr>
+									<td>HighRail+5G</td>
+									<td>300 KM/h</td>
+									<td>25 AP/m</td>
+								</tr>
+								<tr>
+									<td>AR/VR+5G</td>
+									<td>4 KM/h</td>
+									<td>0.33 AP/m</td>
+								</tr>
+								<tr>
+									<td>Wander+WiFI6</td>
+									<td>4 KM/h</td>
+									<td>0.33 AP/m</td>
+								</tr>
+							</tbody>
+						</table>
+						<p class="fragment">🧐<span style="font-style: italic; color: brown;">Where are the impacts?</span><br>
+							<span class="fragment">service handover</span><span class="fragment">, cooperation</span><span class="fragment">, sys deployment</span><span class="fragment">, service discovery, ...</span></p>
+					</section>
+
+					<section>
+						<h3>Explosive app growth</h3>
+						<p style="color: cadetblue; font-style: italic;">Almost all services can be trasferred to the edge</p>
+						
+						<br>
+						<table>
+							<tbody>
+								<tr>
+									<td width="40%">
+										<img src="../resources/netai/serviceboom.png">
+									</td>
+									<td width="50%" style="vertical-align: middle; align-self: center;">
+										<ul>
+											<li>Resource: <span style="color: brown;">constrained</span></li>
+											<li>Types:<span style="color: brown;">Heterogeneous</span></li>
+											<li>Service amount:<span style="color: brown;">Huge</span></li>
+										</ul>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<span class="fragment" style="color: brown;">Massive system works to be done......</span>
+					</section>
+				</section>
+
+				<section class="outline-page">
+					<div class="logo">
+						<a href="https://mobinets.cn"><img src="../resources/ranc/mobinetslogo.png"/></a>
+					</div>
+					<section>
+						<h3>AIoT/Edge Papers</h3>
+						<ul>
+							<li style="color: burlywood;">SigComm'18, AuTO: Scaling Deep Reinforcement Learning for Datacenter-Scale Automatic Traffic Optimization</li>
+							<li style="color: burlywood;">SOSR'21, Accelerating Distributed Deep Learning using Multi-Path RDMA in Data Center Networks</li>
+							<li style="color: cadetblue;">SigComm'21, MimicNet: Fast Performance Estimates for Data Center Networks with Machine Learning</li>
+							<li style="color: cadetblue;">SigComm'20, Interpreting Deep Learning-Based Networking Systems</li>
+						</ul>
+					</section>
+
+					<section>
+						<h3>Some more</h3>
+						<img width="25%" src="../resources/netai/edge-paper.png"><img width="25%" src="../netai/resources/sensingframe.png">
+						<ul>
+							<li style="color: cadetblue;"><a href="../resources/vid/paper-emp.mp4">MobiCom'21</a>, EMP: Edge-assisted Multi-vehicle Perception</li>
+							<li style="color: cadetblue;"><a href="../resources/vid/tunable.mp4">MobiCom'21</a>, Flexible High-resolution Object Detection on Edge Devices with Tunable Latency</li>
+							<li style="color: cadetblue;">MobiCom'19, Edge Assisted Real-time Object Detection for Mobile Augmented Reality</li>
+						</ul>
+					</section>
+					<section>
+						<h2 style="margin-top: 20%;">Interesting videos🚴‍♀️</h2>
+					</section>
+					<section>
+						<h3>AI + Wireless + Mobile (1)</h3>
+						<p style="text-align: left; margin-left: 20px;">
+						<a href="../resources/vid/simfl-mobisys21.mp4">FL</a>: similarity aware cluster for activity recognition.<br>
+						<a href="../resources/vid/remotehand.mp4">remote gesture</a>: real time graph analysis & control.<br>
+						<a href="../resources/vid/mole.mp4">mole</a>: sensing input with smartwatch.<br>
+						<a href="../resources/vid/autodrive1.mp4">AutoDrive1</a>, <a href="../resources/vid/autodrive2.mp4">AutoDrive2</a>, <a href="../resources/vid/autodrive3.mp4">AutoDrive3</a>.<br>
+						<a href="../resources/vid/gesture.mp4">gesture1</a>, <a href="../resources/vid/gesture2.mp4">gesture2</a>, <a href="../resources/vid/handtracking.mp4">gesture3</a>: sensing gestures.<br>
+						<a href="../resources/vid/mobar.mp4">mobile AR</a>: mobile augmented reality (early).<br>
+						<a href="../resources/vid/cablerobot.mp4">Cable robot</a>, <a href="../resources/vid/cablerobot2.mp4">userview</a>: 360 VR.<br>
+						<a href="../resources/vid/mblock.mp4">mblocks</a>: self learning, sensing and navigating.<br>
+						<a href="../resources/vid/lowedge.mp4">pocket edge</a>: low cost edge server using smartphones.<br>
+						<a href="../resources/vid/uavnet.mp4">UAV network</a>: Self organizing and target tracking.<br>
+						<!-- <div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
+							<h2>Video Backgrounds</h2>
+							<pre><code class="hljs html" style="word-wrap: break-word;">&lt;section data-background-video="video.mp4,video.webm"&gt;</code></pre>
+						</div> -->
+						</p>
+					</section>
+					<section>
+						<h3>AI + Wireless + Mobile (2)</h3>
+						<p style="text-align: left; margin-left: 20px;">
+						<a href="../resources/vid/appleAdhoc.mp4">Apple Adhoc</a>: Apple wireless direct link.<br>
+						<a href="../resources/vid/thrpt-fairness-mobisys21.mp4">Throughput fairness</a>: Tradeoffs in mobility platforms.<br>
+						<a href="../resources/vid/underwater-vlc.mp4">Underwater VLC</a>: novel communications.<br>
+						<a href="../resources/vid/audio-side-channel-uav.mp4">UAV side channel</a>: Audio side-channel for UAVs.<br>
+						<a href="../resources/vid/3dhumanmesh.mp4">3D human mesh</a>, <a href="../resources/vid/crowdcount21.mp4">Crowd counting</a>: sensing wirelessly<br>
+						<a href="../resources/vid/iot-democratize.mp4">IoT democratization</a>: hmm.. interesting topic.<br>
+						<a href="../resources/vid/find-missing-objs.mp4">Find missing objects</a>: hybrid use of vision and sensing.<br>
+						<a href="../resources/vid/liquor-detect.mp4">Liquor detect</a>: sensing with graphics.<br>
+						<!-- <div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
+							<h2>Video Backgrounds</h2>
+							<pre><code class="hljs html" style="word-wrap: break-word;">&lt;section data-background-video="video.mp4,video.webm"&gt;</code></pre>
+						</div> -->
+						</p>
+					</section>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="../templates/dist/reveal.js"></script>
+		<script src="../templates/plugin/zoom/zoom.js"></script>
+		<script src="../templates/plugin/notes/notes.js"></script>
+		<script src="../templates/plugin/search/search.js"></script>
+		<script src="../templates/plugin/markdown/markdown.js"></script>
+		<script src="../templates/plugin/highlight/highlight.js"></script>
+		<script>
+
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: false,
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+			});
+
+		</script>
+
+	</body>
+</html>
