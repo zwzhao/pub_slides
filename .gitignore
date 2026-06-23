@@ -1,3 +1,5 @@
-resources/
+resources/vid/
 templates/
 *.mp4
+*.docx
+*.pptx
